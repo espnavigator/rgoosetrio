@@ -58,3 +58,9 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
 }
+
+.video-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }

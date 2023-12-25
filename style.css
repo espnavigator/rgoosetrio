@@ -27,6 +27,7 @@ a {
 
 .main-class {
 
+    padding: 6px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
 
@@ -37,7 +38,7 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#gigs {
+.gigs {
     list-style-type: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
@@ -65,3 +66,10 @@ h1 {
 .photo {
     max-width: 100%;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

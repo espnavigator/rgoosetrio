@@ -78,7 +78,7 @@ h1 {
 
 
     display: -webkit-flex;
-    dislay: flex;
+    display: flex;
     flex-wrap: wrap;
     
     

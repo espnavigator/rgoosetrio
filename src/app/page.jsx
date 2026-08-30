@@ -90,8 +90,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ---- THE TILES -------------------------------------------------- */}
+      {/* ---- THE BAND --------------------------------------------------- */}
       <section className="section section--paper">
+        <div className="container container--narrow">
+          <div className="section-head">
+            <span className="kicker">Who they are</span>
+            <h2>{home.bandBlurbHeading}</h2>
+          </div>
+          <Paragraphs items={home.bandBlurb} />
+          <div className="btn-row">
+            <Link href="/band" className="btn btn--sm">
+              Both line-ups
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ---- THE TILES -------------------------------------------------- */}
+      <section className="section">
         <div className="container">
           <div className="section-head">
             <span className="kicker">Have a look round</span>

@@ -102,9 +102,21 @@ export const home = {
   // This is the first sentence of real text on the site. Google reads it, and
   // it states plainly who he is and what he does.
   heroSubtitle:
-    'Ramon Goose is an English guitarist working in Cuban music — electric guitar and tres between son cubano and the blues.',
+    'Ramon Goose is an English guitarist working in Cuban music. He took the blues to Santiago de Cuba, found The Compadres, and came back with a record.',
   heroCtaPrimary: { label: 'Hear the record', href: '/music' },
   heroCtaSecondary: { label: 'The Cuba sessions', href: '/cuba' },
+
+  // The band blurb on the front page. TODO: Ramon to correct or replace.
+  bandBlurbHeading: 'The Compadres',
+  bandBlurb: [
+    'The Compadres are two bands with one name, either side of the Atlantic, playing son, guajira and bolero with an electric blues guitar where the tres would normally sit.',
+    'In England it is a trio. Kieffer Santander plays percussion — Peruvian, based here, one of the leading players of Afro-Peruvian and Criollo rhythm in Europe, and the reason the band moves the way it does: cajón, congas, bongó and the quijada, a donkey’s jawbone played by rattling the teeth. Joe Goose plays bass, and is my identical twin brother, which is a shortcut through about thirty years of rehearsal.',
+    // TODO: name the Santiago players here — the rooftop photograph has four
+    // besides me (tres, congas, double bass, bongó) and naming them is the
+    // whole point of this paragraph.
+    'In Santiago de Cuba it is a five-piece, and that is the band on the record. It began in 2023 with the Cuban musician Joaquín Solórzano, and we cut the album at EGREM, the state studio that put most of what the world calls Cuban music onto tape. TODO: the other players by name.',
+    'Neither half is a tribute act. The blues went to Cuba, found the music already there, and came back sounding like this.',
+  ],
 
   introHeading: 'Where the blues went',
   intro: [

@@ -66,6 +66,23 @@ export default function BandPage() {
               </p>
             </div>
 
+            {group.photo && (
+              <figure className="band-photo">
+                <img
+                  src={asset(`/images/band/${group.photo}`)}
+                  alt={group.name}
+                  loading="lazy"
+                  width="1800"
+                  height="1013"
+                />
+                {group.photoCaption && (
+                  <figcaption>
+                    <Txt>{group.photoCaption}</Txt>
+                  </figcaption>
+                )}
+              </figure>
+            )}
+
             <div className="member-grid">
               {group.members.map((m, j) => (
                 <Member key={`${group.id}-${j}`} member={m} />

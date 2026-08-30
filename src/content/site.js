@@ -331,6 +331,8 @@ export const band = {
     {
       id: 'cuba',
       name: 'The Compadres — Santiago de Cuba',
+      photo: 'compadres-santiago.jpg',
+      photoCaption: 'The Santiago line-up, on a rooftop above the city',
       blurb:
         'The Cuban line-up, and the band on the record. These are Santiago players working in the son and trova traditions the city invented.',
       // TODO: names, instruments and a line each. The rooftop photograph shows
@@ -352,6 +354,8 @@ export const band = {
     {
       id: 'england',
       name: 'The Compadres — England',
+      photo: 'compadres-england.jpg',
+      photoCaption: 'TODO: which gig is this? — the England line-up live',
       blurb:
         'The touring line-up in the UK, for festivals, clubs and anything on this side of the water.',
       members: [
@@ -370,7 +374,7 @@ export const band = {
         {
           name: 'Kieffer Santander',
           role: 'Percussion',
-          photo: '',
+          photo: 'kieffer-santander.jpg',
           // CHECK: is Kieffer the player with the Compay Segundo / Eliades
           // Ochoa credit? If so, say it here — it is a real lineage claim.
           bio: 'TODO: a couple of lines on Kieffer — congas, bongó, cajón and campana.',
@@ -643,7 +647,35 @@ export const gallery = {
    * — correct any that are wrong, they are the bit search engines actually use.
    */
   photos: [
-    // Cuba and live — these lead, because they are what the site is about.
+    // The band, in Cuba. These lead because they are what the site is about.
+    { src: 'a23.jpg', tag: 'cuba', caption: 'The Compadres on a rooftop in Santiago de Cuba' },
+    { src: 'a24.jpg', tag: 'cuba', caption: 'With Nancy Maura at Estudios Siboney' },
+    { src: 'a14.jpg', tag: 'cuba', caption: 'TODO: who is this? — two red guitars, Santiago' },
+    { src: 'a15.jpg', tag: 'cuba', caption: 'TODO: who is this? — sitting in, Santiago' },
+    { src: 'a16.jpg', tag: 'cuba', caption: 'TODO: name the players — in front of the mural' },
+    { src: 'a17.jpg', tag: 'cuba', caption: 'Congas and double bass' },
+    { src: 'a18.jpg', tag: 'cuba', caption: 'TODO: name the players — Santiago musicians' },
+    { src: 'a19.jpg', tag: 'cuba', caption: 'TODO: who is this? — Santiago' },
+    { src: 'a11.jpg', tag: 'cuba', caption: 'TODO: who is this? — with a trumpet player' },
+
+    // The studios: EGREM and Siboney.
+    { src: 'a07.jpg', tag: 'cuba', caption: 'Estudio 18, EGREM, with the Guyatone' },
+    { src: 'a09.jpg', tag: 'cuba', caption: 'At the desk, EGREM' },
+    { src: 'a06.jpg', tag: 'cuba', caption: 'In the control room with the engineer' },
+    { src: 'a05.jpg', tag: 'cuba', caption: 'The Studer A80 and a reel of BASF tape' },
+    { src: 'a03.jpg', tag: 'cuba', caption: 'Tracking guitar' },
+    { src: 'a02.jpg', tag: 'cuba', caption: 'The control room' },
+    { src: 'a04.jpg', tag: 'cuba', caption: 'The live room at Estudios Siboney' },
+    { src: 'a10.jpg', tag: 'portrait', caption: 'TODO: caption' },
+
+    // Live and gear.
+    { src: 'a08.jpg', tag: 'live', caption: 'TODO: which gig? — live with The Compadres' },
+    { src: 'a13.jpg', tag: 'portrait', caption: 'Kieffer Santander' },
+    { src: 'a12.jpg', tag: 'gear', caption: 'Marshall head' },
+    { src: 'a01.jpg', tag: 'gear', caption: 'TODO: which amp is this?' },
+    { src: 'a20.jpg', tag: 'sleeve', caption: 'TODO: what is this artwork for?' },
+
+    // From the old site.
     { src: 'c04.jpg', tag: 'cuba', caption: 'The album cover shot, Santiago de Cuba' },
     { src: 'c01.jpg', tag: 'cuba', caption: 'In the control room at Estudios Siboney, Santiago de Cuba' },
     { src: 'c02.jpg', tag: 'cuba', caption: 'Between takes' },

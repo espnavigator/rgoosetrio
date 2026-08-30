@@ -143,9 +143,9 @@ export const home = {
       href: '/gear',
     },
     {
-      title: 'Goose Trem',
-      body: 'A tremolo of my own, built from the ground up. Coming soon.',
-      href: '/goose-trem',
+      title: 'Texas Flood',
+      body: 'A pedal of my own, built from the ground up. Coming soon.',
+      href: '/goose-pedal',
     },
     {
       title: 'Gallery',
@@ -466,6 +466,16 @@ export const gear = {
             'Being put together properly, which means hunting original 1960s Radiospares De Luxe output and mains transformers rather than settling for reproductions. TODO: update this once it is finished and gigged.',
         },
         {
+          name: 'WAU Goosemaster',
+          detail: 'A clone of the Green Man',
+          body:
+            'Built by WAU, and a clone of the Green Man — the unit Ry Cooder used. Given that half the reason this record exists is Cooder and Manuel Galbán proving an electric guitar belongs in Cuban music, running the Cuban material through his amplifier is not an accident.',
+          // TODO: paste WAU's Instagram address here and this becomes a link.
+          // I could not find their handle and would rather leave it blank than
+          // send people to the wrong account.
+          href: '',
+        },
+        {
           name: 'TODO: the amp you actually gig',
           detail: 'TODO',
           body: 'TODO',
@@ -476,11 +486,11 @@ export const gear = {
       group: 'Effects',
       items: [
         {
-          name: 'Goose Trem',
+          name: 'Texas Flood',
           detail: 'My own — coming soon',
           body:
             'A tremolo built from the ground up, modelled on the one I could never get to behave the way I wanted. There is a page about it.',
-          href: '/goose-trem',
+          href: '/goose-pedal',
         },
         {
           name: 'TODO: the rest of the board',
@@ -507,18 +517,16 @@ export const gear = {
 /* -------------------------------------------------------------------------- */
 
 export const pedal = {
-  // TODO: confirm the name you are going with, and whether this is the hardware
-  // pedal, the plugin, or both. The page reads fine either way as written.
-  name: 'Goose Trem',
+  name: 'Texas Flood',
   kicker: 'In development',
-  heading: 'Goose Trem',
-  standfirst:
-    'A tremolo built the way I wanted one to sound, because nothing I could buy did it.',
+  heading: 'Texas Flood',
+  standfirst: 'A pedal of my own, built because nothing I could buy did what I wanted.',
 
   body: [
-    'Every guitar player has one effect they are fussy about. Mine is tremolo — the sound running through half the records I love, and the reason half the Cuban material on the new album breathes the way it does.',
-    'Goose Trem is modelled on the circuit I have used for years, with the parts of it I always wished were different put right.',
-    'TODO: two or three sentences on what makes it yours — the sweep, the depth range, the way it behaves at slow speeds, whatever the actual reason is that you are building it.',
+    // TODO: what the pedal actually is — overdrive, boost, fuzz, tremolo? I have
+    // deliberately not guessed. Say what it does and the rest of this page works.
+    'TODO: what kind of pedal is the Texas Flood, and what does it do?',
+    'TODO: two or three sentences on why you are building it — what you could never get out of a shop-bought one, and what you changed.',
   ],
 
   features: [
@@ -570,10 +578,10 @@ export const shop = {
       note: 'TODO',
     },
     {
-      name: 'Goose Trem',
-      variant: 'Tremolo',
+      name: 'Texas Flood',
+      variant: 'Pedal',
       price: '',
-      href: '/goose-trem',
+      href: '/goose-pedal',
       note: 'In development — join the list.',
     },
   ],
@@ -673,11 +681,11 @@ export const gallery = {
     { src: 'a24.jpg', tag: 'cuba', caption: 'With Nancy Maura at Estudios Siboney' },
     { src: 'a14.jpg', tag: 'cuba', caption: 'With Alejandro Almenares, Santiago de Cuba' },
     { src: 'a15.jpg', tag: 'cuba', caption: 'Playing with Alejandro Almenares' },
-    { src: 'a16.jpg', tag: 'cuba', caption: 'TODO: name the players — in front of the mural' },
-    { src: 'a17.jpg', tag: 'cuba', caption: 'Congas and double bass' },
-    { src: 'a18.jpg', tag: 'cuba', caption: 'TODO: name the players — Santiago musicians' },
-    { src: 'a19.jpg', tag: 'cuba', caption: 'TODO: who is this? — Santiago' },
-    { src: 'a11.jpg', tag: 'cuba', caption: 'TODO: who is this? — with a trumpet player' },
+    { src: 'a16.jpg', tag: 'cuba', caption: 'The Compadres' },
+    { src: 'a17.jpg', tag: 'cuba', caption: 'The Compadres' },
+    { src: 'a18.jpg', tag: 'cuba', caption: 'The Compadres' },
+    { src: 'a19.jpg', tag: 'cuba', caption: 'The Compadres' },
+    { src: 'a11.jpg', tag: 'cuba', caption: 'The Compadres' },
 
     // The studios: EGREM and Siboney.
     { src: 'a07.jpg', tag: 'cuba', caption: 'Estudio 18, EGREM, with the Guyatone' },
@@ -693,14 +701,14 @@ export const gallery = {
     { src: 'a08.jpg', tag: 'live', caption: 'TODO: which gig? — live with The Compadres' },
     { src: 'a13.jpg', tag: 'portrait', caption: 'Kieffer Santander' },
     { src: 'a12.jpg', tag: 'gear', caption: 'Marshall head' },
-    { src: 'a01.jpg', tag: 'gear', caption: 'TODO: which amp is this?' },
+    { src: 'a01.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
     { src: 'a20.jpg', tag: 'sleeve', caption: 'TODO: what is this artwork for?' },
 
     // From the old site.
     { src: 'c04.jpg', tag: 'cuba', caption: 'The album cover shot, Santiago de Cuba' },
     { src: 'c01.jpg', tag: 'cuba', caption: 'In the control room at Estudios Siboney, Santiago de Cuba' },
     { src: 'c02.jpg', tag: 'cuba', caption: 'Between takes' },
-    { src: 'c03.jpg', tag: 'cuba', caption: 'TODO: who is in this photograph? — the Santiago sessions' },
+    { src: 'c03.jpg', tag: 'cuba', caption: 'The Compadres' },
     { src: 'c06.jpg', tag: 'live', caption: 'Live with The Compadres' },
     { src: 'c05.jpg', tag: 'gear', caption: 'Picks' },
 
@@ -767,7 +775,7 @@ export const nav = [
   { label: 'The Band', href: '/band' },
   { label: 'Cuba', href: '/cuba' },
   { label: 'Gear', href: '/gear' },
-  { label: 'Goose Trem', href: '/goose-trem' },
+  { label: 'The Pedal', href: '/goose-pedal' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Video', href: '/video' },
   { label: 'Shop', href: '/shop' },

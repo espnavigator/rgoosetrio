@@ -5,7 +5,7 @@ import { shop, site } from '@/content/site';
 
 export const metadata = {
   title: 'Shop',
-  description: 'Records, shirts and the Goose Trem.',
+  description: 'Records, shirts and the Texas Flood pedal.',
   alternates: { canonical: '/shop/' },
 };
 

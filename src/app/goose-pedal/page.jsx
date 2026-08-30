@@ -5,7 +5,7 @@ import { pedal, site } from '@/content/site';
 export const metadata = {
   title: pedal.name,
   description: 'A tremolo built by Ramon Goose. In development.',
-  alternates: { canonical: '/goose-trem/' },
+  alternates: { canonical: '/goose-pedal/' },
 };
 
 export default function PedalPage() {

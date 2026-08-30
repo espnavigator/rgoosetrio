@@ -43,11 +43,21 @@ export default function GearPage() {
                   <p>
                     <Txt>{item.body}</Txt>
                   </p>
-                  {item.href && (
-                    <Link href={item.href} className="card__more">
-                      Read more &rarr;
-                    </Link>
-                  )}
+                  {item.href &&
+                    (item.href.startsWith('http') ? (
+                      <a
+                        href={item.href}
+                        className="card__more"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Who makes it &rarr;
+                      </a>
+                    ) : (
+                      <Link href={item.href} className="card__more">
+                        Read more &rarr;
+                      </Link>
+                    ))}
                 </article>
               ))}
             </div>

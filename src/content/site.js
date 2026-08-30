@@ -345,7 +345,7 @@ export const band = {
       id: 'england',
       name: 'The Compadres — England',
       photo: 'compadres-england.jpg',
-      photoCaption: 'TODO: which gig is this? — the England line-up live',
+      photoCaption: 'The Compadres playing at the Cuban Embassy in London',
       blurb:
         'The line-up that plays here: festivals, clubs and anything on this side of the water. Cuban repertoire with a Peruvian percussionist in it, which sends the rhythm somewhere neither tradition would have gone on its own.',
       members: [
@@ -698,7 +698,7 @@ export const gallery = {
     { src: 'a10.jpg', tag: 'portrait', caption: 'TODO: caption' },
 
     // Live and gear.
-    { src: 'a08.jpg', tag: 'live', caption: 'TODO: which gig? — live with The Compadres' },
+    { src: 'a08.jpg', tag: 'live', caption: 'The Compadres at the Cuban Embassy in London' },
     { src: 'a13.jpg', tag: 'portrait', caption: 'Kieffer Santander' },
     { src: 'a12.jpg', tag: 'gear', caption: 'Marshall head' },
     { src: 'a01.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },

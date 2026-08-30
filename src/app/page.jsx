@@ -1,0 +1,153 @@
+import Link from 'next/link';
+import CutPaper from '@/components/CutPaper';
+import { Paragraphs, Txt } from '@/components/Txt';
+import { asset } from '@/lib/asset';
+import { home, music, site, video } from '@/content/site';
+
+export default function HomePage() {
+  return (
+    <>
+      {/* ---- HERO ------------------------------------------------------- */}
+      <section className="hero">
+        <div className="container hero__grid">
+          <div className="hero__copy">
+            <span className="kicker hero__kicker">{home.heroKicker}</span>
+            {/* The banner, cut from red paper in the manner of the Seeco
+                "Los Compadres" sleeve. The album title sits under it in the
+                letterspaced white oblique caps of "Mambo Sinuendo". Both lines
+                live inside the page's single <h1>. */}
+            <h1 className="hero__title">
+              <CutPaper text={home.heroName} className="hero__banner" />
+              <span className="hero__album">{home.heroTitle}</span>
+            </h1>
+            <p className="hero__subtitle">
+              <Txt>{home.heroSubtitle}</Txt>
+            </p>
+            <div className="btn-row">
+              <Link href={home.heroCtaPrimary.href} className="btn btn--primary">
+                {home.heroCtaPrimary.label}
+              </Link>
+              <Link href={home.heroCtaSecondary.href} className="btn">
+                {home.heroCtaSecondary.label}
+              </Link>
+            </div>
+          </div>
+
+          <img
+            className="hero__sleeve"
+            src={asset(music.featured.cover)}
+            alt={`Album sleeve: ${music.featured.title} by ${music.featured.artist}`}
+            width="1000"
+            height="1000"
+          />
+        </div>
+
+        {/* Cuban flag, taken apart into stripes. */}
+        <div className="hero__flag" aria-hidden="true">
+          <i />
+          <i />
+          <i />
+          <i />
+          <i />
+          <i />
+        </div>
+      </section>
+
+      {/* ---- INTRO ------------------------------------------------------ */}
+      <section className="section">
+        <div className="container split">
+          <div>
+            <span className="kicker">The short version</span>
+            <h2>{home.introHeading}</h2>
+            <Paragraphs items={home.intro} />
+            <div className="btn-row">
+              <Link href="/bio" className="btn btn--sm">
+                Full biography
+              </Link>
+            </div>
+          </div>
+
+          <ul className="facts">
+            <li>
+              <div className="facts__label">New album</div>
+              <div className="facts__value">{music.featured.title}</div>
+            </li>
+            <li>
+              <div className="facts__label">Label</div>
+              <div className="facts__value">
+                <Txt>{music.featured.label}</Txt>
+              </div>
+            </li>
+            <li>
+              <div className="facts__label">Recorded at</div>
+              <div className="facts__value">{music.featured.recordedAt}</div>
+            </li>
+            <li>
+              <div className="facts__label">Guest</div>
+              <div className="facts__value">Rick Vito, formerly of Fleetwood Mac</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* ---- THE TILES -------------------------------------------------- */}
+      <section className="section section--paper">
+        <div className="container">
+          <div className="section-head">
+            <span className="kicker">Have a look round</span>
+            <h2>The rest of it</h2>
+          </div>
+
+          <div className="grid grid--3">
+            {home.cards.map((card) => (
+              <Link key={card.href} href={card.href} className="card">
+                <h3>{card.title}</h3>
+                <p>
+                  <Txt>{card.body}</Txt>
+                </p>
+                <span className="card__more">Go &rarr;</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ---- YOUTUBE ---------------------------------------------------- */}
+      <section className="section section--ink">
+        <div className="container split">
+          <div>
+            <span className="kicker">On YouTube</span>
+            <h2>{video.channels[0].name}</h2>
+            <p>{video.channels[0].body}</p>
+            <div className="btn-row">
+              <a
+                href={video.channels[0].href}
+                className="btn btn--onink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {video.channels[0].cta}
+              </a>
+              <Link href="/video" className="btn btn--onink">
+                Both channels
+              </Link>
+            </div>
+          </div>
+
+          <div>
+            <span className="kicker">Get in touch</span>
+            <h2>Bookings</h2>
+            <p>
+              Trio or full band, festivals and clubs. I read my own email and I answer it.
+            </p>
+            <div className="btn-row">
+              <a href={`mailto:${site.email.booking}`} className="btn btn--onink">
+                Email me
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://ramongoose.co.uk
+Sitemap: https://ramongoose.co.uk/sitemap.xml

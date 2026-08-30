@@ -340,7 +340,7 @@ export const band = {
         {
           name: 'Ramon Goose',
           role: 'Electric guitar, vocals',
-          photo: '',
+          photo: 'ramon-goose.jpg',
           bio: 'English guitarist, born in Colchester in 1975. Twenty-odd years of blues records behind him and now working almost entirely in Cuban music.',
         },
         {
@@ -375,7 +375,7 @@ export const band = {
         {
           name: 'Ramon Goose',
           role: 'Electric guitar, vocals',
-          photo: '',
+          photo: 'ramon-goose.jpg',
           bio: 'The constant in both bands.',
         },
         { name: 'TODO: name', role: 'Tres / guitar', photo: '', bio: 'TODO' },
@@ -653,8 +653,8 @@ export const gallery = {
     // The band, in Cuba. These lead because they are what the site is about.
     { src: 'a23.jpg', tag: 'cuba', caption: 'The Compadres on a rooftop in Santiago de Cuba' },
     { src: 'a24.jpg', tag: 'cuba', caption: 'With Nancy Maura at Estudios Siboney' },
-    { src: 'a14.jpg', tag: 'cuba', caption: 'TODO: who is this? — two red guitars, Santiago' },
-    { src: 'a15.jpg', tag: 'cuba', caption: 'TODO: who is this? — sitting in, Santiago' },
+    { src: 'a14.jpg', tag: 'cuba', caption: 'With Alejandro Almenares, Santiago de Cuba' },
+    { src: 'a15.jpg', tag: 'cuba', caption: 'Playing with Alejandro Almenares' },
     { src: 'a16.jpg', tag: 'cuba', caption: 'TODO: name the players — in front of the mural' },
     { src: 'a17.jpg', tag: 'cuba', caption: 'Congas and double bass' },
     { src: 'a18.jpg', tag: 'cuba', caption: 'TODO: name the players — Santiago musicians' },

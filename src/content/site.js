@@ -368,7 +368,7 @@ export const band = {
         {
           name: 'Joe Goose',
           role: 'Bass',
-          photo: '',
+          photo: 'joe-goose.jpg',
           bio: 'My identical twin brother, on bass. Thirty years of listening to the same records and playing in the same rooms, which turns out to be a shortcut no amount of rehearsal replaces — the bass and the guitar move together without either of us having to look up.',
         },
       ],

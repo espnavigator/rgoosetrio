@@ -444,6 +444,12 @@ export const gear = {
           body: 'TODO: a couple of lines on why this is the workhorse.',
         },
         {
+          name: 'Tres',
+          detail: 'A sideline',
+          body:
+            'I play a bit of tres. Not enough to call myself a tres player, and the Cuban players in the band would tell you the same, but enough to understand what the instrument is doing and why the guitar has to get out of its way.',
+        },
+        {
           name: 'TODO: acoustic / nylon',
           detail: 'TODO',
           body: 'TODO',

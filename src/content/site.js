@@ -335,7 +335,7 @@ export const band = {
       photo: 'compadres-england.jpg',
       photoCaption: 'TODO: which gig is this? — the England line-up live',
       blurb:
-        'The line-up that plays here: festivals, clubs and anything on this side of the water. A trio that gets a genuinely Cuban rhythm section out of three people.',
+        'The line-up that plays here: festivals, clubs and anything on this side of the water. Cuban repertoire with a Peruvian percussionist in it, which sends the rhythm somewhere neither tradition would have gone on its own.',
       members: [
         {
           name: 'Ramon Goose',
@@ -347,7 +347,11 @@ export const band = {
           name: 'Kieffer Santander',
           role: 'Percussion',
           photo: 'kieffer-santander.jpg',
-          bio: 'The engine of the band. Congas, bongó, cajón, campana and the quijada — the jawbone of a donkey, played by rattling the teeth, and one of the oldest instruments in Cuban music. Most bands make do with a drum kit; Kieffer plays the real percussion, which is the difference between a blues band with Latin leanings and a band that actually swings in Spanish.',
+          bio: [
+            'Percussionist, composer, teacher and bandleader. Born in Peru, based in the United Kingdom, and one of the leading players of Afro-Peruvian and Criollo percussion working in Europe — a tradition he has spent his career keeping alive a long way from home.',
+            'That is what makes this band sound the way it does. The cajón and the quijada — the jawbone of a donkey, played by rattling the teeth in the socket — are Afro-Peruvian instruments, not Cuban ones. Putting them underneath son and guajira sends the rhythm somewhere neither tradition would have reached by itself.',
+            'Raised in Lima, where he trained at the Escuela de Bellas Artes before taking a degree in business administration at the Universidad Ricardo Palma. After moving to the UK he carried on at Queen’s Way College and sharpened his reading and Latin percussion at the Studio Tom Allien Centre in Stratford.',
+          ],
         },
         {
           name: 'Joe Goose',

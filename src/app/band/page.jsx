@@ -1,5 +1,5 @@
 import PageHeader from '@/components/PageHeader';
-import { Txt } from '@/components/Txt';
+import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { band } from '@/content/site';
 
@@ -36,9 +36,15 @@ function Member({ member }) {
           <Txt>{member.name}</Txt>
         </h3>
         <p className="kicker kicker--muted">{member.role}</p>
-        <p>
-          <Txt>{member.bio}</Txt>
-        </p>
+        {/* A bio can be a single line or several paragraphs — write it either
+            way in site.js and it renders correctly. */}
+        {Array.isArray(member.bio) ? (
+          <Paragraphs items={member.bio} />
+        ) : (
+          <p>
+            <Txt>{member.bio}</Txt>
+          </p>
+        )}
       </div>
     </article>
   );

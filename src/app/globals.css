@@ -951,10 +951,14 @@ a.card:hover {
   margin-bottom: 0.35rem;
 }
 
-.member__body p:last-child {
-  margin-bottom: 0;
+/* Every paragraph of the bio, not just the last — a member can have several. */
+.member__body p:not(.kicker) {
   font-size: 0.95rem;
   color: var(--ink-soft);
+}
+
+.member__body p:last-child {
+  margin-bottom: 0;
 }
 
 /* ==========================================================================

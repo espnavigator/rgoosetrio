@@ -343,6 +343,20 @@ p {
   color: var(--ink);
   text-decoration: none;
   white-space: nowrap;
+  /* Without this the full name refuses to shrink and shoves the Menu button
+     off the right-hand edge, which makes the whole page scroll sideways. */
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* On a phone there is not room for the full billing beside the Menu button,
+   so the header drops back to the name. The hero banner still carries
+   "Ramón Goose & The Compadres" in full. */
+@media (max-width: 33rem) {
+  .wordmark span {
+    display: none;
+  }
 }
 
 .wordmark:hover {
@@ -388,6 +402,8 @@ p {
    JavaScript at all and cannot get stuck open on a slow connection. */
 .menu-toggle {
   display: block;
+  /* Anchors the dropdown to the button rather than the whole header. */
+  position: relative;
 }
 
 @media (min-width: 64rem) {
@@ -419,30 +435,42 @@ p {
   color: var(--paper);
 }
 
+/* A compact dropdown hanging off the Menu button, not a full-width sheet
+   covering the page. */
 .menu-panel {
   position: absolute;
-  left: 0;
+  top: calc(100% + 0.55rem);
   right: 0;
+  z-index: 60;
+  min-width: 11rem;
+  max-width: min(70vw, 16rem);
   background: var(--paper);
-  border-bottom: var(--rule) solid var(--ink);
-  padding: 1rem var(--gutter) 1.5rem;
+  border: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+  padding: 0.4rem 1rem 0.5rem;
   display: grid;
-  gap: 0.25rem;
+  gap: 0;
 }
 
 .menu-panel a {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink);
   text-decoration: none;
-  padding: 0.7rem 0;
+  padding: 0.62rem 0;
   border-bottom: 1px solid var(--paper-shade);
+  white-space: nowrap;
 }
 
-.menu-panel a:hover {
+.menu-panel a:last-child {
+  border-bottom: 0;
+}
+
+.menu-panel a:hover,
+.menu-panel a[aria-current='page'] {
   color: var(--red);
 }
 

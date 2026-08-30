@@ -163,8 +163,9 @@ export const music = {
     artist: 'Ramon Goose & The Compadres',
     // TODO: confirm with Zozo before this goes live.
     label: 'Zozo Records, New York',
-    releaseLine: 'TODO: release date to be confirmed with Zozo Records',
-    status: 'Coming soon',
+    // TODO: the exact date, once Zozo confirm it. The year is settled.
+    releaseLine: 'Released 2026 on Zozo Records — exact date to be announced.',
+    status: 'Out in 2026',
     cover: '/images/i-left-my-blues-in-cuba.jpg',
     recordedAt: 'EGREM Studios, Santiago de Cuba',
     blurb: [
@@ -286,8 +287,8 @@ export const cuba = {
         // CHECK: the 2023 date and Joaquín Solórzano come from the public
         // record — correct them if they are wrong.
         'The Compadres came together in 2023 with the Cuban musician Joaquín Solórzano. The band plays son, guajira and bolero with an electric guitar in the middle of it, which is not the usual arrangement in either tradition.',
-        'Joe Goose plays bass and Kieffer Santander plays percussion.',
-        'TODO: anyone else in the line-up, and what they played on before. Cuban players carry deep credits and they are worth listing by name.',
+        'There are two line-ups now — one here and one in Santiago — and they are set out properly on the band page.',
+        'TODO: the rest of the Santiago players, and what they played on before. Cuban musicians carry deep credits and they are worth listing by name.',
       ],
     },
     {
@@ -325,9 +326,37 @@ export const cuba = {
 export const band = {
   heading: 'The Compadres',
   standfirst:
-    'Two line-ups, one band. One in Santiago de Cuba, one in England — so the music works whether the gig is in Havana or Hackney.',
+    'Two line-ups, one band. One in England, one in Santiago de Cuba — so the music works whether the gig is in Hackney or Havana.',
 
   groups: [
+    {
+      id: 'england',
+      name: 'The Compadres — England',
+      photo: 'compadres-england.jpg',
+      photoCaption: 'TODO: which gig is this? — the England line-up live',
+      blurb:
+        'The line-up that plays here: festivals, clubs and anything on this side of the water. A trio that gets a genuinely Cuban rhythm section out of three people.',
+      members: [
+        {
+          name: 'Ramon Goose',
+          role: 'Electric guitar, vocals',
+          photo: '',
+          bio: 'English guitarist, born in Colchester in 1975. Twenty-odd years of blues records behind him and now working almost entirely in Cuban music.',
+        },
+        {
+          name: 'Kieffer Santander',
+          role: 'Percussion',
+          photo: 'kieffer-santander.jpg',
+          bio: 'The engine of the band. Congas, bongó, cajón, campana and the quijada — the jawbone of a donkey, played by rattling the teeth, and one of the oldest instruments in Cuban music. Most bands make do with a drum kit; Kieffer plays the real percussion, which is the difference between a blues band with Latin leanings and a band that actually swings in Spanish.',
+        },
+        {
+          name: 'Joe Goose',
+          role: 'Bass',
+          photo: '',
+          bio: 'My identical twin brother, on bass. Thirty years of listening to the same records and playing in the same rooms, which turns out to be a shortcut no amount of rehearsal replaces — the bass and the guitar move together without either of us having to look up.',
+        },
+      ],
+    },
     {
       id: 'cuba',
       name: 'The Compadres — Santiago de Cuba',
@@ -343,42 +372,12 @@ export const band = {
           name: 'Ramon Goose',
           role: 'Electric guitar, vocals',
           photo: '',
-          bio: 'English guitarist, born in Colchester in 1975. Twenty-odd years of blues records behind him and now working almost entirely in Cuban music.',
+          bio: 'The constant in both bands.',
         },
         { name: 'TODO: name', role: 'Tres / guitar', photo: '', bio: 'TODO' },
         { name: 'TODO: name', role: 'Congas', photo: '', bio: 'TODO' },
         { name: 'TODO: name', role: 'Double bass', photo: '', bio: 'TODO' },
         { name: 'TODO: name', role: 'Bongó', photo: '', bio: 'TODO' },
-      ],
-    },
-    {
-      id: 'england',
-      name: 'The Compadres — England',
-      photo: 'compadres-england.jpg',
-      photoCaption: 'TODO: which gig is this? — the England line-up live',
-      blurb:
-        'The touring line-up in the UK, for festivals, clubs and anything on this side of the water.',
-      members: [
-        {
-          name: 'Ramon Goose',
-          role: 'Electric guitar, vocals',
-          photo: '',
-          bio: 'As above — the constant in both bands.',
-        },
-        {
-          name: 'Joe Goose',
-          role: 'Bass',
-          photo: '',
-          bio: 'TODO: a couple of lines on Joe.',
-        },
-        {
-          name: 'Kieffer Santander',
-          role: 'Percussion',
-          photo: 'kieffer-santander.jpg',
-          // CHECK: is Kieffer the player with the Compay Segundo / Eliades
-          // Ochoa credit? If so, say it here — it is a real lineage claim.
-          bio: 'TODO: a couple of lines on Kieffer — congas, bongó, cajón and campana.',
-        },
       ],
     },
   ],

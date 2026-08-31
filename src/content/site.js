@@ -118,7 +118,7 @@ export const home = {
   // in public/images/band/ and are used on the band page too.
   bandPhotos: [
     {
-      src: 'compadres-england.jpg',
+      src: 'compadres-england-trio.jpg',
       caption: 'The Compadres in England',
       detail: 'International Jazz Day, Bolívar Hall, London',
       width: 1800,
@@ -451,7 +451,7 @@ export const band = {
     {
       id: 'england',
       name: 'The Compadres — England',
-      photo: 'compadres-england.jpg',
+      photo: 'compadres-england-trio.jpg',
       photoCaption: 'The Compadres playing at the Cuban Embassy in London',
       blurb:
         'The line-up that plays here: festivals, clubs and anything on this side of the water. Cuban repertoire with a Peruvian percussionist in it, which sends the rhythm somewhere neither tradition would have gone on its own.',
@@ -565,9 +565,14 @@ export const gear = {
             'Bought out of Japan and heavier than it has any right to be. The pickups are thin and twangy in a way that suits the Cuban material — it does a few songs a night, for the sound and for the look of the thing. It is the guitar on the album cover.',
         },
         {
-          name: 'TODO: your main guitar',
-          detail: 'TODO: year and model',
-          body: 'TODO: a couple of lines on why this is the workhorse.',
+          // CHECK: earlier you corrected the model to LG-200T, then called it a
+          // 180T. If they are two different guitars, split this into two
+          // entries; if it is one guitar, tell me which number is right.
+          name: 'Guyatone LG-180T',
+          detail: 'The main guitar',
+          body:
+            'The one that does most of the work. A 1960s Japanese offset with thin, wiry pickups that sit in a different place in a mix to anything American, which is exactly why the Cuban material works through it. It is the guitar on the album cover.',
+          image: '/images/gallery/17.jpg',
         },
         {
           name: 'Siewa Powersonic',
@@ -873,7 +878,6 @@ export const gallery = {
     { src: 'a10.jpg', tag: 'portrait', caption: 'TODO: caption' },
 
     // Live and gear.
-    { src: 'a08.jpg', tag: 'live', caption: 'The Compadres at the Cuban Embassy in London' },
     { src: 'a13.jpg', tag: 'portrait', caption: 'Kieffer Santander' },
     { src: 'a12.jpg', tag: 'gear', caption: 'Marshall head' },
     { src: 'a01.jpg', tag: 'gear', caption: 'TODO: is this one the Goosemaster too, or a different amp?' },

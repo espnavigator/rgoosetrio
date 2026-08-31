@@ -350,10 +350,10 @@ p {
   text-overflow: ellipsis;
 }
 
-/* On a phone there is not room for the full billing beside the Menu button,
-   so the header drops back to the name. The hero banner still carries
-   "Ramón Goose & The Compadres" in full. */
-@media (max-width: 33rem) {
+/* The nav has eleven items, so the full billing only fits on a wide screen.
+   Below that the header drops back to the name rather than truncating to
+   "RAMÓN …". The hero banner still carries the full billing. */
+@media (max-width: 95rem) {
   .wordmark span {
     display: none;
   }
@@ -369,7 +369,7 @@ p {
 
 .nav {
   display: none;
-  gap: clamp(0.75rem, 1.6vw, 1.5rem);
+  gap: clamp(0.6rem, 1.1vw, 1.1rem);
   align-items: center;
 }
 
@@ -382,9 +382,9 @@ p {
 .nav a {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   color: var(--ink);
   text-decoration: none;
   padding-block: 0.35rem;
@@ -571,6 +571,14 @@ p {
   color: var(--red);
 }
 
+/* Each word is one unbreakable box, so a line can only ever break between
+   words. Without this the per-letter spans let the browser break inside a
+   word and "GOOSE" splits across two lines. */
+.cutpaper__word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .cutpaper__letter {
   display: inline-block;
   /* Kept upright: the sleeve letters are cut from a squared-off face, not
@@ -651,7 +659,7 @@ p {
 
 /* The banner: "Ramón Goose & The Compadres", cut from red paper. */
 .hero__banner {
-  font-size: clamp(2.1rem, 0.9rem + 5.6vw, 4.9rem);
+  font-size: clamp(1.85rem, 0.8rem + 4.1vw, 3.6rem);
   /* A soft dark shadow lifts the red off the sky, the way the paper letters
      sit above the sleeve photograph. */
   filter: drop-shadow(0.035em 0.045em 0.01em rgba(0, 0, 0, 0.42));
@@ -1218,6 +1226,16 @@ a.card:hover {
 }
 
 /* Product shot, sitting flush inside the card's top edge. */
+.gear-photo {
+  width: calc(100% + 2 * clamp(1.25rem, 3vw, 1.75rem));
+  margin: calc(-1 * clamp(1.25rem, 3vw, 1.75rem));
+  margin-bottom: 1.1rem;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid var(--ink);
+}
+
 .product__image {
   width: calc(100% + 3rem);
   margin: -1.5rem -1.5rem 1.1rem;

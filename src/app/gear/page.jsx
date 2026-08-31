@@ -34,6 +34,16 @@ export default function GearPage() {
             <div className="grid grid--2">
               {group.items.map((item) => (
                 <article key={item.name} className="card">
+                  {item.image && (
+                    <img
+                      className="gear-photo"
+                      src={asset(item.image)}
+                      alt={item.name}
+                      loading="lazy"
+                      width="1600"
+                      height="1200"
+                    />
+                  )}
                   <h3>
                     <Txt>{item.name}</Txt>
                   </h3>

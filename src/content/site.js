@@ -682,9 +682,9 @@ export const gear = {
       items: [
         {
           name: 'Texas Flood',
-          detail: 'My own — coming soon',
+          detail: 'Thirty built by hand, manufacture next',
           body:
-            'A tremolo built from the ground up, modelled on the one I could never get to behave the way I wanted. There is a page about it.',
+            'I have built about thirty of these, hand-wired on turret boards, and they are going into proper manufacture soon. It takes its DNA from a Tube Screamer, but that is where the comparison ends. There is a page about it.',
           href: '/goose-pedal',
         },
         {
@@ -759,8 +759,8 @@ export const pedal = {
 
   body: [
     'A boost, built to get more out of a Strat. Single coils always want a bit of help before they hit the front of an amp, and most pedals sold to do that job change the sound while they are at it. This one gets out of the way.',
-    'I run it as a set-and-forget, on all the time. It works with hotter guitars too, but the Strat is what it was built around.',
-    'Three controls, no menus, no switching: gain, tone, volume. A bespoke build, made in small numbers.',
+    'It takes its DNA from a Tube Screamer, and that is where the comparison ends. I run it as a set-and-forget, on all the time. It works with hotter guitars too, but the Strat is what it was built around.',
+    'Three controls, no menus, no switching: gain, tone, volume. About thirty have been built so far, every one hand-wired on turret boards, and it goes into proper manufacture soon.',
   ],
 
   features: [

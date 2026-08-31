@@ -518,8 +518,8 @@ export const gear = {
         },
         {
           name: 'Texas Flood',
-          detail: 'Mío, muy pronto',
-          body: 'Un pedal construido desde cero, porque nada de lo que podía comprar hacía lo que yo quería. Hay una página sobre él.',
+          detail: 'Treinta construidos a mano, y pronto en fabricación',
+          body: 'He construido unos treinta, cableados a mano sobre placas de turrets, y pronto pasan a fabricación en condiciones. Toma su ADN de un Tube Screamer, y ahí acaba la comparación. Hay una página sobre él.',
           href: '/goose-pedal',
         },
       ],
@@ -557,7 +557,7 @@ export const pedal = {
   body: [
     'Un booster, hecho para sacarle más a una Stratocaster. Las pastillas de bobina simple siempre piden un poco de ayuda antes de llegar al amplificador, y casi todos los pedales que se venden para eso cambian el sonido de paso. Éste se aparta.',
     'Lo uso encendido todo el rato, puesto y olvidado. También funciona con guitarras más calientes, pero se construyó alrededor de la Stratocaster.',
-    'Tres controles, sin menús ni conmutaciones: ganancia, tono y volumen. Fabricación artesanal, en cantidades pequeñas.',
+    'Tres controles, sin menús ni conmutaciones: ganancia, tono y volumen. Se han construido unos treinta hasta ahora, todos cableados a mano sobre placas de turrets, y pronto pasa a fabricación en condiciones.',
   ],
   features: [
     { title: 'Ganancia', body: 'Cuánto empuja la entrada del amplificador. Casi todo lo útil está en la parte baja del recorrido.' },

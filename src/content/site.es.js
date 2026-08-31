@@ -371,6 +371,12 @@ export const gear = {
           image: '/images/gear/guyatone-180t.jpg',
         },
         {
+          name: 'Guyatone LG-200T',
+          detail: 'La guitarra de la portada',
+          body: 'Comprada en Japón y más pesada de lo que le corresponde. Las pastillas suenan metálicas de una manera que le va bien al repertorio cubano: hace unas cuantas canciones por noche, por el sonido y por la estampa. Ésta es la guitarra de la portada del disco.',
+          image: '/images/gallery/17.jpg',
+        },
+        {
           name: 'Siewa Powersonic',
           detail: 'La guitarra de Ali Farka Touré',
           body: 'El modelo que tocaba Ali Farka Touré. Pasé años metido en música de África occidental antes de Cuba, y ésta es la guitarra que está en el centro de todo aquello: un instrumento barato y de fabricación rara que un músico enorme convirtió en un sonido que nadie ha conseguido copiar desde entonces.',

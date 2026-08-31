@@ -542,6 +542,13 @@ export const gear = {
           image: '/images/gear/guyatone-180t.jpg',
         },
         {
+          name: 'Guyatone LG-200T',
+          detail: 'The album cover guitar',
+          body:
+            'Bought out of Japan and heavier than it has any right to be. The pickups are twangy in a way that suits the Cuban material, so it does a few songs a night, for the sound and for the look of the thing. This is the guitar on the album cover.',
+          image: '/images/gallery/17.jpg',
+        },
+        {
           name: 'Siewa Powersonic',
           detail: 'The Ali Farka Touré guitar',
           body:

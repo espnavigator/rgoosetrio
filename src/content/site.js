@@ -618,7 +618,7 @@ export const gear = {
           name: 'Tres',
           detail: 'Acoustic and electric',
           body:
-            'I play both the acoustic tres and the electric. The electric one was custom made for me by Chapter Guitars. The tres is the instrument at the centre of son, and the reason the guitar has to sit where it sits in this band.',
+            'I play both the acoustic tres and the electric. The electric one was custom made for me by Chapter Guitars, and it started life as a guitar: modelled on the Siewa Powersonic that Ali Farka Touré played, and built mostly from African woods. It was converted into a tres later. So the instrument I play the Cuban material on is a West African guitar underneath, which is either an accident or the whole story depending on how you look at it. The tres is at the centre of son, and the reason the guitar has to sit where it sits in this band.',
           image: '/images/gear/tres.jpg',
         },
       ],
@@ -977,7 +977,7 @@ export const gallery = {
     { src: '10.jpg', tag: 'gear', caption: 'Mystic Blues head' },
     { src: '11.jpg', tag: 'gear', caption: 'The Filmosound chassis, and a Celestion' },
     { src: '12.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
-    { src: '13.jpg', tag: 'gear', caption: 'Guitar and amplifiers in the studio' },
+    { src: '13.jpg', tag: 'gear', caption: 'The Chapter guitar as it was first built, before it became the tres' },
     { src: '14.jpg', tag: 'gear', caption: 'Cogmeister, controls' },
     { src: '15.jpg', tag: 'gear', caption: 'A real 1958 Les Paul belonging to Bob Wootten, with my Daniels behind it' },
     { src: '16.jpg', tag: 'gear', caption: 'The Fender D’Aquisto Deluxe, masterbuilt by Stephen Stern' },

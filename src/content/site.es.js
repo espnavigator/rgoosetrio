@@ -439,7 +439,7 @@ export const gear = {
         {
           name: 'Tres',
           detail: 'Acústico y eléctrico',
-          body: 'Toco el tres tanto acústico como eléctrico. El eléctrico me lo hizo a medida Chapter Guitars. El tres es el instrumento que está en el centro del son, y la razón por la que la guitarra se coloca donde se coloca en esta banda.',
+          body: 'Toco el tres tanto acústico como eléctrico. El eléctrico me lo hizo a medida Chapter Guitars, y empezó siendo una guitarra: inspirada en la Siewa Powersonic que tocaba Ali Farka Touré, y construida sobre todo con maderas africanas. Después se convirtió en tres. Así que el instrumento con el que toco el repertorio cubano es, por debajo, una guitarra de África occidental, lo cual es una casualidad o es toda la historia según cómo se mire. El tres está en el centro del son, y es la razón por la que la guitarra se coloca donde se coloca en esta banda.',
           image: '/images/gear/tres.jpg',
         },
       ],

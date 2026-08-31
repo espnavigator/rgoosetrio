@@ -627,6 +627,7 @@ export const gear = {
         {
           name: 'Bell & Howell Filmosound',
           detail: 'Modified by Bill Krinard of Two-Rock',
+          image: '/images/gallery/11.jpg',
           body:
             'A 1950s cinema projector amplifier, converted for guitar by Bill Krinard — the man behind Two-Rock, and the person most responsible for these projector amps becoming a thing players chase at all. They were built to fill a school hall with a soundtrack, not to be played, and they have a midrange no guitar amp of the period was designed to make. It is the reason the electric guitar sits where it does against the tres.',
         },
@@ -966,7 +967,7 @@ export const gallery = {
     { src: '08.jpg', tag: 'gear', caption: 'Siewa Powersonic, the guitar Ali Farka Touré played' },
     { src: '09.jpg', tag: 'gear', caption: 'Pedalboard' },
     { src: '10.jpg', tag: 'gear', caption: 'Mystic Blues head' },
-    { src: '11.jpg', tag: 'gear', caption: 'Celestion speaker and amplifier chassis' },
+    { src: '11.jpg', tag: 'gear', caption: 'The Filmosound chassis, and a Celestion' },
     { src: '12.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
     { src: '13.jpg', tag: 'gear', caption: 'Guitar and amplifiers in the studio' },
     { src: '14.jpg', tag: 'gear', caption: 'Cogmeister, controls' },

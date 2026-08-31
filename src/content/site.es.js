@@ -448,6 +448,7 @@ export const gear = {
         {
           name: 'Bell & Howell Filmosound',
           detail: 'Modificado por Bill Krinard, de Two-Rock',
+          image: '/images/gallery/11.jpg',
           body: 'Un amplificador de proyector de cine de los años cincuenta, convertido para guitarra por Bill Krinard, el hombre detrás de Two-Rock y el principal responsable de que estos amplificadores de proyector sean algo que los guitarristas persiguen. Se construyeron para llenar un salón de actos con una banda sonora, no para tocarlos, y tienen unos medios que ningún amplificador de guitarra de la época se diseñó para dar.',
         },
         {

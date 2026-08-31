@@ -519,12 +519,12 @@ export const band = {
   guests: [
     {
       name: 'Rick Vito',
-      role: 'Guitar',
+      role: 'Guitarist, formerly of Fleetwood Mac',
       bio: 'Played with Fleetwood Mac, and plays the second guitar on I Loved Another Woman — a song he knows from the inside.',
     },
     {
       name: 'Nancy Maura',
-      role: 'Vocals',
+      role: 'Bolerista of Santiago de Cuba',
       photo: '/images/gallery/a24.jpg',
       // She died on 7 April 2025, aged 90 (born Justina María Balbuena
       // Céspedes, 1 February 1935). Confirmed by UNEAC and the Cuban press.
@@ -532,7 +532,7 @@ export const band = {
     },
     {
       name: 'Alejandro Almenares',
-      role: 'Guitar, tres',
+      role: 'Trovador of Santiago de Cuba',
       photo: '/images/gallery/a15.jpg',
       bio: 'Born in Santiago de Cuba in 1937 and, by most accounts, the last troubadour of the golden age of trova still playing. His father helped found the Casa de la Trova, where Alejandro still plays alongside Eliades Ochoa. He has been through Cuarteto Patria, Septeto Típico Oriental and Cuarteto Oriente, has written several hundred songs, and did not make a solo record under his own name until he was seventy-six. We are making one together.',
     },
@@ -852,7 +852,7 @@ export const gallery = {
     { src: 'g01.jpg', tag: 'cuba', caption: 'The Compadres in Santiago' },
     { src: 'g02.jpg', tag: 'cuba', caption: 'The Compadres, Cuba' },
     { src: 'g03.jpg', tag: 'cuba', caption: 'Ernesto and Calderín' },
-    { src: 'g04.jpg', tag: 'cuba', caption: 'Calderín' },
+    { src: 'g04.jpg', tag: 'cuba', caption: 'Backstage in Santiago' },
     { src: 'a24.jpg', tag: 'cuba', caption: 'With Nancy Maura at Estudios Siboney' },
     { src: 'a14.jpg', tag: 'cuba', caption: 'With Alejandro Almenares, Santiago de Cuba' },
     { src: 'a15.jpg', tag: 'cuba', caption: 'Playing with Alejandro Almenares' },

@@ -311,18 +311,18 @@ export const band = {
   guests: [
     {
       name: 'Rick Vito',
-      role: 'Guitarra',
+      role: 'Guitarrista, antes en Fleetwood Mac',
       bio: 'Tocó en Fleetwood Mac, y toca la segunda guitarra en I Loved Another Woman, una canción que conoce por dentro.',
     },
     {
       name: 'Nancy Maura',
-      role: 'Voz',
+      role: 'Bolerista de Santiago de Cuba',
       photo: '/images/gallery/a24.jpg',
       bio: 'Una de las grandes boleristas de Santiago de Cuba, y una de las últimas defensoras del género en la ciudad. Nacida Justina María Balbuena Céspedes en 1935, cantaba desde los nueve años y nunca se fue de Santiago, porque era santiaguera y ahí se acababa la discusión. Canta en Porque y en Si Pudiera Expresarte. Murió en abril de 2025, a los noventa años, lo que convierte estas grabaciones en de las últimas que hizo.',
     },
     {
       name: 'Alejandro Almenares',
-      role: 'Guitarra, tres',
+      role: 'Trovador de Santiago de Cuba',
       photo: '/images/gallery/a15.jpg',
       bio: 'Nacido en Santiago de Cuba en 1937 y, según casi todos, el último trovador de la época dorada de la trova que sigue tocando. Su padre ayudó a fundar la Casa de la Trova, donde Alejandro todavía toca junto a Eliades Ochoa. Ha pasado por el Cuarteto Patria, el Septeto Típico Oriental y el Cuarteto Oriente, ha escrito varios cientos de canciones, y no grabó un disco a su nombre hasta los setenta y seis años. Estamos haciendo uno juntos.',
     },

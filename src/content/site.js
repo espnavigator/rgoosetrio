@@ -254,42 +254,14 @@ export const music = {
   catalogueNote:
     'A selection, newest first. TODO: check the years marked below and add anything missing.',
   catalogue: [
-    {
-      title: 'Long Road To Tiznit',
-      year: '2017',
-      label: 'World Music Network',
-      role: 'Blues and West African crossover',
-    },
-    {
-      title: 'Blues & Spirituals',
-      year: '2014',
-      label: 'Acoustic Music Records',
-      role: 'Solo album',
-    },
-    {
-      title: 'Uptown Blues',
-      year: '2011',
-      label: 'Blues Boulevard',
-      role: 'Solo album',
-    },
-    {
-      title: 'Drew, Mississippi',
-      year: '2006',
-      label: 'Black and Tan Records',
-      role: 'Boo Boo Davis — produced, co-written, guitar',
-    },
-    {
-      title: 'Snow On The Tracks',
-      year: '2008',
-      label: 'Dixiefrog / 21st Century Blues',
-      role: 'NuBlues',
-    },
-    {
-      title: 'Dreams Of A Blues Man',
-      year: '2004',
-      label: 'Dixiefrog / 21st Century Blues',
-      role: 'NuBlues',
-    },
+    { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues and West African crossover' },
+    { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'With Modou Touré' },
+    { title: 'Blues & Spirituals', year: '2014', label: 'Acoustic Music Records', role: 'Solo album' },
+    { title: 'Uptown Blues', year: '2011', label: 'Blues Boulevard', role: 'Solo album' },
+    { title: 'Mansana Blues', year: '2010', label: 'Dixiefrog', role: 'With Diabel Cissokho, kora and slide guitar' },
+    { title: 'Snow On The Tracks', year: '2008', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
+    { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis — produced, co-written, guitar' },
+    { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
   ],
 };
 
@@ -568,13 +540,18 @@ export const gear = {
             'Bought out of Japan and heavier than it has any right to be. The pickups are thin and twangy in a way that suits the Cuban material — it does a few songs a night, for the sound and for the look of the thing. It is the guitar on the album cover.',
         },
         {
-          // CHECK: earlier you corrected the model to LG-200T, then called it a
-          // 180T. If they are two different guitars, split this into two
-          // entries; if it is one guitar, tell me which number is right.
           name: 'Guyatone LG-180T',
           detail: 'The main guitar',
           body:
-            'The one that does most of the work. A 1960s Japanese offset with thin, wiry pickups that sit in a different place in a mix to anything American, which is exactly why the Cuban material works through it. It is the guitar on the album cover.',
+            'The one that does most of the work. A 1960s Japanese offset with thin, wiry pickups that sit in a different place in a mix to anything American, which is exactly why the Cuban material works through it.',
+          // TODO: a photograph of this one. The picture I had was the LG-200T.
+          image: '',
+        },
+        {
+          name: 'Guyatone LG-200T',
+          detail: 'The album cover guitar',
+          body:
+            'Bought out of Japan and heavier than it has any right to be. The pickups are twangy in a way that suits the Cuban material, so it does a few songs a night, for the sound and for the look of the thing. This is the guitar on the album cover.',
           image: '/images/gallery/17.jpg',
         },
         {

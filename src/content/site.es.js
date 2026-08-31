@@ -161,10 +161,12 @@ export const music = {
   catalogueNote: 'Una selección, de lo más reciente a lo más antiguo.',
   catalogue: [
     { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues y África occidental' },
+    { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'Con Modou Touré' },
     { title: 'Blues & Spirituals', year: '2014', label: 'Acoustic Music Records', role: 'Disco en solitario' },
     { title: 'Uptown Blues', year: '2011', label: 'Blues Boulevard', role: 'Disco en solitario' },
-    { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis: producción, composición y guitarra' },
+    { title: 'Mansana Blues', year: '2010', label: 'Dixiefrog', role: 'Con Diabel Cissokho, kora y slide' },
     { title: 'Snow On The Tracks', year: '2008', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
+    { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis: producción, composición y guitarra' },
     { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
   ],
 };
@@ -364,13 +366,14 @@ export const gear = {
         {
           name: 'Guyatone LG-180T',
           detail: 'La guitarra principal',
-          body: 'La que hace casi todo el trabajo. Una offset japonesa de los años sesenta con pastillas finas y nerviosas que se sitúan en la mezcla en un lugar distinto a cualquier guitarra americana, que es exactamente por lo que el repertorio cubano funciona a través de ella. Es la guitarra de la portada del disco.',
-          image: '/images/gallery/17.jpg',
+          body: 'La que hace casi todo el trabajo. Una offset japonesa de los años sesenta con pastillas finas y nerviosas que se sitúan en la mezcla en un lugar distinto a cualquier guitarra americana, que es exactamente por lo que el repertorio cubano funciona a través de ella.',
+          image: '',
         },
         {
           name: 'Guyatone LG-200T',
-          detail: 'Offset japonesa de los sesenta',
-          body: 'Comprada en Japón y más pesada de lo que le corresponde. Las pastillas suenan finas y metálicas de una manera que le va bien al repertorio cubano: hace unas cuantas canciones por noche, por el sonido y por la estampa.',
+          detail: 'La guitarra de la portada',
+          body: 'Comprada en Japón y más pesada de lo que le corresponde. Las pastillas suenan metálicas de una manera que le va bien al repertorio cubano: hace unas cuantas canciones por noche, por el sonido y por la estampa. Ésta es la guitarra de la portada del disco.',
+          image: '/images/gallery/17.jpg',
         },
         {
           name: 'Siewa Powersonic',

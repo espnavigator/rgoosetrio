@@ -523,26 +523,32 @@ export const pedal = {
   standfirst: 'A pedal of my own, built because nothing I could buy did what I wanted.',
 
   body: [
-    // TODO: what the pedal actually is — overdrive, boost, fuzz, tremolo? I have
-    // deliberately not guessed. Say what it does and the rest of this page works.
-    'TODO: what kind of pedal is the Texas Flood, and what does it do?',
-    'TODO: two or three sentences on why you are building it — what you could never get out of a shop-bought one, and what you changed.',
+    'A boost, built to get more out of a Strat. Single coils always want a bit of help before they hit the front of an amp, and most pedals sold to do that job change the sound while they are at it. This one gets out of the way.',
+    'I run it as a set-and-forget, on all the time. It works with hotter guitars too, but the Strat is what it was built around.',
+    'Three controls, no menus, no switching: gain, tone, volume. It is a bespoke build, made in limited numbers by Rockbeare Guitars, who I make The Bob & Ramon Show with.',
   ],
 
   features: [
-    // TODO: replace these with the real specification.
-    { title: 'TODO: control one', body: 'TODO: what it does.' },
-    { title: 'TODO: control two', body: 'TODO: what it does.' },
-    { title: 'TODO: control three', body: 'TODO: what it does.' },
+    {
+      title: 'Gain',
+      body: 'How hard it pushes the front of the amp. Most of the useful range sits low.',
+    },
+    {
+      title: 'Tone',
+      body: 'Takes the edge off single coils, or leaves it there.',
+    },
+    {
+      title: 'Volume',
+      body: 'Output level, so you can set it once and leave it on.',
+    },
   ],
 
-  // TODO: swap for a real price and a real buy link when you are ready to sell.
-  // Until then the page collects interest by email, which is the right move —
-  // you want a list of people waiting before the first batch is finished.
+  // TODO: the price, if you want it shown here. The buy link goes to Rockbeare,
+  // who build and sell it.
   price: '',
-  buyHref: '',
+  buyHref: 'https://rockbeareguitars.com/fx/drivesboosts/ramon-goose-signature-pedal/',
   notifyCopy:
-    'Not finished yet. Send me an email and I will tell you when the first batch is ready.',
+    'Built in limited numbers by Rockbeare Guitars. If they are out of stock, email me and I will tell you when the next batch lands.',
 };
 
 /* -------------------------------------------------------------------------- */
@@ -701,7 +707,7 @@ export const gallery = {
     { src: 'a08.jpg', tag: 'live', caption: 'The Compadres at the Cuban Embassy in London' },
     { src: 'a13.jpg', tag: 'portrait', caption: 'Kieffer Santander' },
     { src: 'a12.jpg', tag: 'gear', caption: 'Marshall head' },
-    { src: 'a01.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
+    { src: 'a01.jpg', tag: 'gear', caption: 'TODO: is this one the Goosemaster too, or a different amp?' },
     { src: 'a20.jpg', tag: 'sleeve', caption: 'TODO: what is this artwork for?' },
 
     // From the old site.
@@ -724,7 +730,7 @@ export const gallery = {
     { src: '09.jpg', tag: 'gear', caption: 'Pedalboard' },
     { src: '10.jpg', tag: 'gear', caption: 'Mystic Blues head' },
     { src: '11.jpg', tag: 'gear', caption: 'Celestion speaker and amplifier chassis' },
-    { src: '12.jpg', tag: 'gear', caption: 'Amp head on the bench' },
+    { src: '12.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
     { src: '13.jpg', tag: 'gear', caption: 'Guitar and amplifiers in the studio' },
     { src: '14.jpg', tag: 'gear', caption: 'Cogmeister, controls' },
     { src: '15.jpg', tag: 'gear', caption: 'Two Les Pauls' },

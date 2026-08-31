@@ -791,7 +791,7 @@ export const nav = [
   { label: 'The Band', href: '/band' },
   { label: 'Cuba', href: '/cuba' },
   { label: 'Gear', href: '/gear' },
-  { label: 'The Pedal', href: '/goose-pedal' },
+  { label: 'Texas Flood Pedal', href: '/goose-pedal' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Video', href: '/video' },
   { label: 'Shop', href: '/shop' },

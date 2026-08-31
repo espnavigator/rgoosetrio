@@ -274,13 +274,13 @@ export const music = {
     },
     {
       title: 'Drew, Mississippi',
-      year: 'TODO: year',
+      year: '2006',
       label: 'Black and Tan Records',
       role: 'Boo Boo Davis — produced, co-written, guitar',
     },
     {
       title: 'Snow On The Tracks',
-      year: 'TODO: year',
+      year: '2008',
       label: 'Dixiefrog / 21st Century Blues',
       role: 'NuBlues',
     },

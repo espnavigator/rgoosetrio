@@ -544,8 +544,7 @@ export const gear = {
           detail: 'The main guitar',
           body:
             'The one that does most of the work. A 1960s Japanese offset with thin, wiry pickups that sit in a different place in a mix to anything American, which is exactly why the Cuban material works through it.',
-          // TODO: a photograph of this one. The picture I had was the LG-200T.
-          image: '',
+          image: '/images/gear/guyatone-180t.jpg',
         },
         {
           name: 'Guyatone LG-200T',
@@ -555,16 +554,17 @@ export const gear = {
           image: '/images/gallery/17.jpg',
         },
         {
+          name: 'Tres',
+          detail: 'Acoustic and electric',
+          body:
+            'I play both the acoustic tres and the electric. It is the instrument at the centre of son, and the reason the guitar has to sit where it sits in this band.',
+        },
+        {
           name: 'Siewa Powersonic',
           detail: 'The Ali Farka Touré guitar',
           body:
             'The model Ali Farka Touré played. I spent years on West African music before Cuba, and this is the guitar at the centre of it — a cheap, oddly-made thing that a great player turned into a sound nobody has managed to copy since. It is on the wall for good reason.',
-        },
-        {
-          name: 'Tres',
-          detail: 'A sideline',
-          body:
-            'I play a bit of tres. Not enough to call myself a tres player, and the Cuban players in the band would tell you the same, but enough to understand what the instrument is doing and why the guitar has to get out of its way.',
+          image: '/images/gallery/08.jpg',
         },
         {
           name: 'TODO: acoustic / nylon',

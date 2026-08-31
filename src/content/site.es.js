@@ -367,7 +367,7 @@ export const gear = {
           name: 'Guyatone LG-180T',
           detail: 'La guitarra principal',
           body: 'La que hace casi todo el trabajo. Una offset japonesa de los años sesenta con pastillas finas y nerviosas que se sitúan en la mezcla en un lugar distinto a cualquier guitarra americana, que es exactamente por lo que el repertorio cubano funciona a través de ella.',
-          image: '',
+          image: '/images/gear/guyatone-180t.jpg',
         },
         {
           name: 'Guyatone LG-200T',
@@ -376,14 +376,15 @@ export const gear = {
           image: '/images/gallery/17.jpg',
         },
         {
+          name: 'Tres',
+          detail: 'Acústico y eléctrico',
+          body: 'Toco el tres tanto acústico como eléctrico. Es el instrumento que está en el centro del son, y la razón por la que la guitarra se coloca donde se coloca en esta banda.',
+        },
+        {
           name: 'Siewa Powersonic',
           detail: 'La guitarra de Ali Farka Touré',
           body: 'El modelo que tocaba Ali Farka Touré. Pasé años metido en música de África occidental antes de Cuba, y ésta es la guitarra que está en el centro de todo aquello: un instrumento barato y de fabricación rara que un músico enorme convirtió en un sonido que nadie ha conseguido copiar desde entonces.',
-        },
-        {
-          name: 'Tres',
-          detail: 'Una afición',
-          body: 'Toco algo de tres. No lo suficiente para llamarme tresero, y los músicos cubanos de la banda dirían lo mismo, pero sí lo suficiente para entender qué hace el instrumento y por qué la guitarra tiene que apartarse.',
+          image: '/images/gallery/08.jpg',
         },
       ],
     },

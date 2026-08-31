@@ -498,6 +498,7 @@ export const band = {
   ],
 
   // Named guests who are not in either standing line-up.
+  guestsKicker: 'Collaborators and guests on the album',
   guestsHeading: 'Guests on the record',
   guests: [
     {

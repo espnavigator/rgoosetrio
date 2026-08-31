@@ -296,6 +296,7 @@ export const band = {
       ],
     },
   ],
+  guestsKicker: 'Colaboradores e invitados en el disco',
   guestsHeading: 'Invitados en el disco',
   guests: [
     {

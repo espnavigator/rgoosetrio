@@ -111,7 +111,7 @@ export default function BandPage({ locale = 'en' }) {
       <section className="section section--ink">
         <div className="container">
           <div className="section-head">
-            <span className="kicker">Not in either band, but on the record</span>
+            <span className="kicker">{band.guestsKicker}</span>
             <h2>{band.guestsHeading}</h2>
           </div>
 

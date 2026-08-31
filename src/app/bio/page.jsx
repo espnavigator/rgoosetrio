@@ -19,6 +19,7 @@ export default function BioPage() {
       <section className="section">
         <div className="container split">
           <div>
+            {bio.longHeading && <h2>{bio.longHeading}</h2>}
             <Paragraphs items={bio.long} />
 
             {downloads.length > 0 && (

@@ -118,14 +118,7 @@ export const home = {
     'Neither half is a tribute act. The blues went to Cuba, found the music already there, and came back sounding like this.',
   ],
 
-  introHeading: 'Where the blues went',
-  intro: [
-    'Ramon Goose is an English guitarist, singer and producer, born in Colchester in 1975 and playing professionally since the 1990s. He has spent that career carrying the electric guitar out of the blues and into whatever the blues touched — hip-hop and Delta guitar with NuBlues, Mississippi by way of Mali with the West African Blues Project, and now the son and guajira of eastern Cuba.',
-    'Since 2023 that work has been with The Compadres, a Cuban band. The new album was cut at EGREM in Santiago de Cuba, the studio at the centre of the island’s recorded history, and it sounds like it. A second record, with the Santiago trova guitarist Alejandro Almenares, is still being made.',
-    'Cuban electric guitar is a small field with a long history and very few players coming to it from the blues. That is the ground this work stands on.',
-  ],
-
-  // The tiles under the intro. Reorder them by moving the blocks around.
+  // The tiles under the band blurb. Reorder them by moving the blocks around.
   cards: [
     {
       title: 'The Music',
@@ -649,9 +642,11 @@ export const bio = {
   short:
     'Ramon Goose is an English guitarist working in Cuban music. Born in Colchester in 1975, he has spent thirty years taking the electric guitar out of the blues — through West Africa with the West African Blues Project, and now through Santiago de Cuba with The Compadres, whose album I Left My Blues In Cuba was recorded at EGREM Studios.',
 
+  longHeading: 'Where the blues went',
   long: [
-    'TODO: the full biography goes here, as a list of paragraphs. Each paragraph sits inside its own quote marks, separated by a comma — the same as this one. This is the text we are writing for Zozo Records, and the same words should serve the label, the press and this page.',
-    'The arc worth telling: NuBlues, then the West African Blues Project, then The Compadres. Thirty years of taking the blues somewhere else and coming back with a record.',
+    'Ramon Goose is an English guitarist, singer and producer, born in Colchester in 1975 and playing professionally since the 1990s. He has spent that career carrying the electric guitar out of the blues and into whatever the blues touched: hip-hop and Delta guitar with NuBlues, Mississippi by way of Mali with the West African Blues Project, and now the son and guajira of eastern Cuba.',
+    'Since 2023 that work has been with The Compadres, a Cuban band. The new album was cut at EGREM in Santiago de Cuba, the studio at the centre of the island\u2019s recorded history, and it sounds like it. A second record, with the Santiago trova guitarist Alejandro Almenares, is still being made.',
+    'Cuban electric guitar is a small field with a long history and very few players coming to it from the blues. That is the ground this work stands on.',
   ],
 
   // Facts a journalist will want without having to ask.

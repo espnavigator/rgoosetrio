@@ -53,44 +53,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ---- INTRO ------------------------------------------------------ */}
-      <section className="section">
-        <div className="container split">
-          <div>
-            <span className="kicker">The short version</span>
-            <h2>{home.introHeading}</h2>
-            <Paragraphs items={home.intro} />
-            <div className="btn-row">
-              <Link href="/bio" className="btn btn--sm">
-                Full biography
-              </Link>
-            </div>
-          </div>
-
-          <ul className="facts">
-            <li>
-              <div className="facts__label">New album</div>
-              <div className="facts__value">{music.featured.title}</div>
-            </li>
-            <li>
-              <div className="facts__label">Label</div>
-              <div className="facts__value">
-                <Txt>{music.featured.label}</Txt>
-              </div>
-            </li>
-            <li>
-              <div className="facts__label">Recorded at</div>
-              <div className="facts__value">{music.featured.recordedAt}</div>
-            </li>
-            <li>
-              <div className="facts__label">Guest</div>
-              <div className="facts__value">Rick Vito, formerly of Fleetwood Mac</div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      {/* ---- THE BAND --------------------------------------------------- */}
+      {/* ---- THE BAND ---------------------------------------------------
+          The landing page goes straight from the hero into the band. The
+          biography that used to sit here now lives on /bio. */}
       <section className="section section--paper">
         <div className="container container--narrow">
           <div className="section-head">
@@ -101,6 +66,9 @@ export default function HomePage() {
           <div className="btn-row">
             <Link href="/band" className="btn btn--sm">
               Both line-ups
+            </Link>
+            <Link href="/bio" className="btn btn--sm">
+              Biography
             </Link>
           </div>
         </div>

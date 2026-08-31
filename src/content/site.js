@@ -357,10 +357,10 @@ export const band = {
         },
         {
           name: 'Kieffer Santander',
-          role: 'Percussion',
+          role: 'Musical director, percussion',
           photo: 'kieffer-santander.jpg',
           bio: [
-            'Percussionist, composer, teacher and bandleader. Born in Peru, based in the United Kingdom, and one of the leading players of Afro-Peruvian and Criollo percussion working in Europe — a tradition he has spent his career keeping alive a long way from home.',
+            'Musical director of the London Compadres. Percussionist, composer, teacher and bandleader, born in Peru and based in the United Kingdom, and one of the leading players of Afro-Peruvian and Criollo percussion working in Europe, a tradition he has spent his career keeping alive a long way from home.',
             'That is what makes this band sound the way it does. The cajón and the quijada — the jawbone of a donkey, played by rattling the teeth in the socket — are Afro-Peruvian instruments, not Cuban ones. Putting them underneath son and guajira sends the rhythm somewhere neither tradition would have reached by itself.',
             'Raised in Lima, where he trained at the Escuela de Bellas Artes before taking a degree in business administration at the Universidad Ricardo Palma. After moving to the UK he carried on at Queen’s Way College and sharpened his reading and Latin percussion at the Studio Tom Allien Centre in Stratford.',
           ],

@@ -420,9 +420,15 @@ export const gear = {
           image: '/images/gear/p-project.jpg',
         },
         {
+          name: 'Coodercaster',
+          detail: 'Pastillas gold foil y Valco originales',
+          body: 'Montada como la de Ry Cooder: una gold foil en el mástil y una pastilla Valco de lap steel en el puente, las dos originales y no reediciones. Esas dos pastillas son el sonido de Mambo Sinuendo, que es el disco que hizo pensable una guitarra eléctrica en la música cubana. Tener las mismas piezas no es lo mismo que tocar como él, pero te pone en la sala correcta.',
+          image: '/images/gallery/05.jpg',
+        },
+        {
           name: 'ESP Navigator',
           detail: 'Las guitarras estilo Gibson',
-          body: 'Navigator es la línea japonesa de ESP, y construyen las formas de Gibson mejor que casi nadie: una Explorer, una Firebird, una SG, una Les Paul y una semicaja estilo 335. Para un concierto de The Compadres me llevo una de las Guyatone y una de éstas, que cubre todo el terreno entre una pastilla fina y metálica y una humbucker gorda sin tener que cargar con media casa.',
+          body: 'Navigator es la línea japonesa de ESP, y construyen las formas de Gibson mejor que casi nadie: una Explorer, una Firebird, una SG, una Les Paul y una semicaja estilo 335, además de la N-ST azul. Para un concierto de The Compadres me llevo una de las Guyatone y una de éstas, que cubre todo el terreno entre una pastilla fina y metálica y una humbucker gorda sin tener que cargar con media casa.',
         },
         {
           name: 'Daniels Guitars Les Paul',
@@ -487,6 +493,22 @@ export const gear = {
     {
       group: 'Efectos',
       items: [
+        {
+          name: 'Goose Germanium Fuzz',
+          detail: 'Mío',
+          body: 'De germanio y no de silicio, que es de lo que se trata: se limpia al bajar el volumen de la guitarra en lugar de simplemente sonar más bajo, así que un solo pedal cubre mucho terreno sin tener que tocarlo entre canciones.',
+        },
+        {
+          name: 'Goose Effects Crossfire',
+          detail: 'Mío',
+          body: 'Básicamente un TS-10 con modificaciones, hecho para encajar delante del Filmosound mejor que el original. El Texas Flood no es una cosa suelta: éste y el fuzz vinieron antes.',
+        },
+        {
+          name: 'Los delays',
+          detail: 'Crucial Audio y Blackbox',
+          body: 'Un Crucial Audio Echo Nugget y un Blackbox Quicksilver. Dos delays en lugar de uno porque el lado con efectos del equipo es el que los lleva, y hacen trabajos distintos: uno para el slap y otro para las repeticiones largas dentro de las que se asienta el repertorio cubano.',
+          image: '/images/gallery/09.jpg',
+        },
         {
           name: 'Texas Flood',
           detail: 'Mío, muy pronto',

@@ -595,10 +595,17 @@ export const gear = {
           image: '/images/gear/p-project.jpg',
         },
         {
+          name: 'Coodercaster',
+          detail: 'Original gold foil and Valco pickups',
+          body:
+            'Built the way Ry Cooder’s is: a gold foil in the neck and a Valco lap steel pickup in the bridge, both original rather than reissued. Those two pickups are the sound on Mambo Sinuendo, which is the record that made an electric guitar in Cuban music thinkable in the first place. Owning the same parts is not the same as playing like him, but it does put you in the right room.',
+          image: '/images/gallery/05.jpg',
+        },
+        {
           name: 'ESP Navigator',
           detail: 'The Gibson-style guitars',
           body:
-            'Navigator is ESP’s Japanese line, and they build Gibson shapes better than most: an Explorer, a Firebird, an SG, a Les Paul and a 335-style semi. For a Compadres gig I take one of the Guyatones and one of these, which covers everything between a thin twangy pickup and a fat humbucker without carrying half the house.',
+            'Navigator is ESP’s Japanese line, and they build Gibson shapes better than most: an Explorer, a Firebird, an SG, a Les Paul and a 335-style semi, plus the blue N-ST. For a Compadres gig I take one of the Guyatones and one of these, which covers everything between a thin twangy pickup and a fat humbucker without carrying half the house.',
         },
         {
           name: 'Daniels Guitars Les Paul',
@@ -678,6 +685,25 @@ export const gear = {
           body:
             'A tremolo built from the ground up, modelled on the one I could never get to behave the way I wanted. There is a page about it.',
           href: '/goose-pedal',
+        },
+        {
+          name: 'Goose Germanium Fuzz',
+          detail: 'Mine',
+          body:
+            'Germanium rather than silicon, which is the whole point: it cleans up when you roll the guitar volume back instead of just getting quieter, so one pedal covers a lot of ground without touching it between songs.',
+        },
+        {
+          name: 'Goose Effects Crossfire',
+          detail: 'Mine',
+          body:
+            'Essentially a TS-10 with modifications, built to sit better in front of the Filmosound than the original does. The Texas Flood is not a one-off; this and the fuzz came first.',
+        },
+        {
+          name: 'The delays',
+          detail: 'Crucial Audio and Blackbox',
+          body:
+            'A Crucial Audio Echo Nugget and a Blackbox Quicksilver. Two delays rather than one because the wet side of the rig carries them, and the two do different jobs: one for slap, one for the long repeats the Cuban material sits inside.',
+          image: '/images/gallery/09.jpg',
         },
         {
           name: 'The GigRig',
@@ -969,12 +995,12 @@ export const gallery = {
     { src: '01.jpg', tag: 'gear', caption: 'Guitars at home' },
     { src: '02.jpg', tag: 'gear', caption: 'Amplifier chassis with the valves in' },
     { src: '03.jpg', tag: 'gear', caption: 'Flame-top Les Paul' },
-    { src: '04.jpg', tag: 'gear', caption: 'A pair of semi-hollows' },
-    { src: '05.jpg', tag: 'gear', caption: 'Guitars under the lights' },
+    { src: '04.jpg', tag: 'gear', caption: 'The ESP flame maple 335 and a Daniels Les Paul replica' },
+    { src: '05.jpg', tag: 'gear', caption: 'The Coodercaster, and the blue ESP Navigator N-ST' },
     { src: '06.jpg', tag: 'gear', caption: 'Vintage amplifiers, stacked' },
     { src: '07.jpg', tag: 'portrait', caption: 'TODO: caption — in the workshop with a Les Paul' },
     { src: '08.jpg', tag: 'gear', caption: 'Siewa Powersonic, the guitar Ali Farka Touré played' },
-    { src: '09.jpg', tag: 'gear', caption: 'Pedalboard' },
+    { src: '09.jpg', tag: 'gear', caption: 'Left to right: Crucial Audio Echo Nugget, Blackbox Quicksilver, Goose Germanium Fuzz, Goose Effects Crossfire' },
     { src: '10.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
     { src: '11.jpg', tag: 'gear', caption: 'The Filmosound chassis, and a Celestion' },
     { src: '12.jpg', tag: 'gear', caption: 'The WAU Goosemaster on the bench' },

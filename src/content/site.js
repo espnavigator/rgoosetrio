@@ -1001,7 +1001,7 @@ export const gallery = {
     // Guitars, amplifiers and the workshop.
     { src: '01.jpg', tag: 'gear', caption: 'Guitars at home' },
     { src: '02.jpg', tag: 'gear', caption: 'The Victoria Reverberato chassis, valves in' },
-    { src: '03.jpg', tag: 'gear', caption: 'Flame-top Les Paul' },
+    { src: '03.jpg', tag: 'gear', caption: 'The Daniels Les Paul replica' },
     { src: '04.jpg', tag: 'gear', caption: 'The ESP flame maple 335 and a Daniels Les Paul replica' },
     { src: '05.jpg', tag: 'gear', caption: 'The Coodercaster, and the blue ESP Navigator N-ST' },
     { src: '06.jpg', tag: 'gear', caption: 'Vintage amplifiers, stacked' },

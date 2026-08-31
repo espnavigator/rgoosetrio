@@ -312,6 +312,7 @@ export const band = {
     {
       name: 'Rick Vito',
       role: 'Guitarrista, antes en Fleetwood Mac',
+      photo: '/images/band/rick-vito.jpg',
       bio: 'Tocó en Fleetwood Mac, y toca la segunda guitarra en I Loved Another Woman, una canción que conoce por dentro.',
     },
     {

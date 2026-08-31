@@ -485,7 +485,7 @@ export const gear = {
         {
           name: 'WAU Goosemaster',
           detail: 'Divisor de señal',
-          image: '/images/gallery/10.jpg',
+          image: '/images/gallery/12.jpg',
           body: 'No es un amplificador sino un divisor, construido por WAU como clon del Green Man, la caja que usaba Ry Cooder para atacar más de un amplificador a la vez. Es lo que alimenta los dos amplificadores. Cooder y Manuel Galbán son buena parte de la razón por la que una guitarra eléctrica en la música cubana es siquiera una idea, así que usar su divisor para hacerlo no es casualidad.',
           href: '',
         },

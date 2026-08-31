@@ -213,13 +213,15 @@ export const music = {
     ],
     personnel: [
       { name: 'Ramon Goose', role: 'Electric guitar, vocals' },
-      { name: 'Joe \u201CRicardo\u201D Goose', role: 'Bass' },
-      { name: 'Kieffer Santander', role: 'Percussion, vocals' },
-      { name: 'Rick Vito', role: 'Guitar on I Loved Another Woman' },
+      { name: 'Joaquín Solórzano', role: 'Congas' },
+      { name: 'Rudy Ramon Daquín', role: 'Tres' },
+      { name: 'Calderín', role: 'Double bass' },
+      { name: 'Ernesto', role: 'Bongó' },
+      { name: 'Mustafa', role: 'Piano' },
       { name: 'Nancy Maura', role: 'Vocals on Porque and Si Pudiera Expresarte (1935–2025)' },
-      // CHECK: is Kieffer the player with the Compay Segundo / Eliades Ochoa
-      // credit? If so it belongs in the press copy — it is a real lineage claim
-      // and worth stating plainly rather than leaving buried.
+      { name: 'Alejandro Almenares', role: 'Guitar, tres' },
+      { name: 'Rick Vito', role: 'Guitar on I Loved Another Woman' },
+      // TODO: the horn section, by name.
     ],
     // Shown in place of the streaming buttons until the links exist.
     linksPending:
@@ -477,28 +479,35 @@ export const band = {
         {
           name: 'Rudy Ramon Daquín',
           role: 'Tres',
-          photo: '',
+          photo: 'rudy-ramon.jpg',
           bio: 'Santiago tresero, and a member of Los Jubilados del Caribe, the veteran group from the city whose reading of Siboney features the multi-instrumentalist and whistler known as El Silbador.',
         },
         {
           name: 'Joaquín Solórzano',
           role: 'Congas',
-          photo: '',
+          photo: 'joaquin-solorzano.jpg',
           bio: 'The band started with him, in Santiago in 2023. He played in Compay Segundo’s band for over twenty years, which is about as direct a line back to the music the Buena Vista Social Club made famous as anyone still playing can claim.',
         },
         {
           name: 'Calderín',
           // TODO: his full name, for the credits and the press.
           role: 'Double bass',
-          photo: '',
-          bio: 'TODO: a line or two on Calderín.',
+          photo: 'calderin.jpg',
+          bio: '',
         },
         {
           name: 'Ernesto',
           // TODO: his surname, for the credits and the press.
           role: 'Bongó',
-          photo: '',
-          bio: 'TODO: a line or two on Ernesto.',
+          photo: 'ernesto.jpg',
+          bio: '',
+        },
+        {
+          name: 'Mustafa',
+          // TODO: his surname, for the credits and the press.
+          role: 'Piano',
+          photo: 'mustafa.jpg',
+          bio: '',
         },
       ],
     },
@@ -840,6 +849,10 @@ export const gallery = {
   photos: [
     // The band, in Cuba. These lead because they are what the site is about.
     { src: 'a23.jpg', tag: 'cuba', caption: 'The Compadres on a rooftop in Santiago de Cuba' },
+    { src: 'g01.jpg', tag: 'cuba', caption: 'The Compadres in Santiago' },
+    { src: 'g02.jpg', tag: 'cuba', caption: 'The Compadres, Cuba' },
+    { src: 'g03.jpg', tag: 'cuba', caption: 'Ernesto and Calderín' },
+    { src: 'g04.jpg', tag: 'cuba', caption: 'Calderín' },
     { src: 'a24.jpg', tag: 'cuba', caption: 'With Nancy Maura at Estudios Siboney' },
     { src: 'a14.jpg', tag: 'cuba', caption: 'With Alejandro Almenares, Santiago de Cuba' },
     { src: 'a15.jpg', tag: 'cuba', caption: 'Playing with Alejandro Almenares' },

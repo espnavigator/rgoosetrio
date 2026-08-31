@@ -222,7 +222,7 @@ export const music = {
       { name: 'Alejandro Almenares', role: 'Guitar and vocals' },
       { name: 'Damian Busqueta Mineto', role: 'Trombone' },
       { name: 'Benilde Aysmel Guzmán Mariño', role: 'Trumpet' },
-      { name: 'Rick Vito', role: 'Guitar on I Loved Another Woman' },
+      { name: 'Rick Vito', role: 'Lead guitar on I Loved Another Woman' },
     ],
     // Shown in place of the streaming buttons until the links exist.
     linksPending:
@@ -247,7 +247,7 @@ export const music = {
       status: 'In progress',
       blurb: [
         'A record made with Alejandro Almenares, the veteran guitarist from Santiago de Cuba and the last of the trova musicians of his generation still recording.',
-        'Horns are still being tracked in Cuba. This one is not finished, and it is not being rushed.',
+        'Rick Vito plays on it. Horns are still being tracked in Cuba. This one is not finished, and it is not being rushed.',
       ],
     },
   ],
@@ -524,9 +524,9 @@ export const band = {
   guests: [
     {
       name: 'Rick Vito',
-      role: 'Guitarist, formerly of Fleetwood Mac',
+      role: 'Maestro. Guitarist, formerly of Fleetwood Mac',
       photo: '/images/band/rick-vito.jpg',
-      bio: 'Played with Fleetwood Mac, and plays the second guitar on I Loved Another Woman — a song he knows from the inside.',
+      bio: 'A maestro, and one of the great American slide players. He plays the lead guitar on I Loved Another Woman — a Peter Green song he knows from the inside, having taken Green’s chair in Fleetwood Mac from 1987 to 1991 and played on Behind the Mask. That is his slide on Bob Seger’s Like A Rock. Before and since, the sessions run deep: Bonnie Raitt, Jackson Browne, John Mayall, John Fogerty, Roy Orbison, Little Richard, Leon Russell, Boz Scaggs, Roger McGuinn. He started out with Delaney and Bonnie and opened for Muddy Waters in 1969, and he is Grammy-nominated for his work fronting the Mick Fleetwood Blues Band. He also plays on the new Alejandro Almenares record.',
     },
     {
       name: 'Nancy Maura',

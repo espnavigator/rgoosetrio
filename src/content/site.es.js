@@ -148,7 +148,7 @@ export const music = {
       { name: 'Alejandro Almenares', role: 'Guitarra y voz' },
       { name: 'Damian Busqueta Mineto', role: 'Trombón' },
       { name: 'Benilde Aysmel Guzmán Mariño', role: 'Trompeta' },
-      { name: 'Rick Vito', role: 'Guitarra en I Loved Another Woman' },
+      { name: 'Rick Vito', role: 'Guitarra solista en I Loved Another Woman' },
     ],
   },
 
@@ -158,7 +158,7 @@ export const music = {
       status: 'En proceso',
       blurb: [
         'Un disco con Alejandro Almenares, el guitarrista veterano de Santiago de Cuba y el último de los trovadores de su generación que sigue grabando.',
-        'Los metales todavía se están grabando en Cuba. Éste no está terminado, y no se va a apurar.',
+        'Rick Vito toca en él. Los metales todavía se están grabando en Cuba. Éste no está terminado, y no se va a apurar.',
       ],
     },
   ],
@@ -313,9 +313,9 @@ export const band = {
   guests: [
     {
       name: 'Rick Vito',
-      role: 'Guitarrista, antes en Fleetwood Mac',
+      role: 'Maestro. Guitarrista, antes en Fleetwood Mac',
       photo: '/images/band/rick-vito.jpg',
-      bio: 'Tocó en Fleetwood Mac, y toca la segunda guitarra en I Loved Another Woman, una canción que conoce por dentro.',
+      bio: 'Un maestro, y uno de los grandes del slide americano. Toca la guitarra solista en I Loved Another Woman, una canción de Peter Green que conoce por dentro: ocupó el puesto de Green en Fleetwood Mac entre 1987 y 1991 y tocó en Behind the Mask. Suyo es el slide de Like A Rock, de Bob Seger. Antes y después, las sesiones son profundas: Bonnie Raitt, Jackson Browne, John Mayall, John Fogerty, Roy Orbison, Little Richard, Leon Russell, Boz Scaggs, Roger McGuinn. Empezó con Delaney and Bonnie y abrió para Muddy Waters en 1969, y está nominado al Grammy por su trabajo al frente de la Mick Fleetwood Blues Band. También toca en el nuevo disco de Alejandro Almenares.',
     },
     {
       name: 'Nancy Maura',

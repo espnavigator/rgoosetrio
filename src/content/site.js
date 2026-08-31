@@ -549,6 +549,8 @@ export const band = {
 /* -------------------------------------------------------------------------- */
 
 export const gear = {
+  photosKicker: 'The workshop',
+  photosHeading: 'In pictures',
   heading: 'The Gear',
   intro:
     'What I actually play, and what actually went down on the record. No endorsements, no pretending — if it is on here it is because I use it.',

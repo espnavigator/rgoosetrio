@@ -378,6 +378,8 @@ export const cuba = {
 /* -------------------------------------------------------------------------- */
 
 export const gear = {
+  photosKicker: 'El taller',
+  photosHeading: 'En imágenes',
   heading: 'El equipo',
   intro:
     'Lo que toco de verdad, y lo que de verdad se grabó en el disco. Sin patrocinios ni fingimientos: si está aquí es porque lo uso.',
@@ -444,6 +446,17 @@ export const gear = {
       ],
     },
     {
+      group: 'Efectos',
+      items: [
+        {
+          name: 'Texas Flood',
+          detail: 'Mío, muy pronto',
+          body: 'Un pedal construido desde cero, porque nada de lo que podía comprar hacía lo que yo quería. Hay una página sobre él.',
+          href: '/goose-pedal',
+        },
+      ],
+    },
+    {
       group: 'Cuerdas, púas y lo demás',
       items: [
         {
@@ -460,17 +473,6 @@ export const gear = {
           name: 'Slides',
           detail: 'Diamond Bottlenecks',
           body: 'Diamond Bottlenecks, hechos en Inglaterra. De cristal, y con el peso justo: los años de slide antes de Cuba no se han ido a ninguna parte.',
-        },
-      ],
-    },
-    {
-      group: 'Efectos',
-      items: [
-        {
-          name: 'Texas Flood',
-          detail: 'Mío, muy pronto',
-          body: 'Un pedal construido desde cero, porque nada de lo que podía comprar hacía lo que yo quería. Hay una página sobre él.',
-          href: '/goose-pedal',
         },
       ],
     },

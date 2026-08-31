@@ -89,8 +89,8 @@ export default function GearPage({ locale = 'en' }) {
         <section className="section section--ink">
           <div className="container">
             <div className="section-head">
-              <span className="kicker">The workshop</span>
-              <h2>In pictures</h2>
+              <span className="kicker">{gear.photosKicker}</span>
+              <h2>{gear.photosHeading}</h2>
             </div>
 
             <div className="gallery-grid">

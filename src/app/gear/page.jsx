@@ -3,15 +3,25 @@ import PageHeader from '@/components/PageHeader';
 import { Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { gallery, gear } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Gear',
   description:
     'The guitars, amplifiers and effects behind the Cuban electric guitar records — including the Guyatone LG-180.',
-  alternates: { canonical: '/gear/' },
+  alternates: {
+    canonical: '/gear/',
+    languages: {
+      'en-GB': '/gear/',
+      'es': '/es/gear/',
+      'x-default': '/gear/',
+    },
+  },
 };
 
-export default function GearPage() {
+export default function GearPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { gallery, gear } = getContent(locale);
   // The gear photographs live in one list with the rest of the gallery; this
   // page shows the ones tagged 'gear' so nothing has to be listed twice.
   const shots = gallery.photos.filter((p) => p.tag === 'gear');

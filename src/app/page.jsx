@@ -3,8 +3,11 @@ import CutPaper from '@/components/CutPaper';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { bio, home, music, site, video } from '@/content/site';
+import { getContent } from '@/content';
 
-export default function HomePage() {
+export default function HomePage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { bio, home, music, site, video } = getContent(locale);
   return (
     <>
       {/* ---- HERO ------------------------------------------------------- */}

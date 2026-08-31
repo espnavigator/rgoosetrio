@@ -1,12 +1,20 @@
 import PageHeader from '@/components/PageHeader';
 import { Txt } from '@/components/Txt';
 import { video } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Video',
   description:
     'Video from Ramon Goose & The Compadres, the back catalogue, and The Guitar Show.',
-  alternates: { canonical: '/video/' },
+  alternates: {
+    canonical: '/video/',
+    languages: {
+      'en-GB': '/video/',
+      'es': '/es/video/',
+      'x-default': '/video/',
+    },
+  },
 };
 
 /** One embedded YouTube video. */
@@ -29,7 +37,9 @@ function Embed({ item }) {
   );
 }
 
-export default function VideoPage() {
+export default function VideoPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { video } = getContent(locale);
   return (
     <>
       <PageHeader kicker="YouTube" title={video.heading} lead={video.intro} />

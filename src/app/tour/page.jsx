@@ -1,12 +1,20 @@
 import PageHeader from '@/components/PageHeader';
 import { Txt, isTodo } from '@/components/Txt';
 import { site, tour } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Live',
   description:
     'Live dates for Ramon Goose & The Compadres — trio in England, quintet in Santiago de Cuba.',
-  alternates: { canonical: '/tour/' },
+  alternates: {
+    canonical: '/tour/',
+    languages: {
+      'en-GB': '/tour/',
+      'es': '/es/tour/',
+      'x-default': '/tour/',
+    },
+  },
 };
 
 /** "2026-06-12" -> "Fri 12 Jun 2026". Returns null if there is no usable date. */
@@ -72,7 +80,9 @@ function Gig({ gig, past }) {
   );
 }
 
-export default function TourPage() {
+export default function TourPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { site, tour } = getContent(locale);
   // A row that is nothing but a placeholder should not be presented as a gig.
   const upcoming = tour.upcoming.filter((g) => !(isTodo(g.venue) && !g.date));
   const hasUpcoming = upcoming.length > 0;

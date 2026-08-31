@@ -2,14 +2,24 @@ import PageHeader from '@/components/PageHeader';
 import { Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { gallery } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Gallery',
   description: 'Photographs from Santiago de Cuba, Havana and the road.',
-  alternates: { canonical: '/gallery/' },
+  alternates: {
+    canonical: '/gallery/',
+    languages: {
+      'en-GB': '/gallery/',
+      'es': '/es/gallery/',
+      'x-default': '/gallery/',
+    },
+  },
 };
 
-export default function GalleryPage() {
+export default function GalleryPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { gallery } = getContent(locale);
   return (
     <>
       <PageHeader kicker="Photographs" title={gallery.heading} lead={gallery.intro} />

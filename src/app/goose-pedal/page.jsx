@@ -1,14 +1,24 @@
 import PageHeader from '@/components/PageHeader';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { pedal, site } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: pedal.name,
   description: 'A tremolo built by Ramon Goose. In development.',
-  alternates: { canonical: '/goose-pedal/' },
+  alternates: {
+    canonical: '/goose-pedal/',
+    languages: {
+      'en-GB': '/goose-pedal/',
+      'es': '/es/goose-pedal/',
+      'x-default': '/goose-pedal/',
+    },
+  },
 };
 
-export default function PedalPage() {
+export default function PedalPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { pedal, site } = getContent(locale);
   return (
     <>
       <PageHeader kicker={pedal.kicker} title={pedal.heading} lead={pedal.standfirst} />

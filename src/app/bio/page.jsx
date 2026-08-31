@@ -2,14 +2,24 @@ import PageHeader from '@/components/PageHeader';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { bio, site } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Biography',
   description: bio.short,
-  alternates: { canonical: '/bio/' },
+  alternates: {
+    canonical: '/bio/',
+    languages: {
+      'en-GB': '/bio/',
+      'es': '/es/bio/',
+      'x-default': '/bio/',
+    },
+  },
 };
 
-export default function BioPage() {
+export default function BioPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { bio, site } = getContent(locale);
   const downloads = bio.downloads.filter((d) => d.href);
 
   return (

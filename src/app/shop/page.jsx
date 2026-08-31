@@ -3,14 +3,24 @@ import PageHeader from '@/components/PageHeader';
 import { Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { shop, site } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Shop',
   description: 'Records, shirts and the Texas Flood pedal.',
-  alternates: { canonical: '/shop/' },
+  alternates: {
+    canonical: '/shop/',
+    languages: {
+      'en-GB': '/shop/',
+      'es': '/es/shop/',
+      'x-default': '/shop/',
+    },
+  },
 };
 
-export default function ShopPage() {
+export default function ShopPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { shop, site } = getContent(locale);
   return (
     <>
       <PageHeader kicker="Merchandise" title={shop.heading} lead={shop.intro} />

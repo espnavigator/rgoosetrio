@@ -1,8 +1,14 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { nav, site } from '@/content/site';
+import { getContent, localeHref } from '@/content';
 
 export default function SiteFooter() {
+  const pathname = usePathname();
+  const locale = pathname && pathname.startsWith('/es') ? 'es' : 'en';
   const year = new Date().getFullYear();
+  const { nav, site } = getContent(locale);
 
   return (
     <footer className="site-footer">
@@ -20,7 +26,7 @@ export default function SiteFooter() {
             <ul className="footer__list">
               {nav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href}>{item.label}</Link>
+                  <Link href={localeHref(item.href, locale)}>{item.label}</Link>
                 </li>
               ))}
             </ul>

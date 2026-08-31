@@ -257,7 +257,7 @@ export const music = {
     {
       title: 'Long Road To Tiznit',
       year: '2017',
-      label: 'TODO: label',
+      label: 'World Music Network',
       role: 'Blues and West African crossover',
     },
     {
@@ -476,7 +476,10 @@ export const band = {
           name: 'Joe \u201CRicardo\u201D Goose',
           role: 'Bass',
           photo: 'joe-goose.jpg',
-          bio: 'My identical twin brother, on bass. Thirty years of listening to the same records and playing in the same rooms, which turns out to be a shortcut no amount of rehearsal replaces — the bass and the guitar move together without either of us having to look up.',
+          bio: [
+            'My identical twin brother, on bass. Thirty years of listening to the same records and playing in the same rooms, which turns out to be a shortcut no amount of rehearsal replaces: the bass and the guitar move together without either of us having to look up.',
+            'He has played with Pee Wee Ellis and toured with Eric Bibb, and spent seven years on the Paris jazz scene. That is where he learned the tumbao, the Cuban bass figure the whole band sits on. Most bass players coming to this music have to be taught it. He already had it.',
+          ],
         },
       ],
     },
@@ -769,32 +772,30 @@ export const video = {
   groups: [
     {
       title: 'The Compadres',
-      kicker: 'Cuba',
+      kicker: 'The band',
       items: [
-        { id: '64gu8oEnvyM', title: 'The Compadres, showreel' },
-        { id: 'l4nzFHgAxPw', title: 'Havana Town' },
-        { id: 'bKqH7KbrfOA', title: 'Cumbia Por Los Muertos' },
-        { id: '2gbDm5cbRRo', title: 'Live in Leigh-on-Sea' },
+        { id: 'tT7OeHMAESg', title: 'Alto Boniato' },
+        { id: 'QXDiARNrddM', title: 'Los Rumberos, live in London' },
+        { id: 'uVi783Bd7CQ', title: 'Crouch End Festival: Ali Farka Touré meets Buena Vista' },
+        { id: 'PE7XhnOdAb8', title: 'La Movedora, cumbia guitar' },
       ],
     },
     {
-      title: 'Before Cuba',
-      kicker: 'The back catalogue',
+      title: 'In Cuba',
+      kicker: 'Santiago',
       items: [
-        { id: 'X7XF_ckJCNU', title: 'Long Road To Tiznit' },
-        { id: 'VaUcno-o504', title: 'Sahara Hands' },
-        { id: 'M4aVLZ8y0xw', title: 'Little Wing' },
-        { id: 'r03YOGaMqCk', title: 'Ealing Blues Festival, with the trio' },
+        { id: 'fPHPfym4jB0', title: "Peter Green's Black Magic Woman, recorded in Cuba" },
+        { id: 'qML77DFw6is', title: 'Performing Black Magic Woman in Cuba' },
+        { id: 'CygeLUElt1Y', title: 'Rick Vito and Alejandro Almenares: Échale Salsita' },
+        { id: 'VlCJ7FkIIDw', title: 'Cuban bolero with Nancy Maura' },
+        { id: 'm3LgcY-gOms', title: 'Trova with Alejandro Almenares' },
+        { id: 'HEeGp-I6c0c', title: 'Leyenda de la música de Santiago de Cuba: documentary' },
       ],
     },
     {
-      title: 'Elsewhere',
-      kicker: 'Guests and gear',
-      items: [
-        { id: '5njYMgRJrHY', title: 'Guitars, amps and FX: rig rundown' },
-        { id: 'omSBuq-ByMg', title: "Rollin' and Tumblin' with the Malcolm Bruce Band" },
-        { id: 'OxARloKwmi8', title: 'Live at Mashed Festival' },
-      ],
+      title: 'The gear',
+      kicker: 'What made the sound',
+      items: [{ id: 'YMCKz5TC_fg', title: 'Rig rundown, from Cuba' }],
     },
   ],
 };

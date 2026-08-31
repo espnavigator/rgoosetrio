@@ -1,14 +1,24 @@
 import PageHeader from '@/components/PageHeader';
 import { Txt } from '@/components/Txt';
 import { contact, site } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Contact',
   description: 'Bookings, press and everything else.',
-  alternates: { canonical: '/contact/' },
+  alternates: {
+    canonical: '/contact/',
+    languages: {
+      'en-GB': '/contact/',
+      'es': '/es/contact/',
+      'x-default': '/contact/',
+    },
+  },
 };
 
-export default function ContactPage() {
+export default function ContactPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { contact, site } = getContent(locale);
   return (
     <>
       <PageHeader kicker="Get in touch" title={contact.heading} lead={contact.intro} />

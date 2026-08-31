@@ -1,15 +1,25 @@
 import PageHeader from '@/components/PageHeader';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { cuba } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Working In Cuba',
   description:
     'Cuban electric guitar recorded at EGREM Studios in Santiago de Cuba, with The Compadres and the trova guitarist Alejandro Almenares.',
-  alternates: { canonical: '/cuba/' },
+  alternates: {
+    canonical: '/cuba/',
+    languages: {
+      'en-GB': '/cuba/',
+      'es': '/es/cuba/',
+      'x-default': '/cuba/',
+    },
+  },
 };
 
-export default function CubaPage() {
+export default function CubaPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { cuba } = getContent(locale);
   return (
     <>
       <PageHeader kicker="Santiago de Cuba" title={cuba.heading} lead={cuba.standfirst} />

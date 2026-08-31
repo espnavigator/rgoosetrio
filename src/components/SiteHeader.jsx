@@ -3,14 +3,21 @@
 import { useCallback, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { nav, site } from '@/content/site';
+import { getContent, localeHref } from '@/content';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function SiteHeader() {
   const pathname = usePathname();
+  // The URL is the source of truth for language: /es/... is Spanish.
+  const locale = pathname && pathname.startsWith('/es') ? 'es' : 'en';
   const menuRef = useRef(null);
+  const { nav, site } = getContent(locale);
 
   // Pages are exported with a trailing slash, so /music/ has to match /music.
-  const isCurrent = (href) => pathname === href || pathname === `${href}/`;
+  const isCurrent = (href) => {
+    const target = localeHref(href, locale);
+    return pathname === target || pathname === `${target}/`;
+  };
 
   const closeMenu = useCallback(() => {
     if (menuRef.current) menuRef.current.open = false;
@@ -22,15 +29,13 @@ export default function SiteHeader() {
     closeMenu();
   }, [pathname, closeMenu]);
 
-  // Escape, and clicking anywhere off the menu, both shut it — what anyone
-  // expects from a dropdown.
+  // Escape, and clicking anywhere off the menu, both shut it.
   useEffect(() => {
     const onKeyDown = (event) => {
       if (event.key === 'Escape') closeMenu();
     };
     const onPointerDown = (event) => {
       const el = menuRef.current;
-      // A click on the button itself is inside the element, so it still toggles.
       if (el && el.open && !el.contains(event.target)) closeMenu();
     };
 
@@ -45,15 +50,17 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container site-header__inner">
-        <Link href="/" className="wordmark" onClick={closeMenu}>
-          Ramón Goose <span>&amp; The Compadres</span>
+        <Link href={localeHref('/', locale)} className="wordmark" onClick={closeMenu}>
+          <span className="wordmark__long">Ramón Goose</span>
+          <span className="wordmark__short">RG</span>{' '}
+          <span className="wordmark__band">&amp; The Compadres</span>
         </Link>
 
         <nav className="nav" aria-label="Main">
           {nav.map((item) => (
             <Link
               key={item.href}
-              href={item.href}
+              href={localeHref(item.href, locale)}
               aria-current={isCurrent(item.href) ? 'page' : undefined}
             >
               {item.label}
@@ -61,26 +68,30 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        {/* A disclosure menu for narrow screens. It still opens and closes with
-            no JavaScript at all; the script only adds the closing behaviour. */}
-        <details className="menu-toggle" ref={menuRef}>
-          <summary aria-label="Menu">Menu</summary>
-          <div className="menu-panel">
-            {nav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={closeMenu}
-                aria-current={isCurrent(item.href) ? 'page' : undefined}
-              >
-                {item.label}
-              </Link>
-            ))}
-            <a href={`mailto:${site.email.booking}`} onClick={closeMenu}>
-              Email
-            </a>
-          </div>
-        </details>
+        <div className="header-tools">
+          <LanguageSwitcher locale={locale} />
+
+          {/* A disclosure menu for narrow screens. It still opens and closes
+              with no JavaScript at all; the script only adds the closing. */}
+          <details className="menu-toggle" ref={menuRef}>
+            <summary aria-label="Menu">Menu</summary>
+            <div className="menu-panel">
+              {nav.map((item) => (
+                <Link
+                  key={item.href}
+                  href={localeHref(item.href, locale)}
+                  onClick={closeMenu}
+                  aria-current={isCurrent(item.href) ? 'page' : undefined}
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <a href={`mailto:${site.email.booking}`} onClick={closeMenu}>
+                Email
+              </a>
+            </div>
+          </details>
+        </div>
       </div>
     </header>
   );

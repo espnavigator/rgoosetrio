@@ -2,14 +2,24 @@ import PageHeader from '@/components/PageHeader';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { music } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Music',
   description: `${music.featured.title} by ${music.featured.artist} — Cuban electric guitar recorded at ${music.featured.recordedAt}, plus twenty years of back catalogue.`,
-  alternates: { canonical: '/music/' },
+  alternates: {
+    canonical: '/music/',
+    languages: {
+      'en-GB': '/music/',
+      'es': '/es/music/',
+      'x-default': '/music/',
+    },
+  },
 };
 
-export default function MusicPage() {
+export default function MusicPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { music } = getContent(locale);
   const album = music.featured;
   // Streaming links are only drawn once they actually point somewhere.
   const liveLinks = album.links.filter((l) => l.href);

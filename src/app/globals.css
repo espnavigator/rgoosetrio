@@ -350,12 +350,19 @@ p {
   text-overflow: ellipsis;
 }
 
-/* The nav has eleven items, so the full billing only fits on a wide screen.
-   Below that the header drops back to the name rather than truncating to
-   "RAMÓN …". The hero banner still carries the full billing. */
+/* The billing is the whole point, so it never gets dropped. When the nav
+   leaves too little room, the name abbreviates to "RG" and the band stays:
+   "RG & The Compadres" rather than a truncated "RAMÓN …". */
+.wordmark__short {
+  display: none;
+}
+
 @media (max-width: 95rem) {
-  .wordmark span {
+  .wordmark__long {
     display: none;
+  }
+  .wordmark__short {
+    display: inline;
   }
 }
 
@@ -472,6 +479,47 @@ p {
 .menu-panel a:hover,
 .menu-panel a[aria-current='page'] {
   color: var(--red);
+}
+
+
+/* ==========================================================================
+   LANGUAGE SWITCHER
+   ========================================================================== */
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.55rem;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.lang-switch:hover {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.lang-switch .flag {
+  width: 1.35rem;
+  height: 0.68rem;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  flex: none;
 }
 
 /* ==========================================================================

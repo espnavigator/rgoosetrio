@@ -26,10 +26,16 @@ export const dynamic = 'force-static';
 
 export default function sitemap() {
   const lastModified = new Date();
-  return routes.map((r) => ({
-    url: `${site.url}${r.path}`,
-    lastModified,
-    changeFrequency: r.path === '/' ? 'weekly' : 'monthly',
-    priority: r.priority,
-  }));
+  // Both languages, and each entry names its counterpart so search engines
+  // treat them as translations of one page rather than duplicates.
+  return routes.flatMap((r) => {
+    const en = `${site.url}${r.path}`;
+    const es = `${site.url}/es${r.path === '/' ? '' : r.path}`;
+    const alternates = { languages: { 'en-GB': en, es } };
+    const changeFrequency = r.path === '/' ? 'weekly' : 'monthly';
+    return [
+      { url: en, lastModified, changeFrequency, priority: r.priority, alternates },
+      { url: es, lastModified, changeFrequency, priority: r.priority * 0.9, alternates },
+    ];
+  });
 }

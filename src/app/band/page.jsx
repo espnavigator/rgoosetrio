@@ -2,12 +2,20 @@ import PageHeader from '@/components/PageHeader';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { band } from '@/content/site';
+import { getContent } from '@/content';
 
 export const metadata = {
   title: 'The Compadres',
   description:
     'The two Compadres line-ups — Santiago de Cuba and England — and the guests on the record.',
-  alternates: { canonical: '/band/' },
+  alternates: {
+    canonical: '/band/',
+    languages: {
+      'en-GB': '/band/',
+      'es': '/es/band/',
+      'x-default': '/band/',
+    },
+  },
 };
 
 /** A member card. Falls back to an initial when there is no photograph yet. */
@@ -50,7 +58,9 @@ function Member({ member }) {
   );
 }
 
-export default function BandPage() {
+export default function BandPage({ locale = 'en' }) {
+  // Content comes from the language this page was built for.
+  const { band } = getContent(locale);
   return (
     <>
       <PageHeader kicker="Who plays" title={band.heading} lead={band.standfirst} />

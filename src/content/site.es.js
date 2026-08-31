@@ -66,7 +66,7 @@ export const home = {
     {
       src: 'compadres-england-trio.jpg',
       caption: 'The Compadres en Inglaterra',
-      detail: 'Día Internacional del Jazz, Bolívar Hall, Londres',
+      detail: 'Kieffer Santander, Ramon Goose y Joe “Ricardo” Goose. Día Internacional del Jazz, Londres.',
       width: 1800,
       height: 1355,
     },
@@ -239,7 +239,7 @@ export const band = {
       id: 'england',
       name: 'The Compadres — Inglaterra',
       photo: 'compadres-england-trio.jpg',
-      photoCaption: 'The Compadres tocando en la Embajada de Cuba en Londres',
+      photoCaption: 'The Compadres en la Embajada de Cuba en Londres. De izquierda a derecha: Kieffer Santander, Ramon Goose y Joe “Ricardo” Goose.',
       blurb:
         'La formación que toca aquí: festivales, clubes y cualquier cosa de este lado del agua. Repertorio cubano con un percusionista peruano dentro, lo que lleva el ritmo a un sitio al que ninguna de las dos tradiciones habría llegado sola.',
       members: [

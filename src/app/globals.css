@@ -864,6 +864,49 @@ a.card:hover {
   border-top: 1px solid rgba(243, 232, 213, 0.22);
 }
 
+/* The two line-ups, side by side under the band blurb on the front page. */
+.lineup-photos {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 1.75rem);
+  margin-top: 2.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+
+.lineup-photo {
+  margin: 0;
+  border: 2px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--ink);
+  background: var(--paper);
+}
+
+.lineup-photo img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid var(--ink);
+}
+
+.lineup-photo figcaption {
+  padding: 0.8rem 1rem;
+  display: grid;
+  gap: 0.15rem;
+}
+
+.lineup-photo figcaption strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.lineup-photo figcaption span {
+  font-size: 0.86rem;
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
 /* Laid out across the page rather than down a sidebar, for the front page. */
 .facts--row {
   margin-top: 2.25rem;

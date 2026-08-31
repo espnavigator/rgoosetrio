@@ -64,6 +64,25 @@ export default function HomePage() {
           </div>
           <Paragraphs items={home.bandBlurb} />
 
+          {/* The two line-ups, side by side. */}
+          <div className="lineup-photos">
+            {home.bandPhotos.map((photo) => (
+              <figure key={photo.src} className="lineup-photo">
+                <img
+                  src={asset(`/images/band/${photo.src}`)}
+                  alt={photo.caption}
+                  loading="lazy"
+                  width="1800"
+                  height="1013"
+                />
+                <figcaption>
+                  <strong>{photo.caption}</strong>
+                  <span>{photo.detail}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+
           {/* The quick facts a promoter or journalist wants without reading on.
               Same list as the biography page, so it is only written once. */}
           <ul className="facts facts--row">

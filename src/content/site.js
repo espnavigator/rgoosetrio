@@ -114,6 +114,21 @@ export const home = {
     'Neither half is a tribute act. The blues went to Cuba, found the music already there, and came back sounding like this.',
   ],
 
+  // The two line-ups, side by side on the front page. Both files already live
+  // in public/images/band/ and are used on the band page too.
+  bandPhotos: [
+    {
+      src: 'compadres-england.jpg',
+      caption: 'The Compadres in England',
+      detail: 'International Jazz Day, Bolívar Hall, London',
+    },
+    {
+      src: 'compadres-santiago.jpg',
+      caption: 'The Compadres in Cuba',
+      detail: 'On a rooftop above Santiago de Cuba',
+    },
+  ],
+
   // The tiles under the band blurb. Reorder them by moving the blocks around.
   cards: [
     {

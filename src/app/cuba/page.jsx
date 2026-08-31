@@ -1,5 +1,6 @@
 import PageHeader from '@/components/PageHeader';
 import { Paragraphs, Txt } from '@/components/Txt';
+import { asset } from '@/lib/asset';
 import { cuba } from '@/content/site';
 import { getContent } from '@/content';
 
@@ -30,6 +31,18 @@ export default function CubaPage({ locale = 'en' }) {
             {cuba.sections.map((s) => (
               <article key={s.title} style={{ marginBottom: '3rem' }}>
                 <h2>{s.title}</h2>
+                {s.image && (
+                  <figure className="section-photo">
+                    <img
+                      src={asset(s.image)}
+                      alt={s.imageCaption || s.title}
+                      loading="lazy"
+                      width="1800"
+                      height="1350"
+                    />
+                    {s.imageCaption && <figcaption>{s.imageCaption}</figcaption>}
+                  </figure>
+                )}
                 <Paragraphs items={s.body} />
               </article>
             ))}

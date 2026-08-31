@@ -343,11 +343,9 @@ p {
   color: var(--ink);
   text-decoration: none;
   white-space: nowrap;
-  /* Without this the full name refuses to shrink and shoves the Menu button
-     off the right-hand edge, which makes the whole page scroll sideways. */
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* The billing never shrinks and never truncates — it is the band's name. The
+     nav is the thing that gives way, by tightening up. */
+  flex: none;
 }
 
 /* The billing is the whole point, so it never gets dropped. When the nav
@@ -363,6 +361,28 @@ p {
   }
   .wordmark__short {
     display: inline;
+  }
+}
+
+/* On a phone, "RG & The Compadres" still has to share the bar with the
+   language switch and the Menu button, so the type tightens. */
+@media (max-width: 30rem) {
+  .wordmark {
+    font-size: 0.76rem;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* Between the point the desktop nav appears and the point the full billing
+   fits, the nav carries eleven items in a tight space. It compresses rather
+   than pushing the name out. */
+@media (min-width: 64rem) and (max-width: 95rem) {
+  .nav {
+    gap: 0.5rem;
+  }
+  .nav a {
+    font-size: 0.66rem;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -630,8 +650,10 @@ p {
 .cutpaper__letter {
   display: inline-block;
   /* Kept upright: the sleeve letters are cut from a squared-off face, not
-     italic. The tilt comes from the per-letter rotation instead. */
+     italic. The tilt comes from the per-letter rotation instead, which arrives
+     as a custom property so an animation can build on it rather than erase it. */
   transform-origin: 50% 60%;
+  transform: translate(var(--tx, 0), var(--ty, 0)) rotate(var(--rot, 0deg));
 }
 
 .cutpaper__space {
@@ -703,6 +725,68 @@ p {
   margin: 0 0 1rem;
   display: grid;
   gap: 0.6rem;
+}
+
+/* The billing, with a star either side of it. */
+.hero__billing {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(0.5rem, 1.4vw, 1.1rem);
+}
+
+.hero__star {
+  flex: none;
+  width: clamp(1.1rem, 0.6rem + 1.8vw, 2rem);
+  color: var(--gold);
+  /* A slow twinkle, out of step with each other. */
+  animation: star-twinkle 4.5s ease-in-out infinite;
+}
+
+.hero__billing .hero__star:last-child {
+  animation-delay: -2.25s;
+}
+
+.hero__star svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  fill: currentColor;
+  filter: drop-shadow(0.03em 0.04em 0 rgba(0, 0, 0, 0.4));
+}
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
+  50% { opacity: 0.55; transform: scale(0.86) rotate(-8deg); }
+}
+
+/* The cut-paper letters sway, as though the paper is not quite stuck down.
+   Each keyframe adds to the letter's own hand-cut angle rather than replacing
+   it, and the delay is staggered by letter so the movement travels along the
+   word instead of the whole line lifting at once. */
+.hero__banner .cutpaper__letter {
+  animation: paper-sway 5.5s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * -0.14s);
+}
+
+@keyframes paper-sway {
+  0%,
+  100% {
+    transform: translate(var(--tx, 0), var(--ty, 0)) rotate(calc(var(--rot, 0deg) - 1.2deg));
+  }
+  50% {
+    transform: translate(var(--tx, 0), calc(var(--ty, 0) - 0.03em))
+      rotate(calc(var(--rot, 0deg) + 1.2deg));
+  }
+}
+
+/* Anyone who has asked their machine to stop moving things gets a still page:
+   the letters keep their hand-cut angles, nothing animates. */
+@media (prefers-reduced-motion: reduce) {
+  .hero__star,
+  .hero__banner .cutpaper__letter {
+    animation: none;
+  }
 }
 
 /* The banner: "Ramón Goose & The Compadres", cut from red paper. */
@@ -1079,6 +1163,29 @@ a.card:hover {
 
 .gig-list--past .gig__when {
   color: var(--ink-faint);
+}
+
+/* A photograph inside a run of prose, on the Cuba page. */
+.section-photo {
+  margin: 0 0 1.75rem;
+  border: 2px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--red);
+  background: var(--paper);
+  max-width: 34rem;
+}
+
+.section-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid var(--ink);
+}
+
+.section-photo figcaption {
+  padding: 0.7rem 0.9rem;
+  font-size: 0.86rem;
+  font-style: italic;
+  color: var(--ink-soft);
 }
 
 /* ==========================================================================

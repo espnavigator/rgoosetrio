@@ -277,6 +277,8 @@ export const cuba = {
   sections: [
     {
       title: 'EGREM, Santiago',
+      image: '/images/gallery/a09.jpg',
+      imageCaption: 'At the desk, EGREM, Santiago de Cuba',
       body: [
         'EGREM is the state studio, and the Santiago room has recorded a large part of what the rest of the world thinks of as Cuban music. Analogue desk, high ceilings, everyone playing together in one space because that is how the room is built.',
         'TODO: write two or three sentences here about actually being in that room — what it sounded like, what the days were like, who was in and out. This is the part press will quote, so it is worth doing in your own words.',
@@ -509,6 +511,7 @@ export const band = {
     {
       name: 'Nancy Maura',
       role: 'Vocals',
+      photo: '/images/gallery/a24.jpg',
       // She died on 7 April 2025, aged 90 (born Justina María Balbuena
       // Céspedes, 1 February 1935). Confirmed by UNEAC and the Cuban press.
       bio: 'One of the great bolero singers of Santiago de Cuba, and one of the last defenders of the form in the city. Born Justina María Balbuena Céspedes in 1935, she sang from the age of nine and never left Santiago, because she was a santiaguera and that was the end of it. She sings on Porque and Si Pudiera Expresarte. She died in April 2025, aged ninety, which makes these among the last things she recorded.',
@@ -516,6 +519,7 @@ export const band = {
     {
       name: 'Alejandro Almenares',
       role: 'Guitar, tres',
+      photo: '/images/gallery/a15.jpg',
       bio: 'Born in Santiago de Cuba in 1937 and, by most accounts, the last troubadour of the golden age of trova still playing. His father helped found the Casa de la Trova, where Alejandro still plays alongside Eliades Ochoa. He has been through Cuarteto Patria, Septeto Típico Oriental and Cuarteto Oriente, has written several hundred songs, and did not make a solo record under his own name until he was seventy-six. We are making one together.',
     },
   ],
@@ -669,7 +673,7 @@ export const pedal = {
 
 export const shop = {
   heading: 'Shop',
-  intro: 'TODO: a line about shipping, or where you post from.',
+  intro: 'Records, a shirt, and the pedal. Everything posts from the UK.',
 
   // TODO: real products, prices and links. Leave "href" empty and the item shows
   // as coming soon rather than as a dead button.

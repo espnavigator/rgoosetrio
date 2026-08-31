@@ -307,11 +307,13 @@ export const band = {
     {
       name: 'Nancy Maura',
       role: 'Voz',
+      photo: '/images/gallery/a24.jpg',
       bio: 'Una de las grandes boleristas de Santiago de Cuba, y una de las últimas defensoras del género en la ciudad. Nacida Justina María Balbuena Céspedes en 1935, cantaba desde los nueve años y nunca se fue de Santiago, porque era santiaguera y ahí se acababa la discusión. Canta en Porque y en Si Pudiera Expresarte. Murió en abril de 2025, a los noventa años, lo que convierte estas grabaciones en de las últimas que hizo.',
     },
     {
       name: 'Alejandro Almenares',
       role: 'Guitarra, tres',
+      photo: '/images/gallery/a15.jpg',
       bio: 'Nacido en Santiago de Cuba en 1937 y, según casi todos, el último trovador de la época dorada de la trova que sigue tocando. Su padre ayudó a fundar la Casa de la Trova, donde Alejandro todavía toca junto a Eliades Ochoa. Ha pasado por el Cuarteto Patria, el Septeto Típico Oriental y el Cuarteto Oriente, ha escrito varios cientos de canciones, y no grabó un disco a su nombre hasta los setenta y seis años. Estamos haciendo uno juntos.',
     },
   ],
@@ -326,6 +328,8 @@ export const cuba = {
   sections: [
     {
       title: 'EGREM, Santiago',
+      image: '/images/gallery/a09.jpg',
+      imageCaption: 'En la mesa de EGREM, Santiago de Cuba',
       body: [
         'EGREM es el estudio del Estado, y la sala de Santiago ha grabado buena parte de lo que el resto del mundo entiende por música cubana. Mesa analógica, techos altos, y todos tocando a la vez en el mismo espacio porque así está construida la sala.',
         '',
@@ -446,7 +450,7 @@ export const pedal = {
 
 export const shop = {
   heading: 'Tienda',
-  intro: '',
+  intro: 'Discos, una camiseta y el pedal. Todo se envía desde el Reino Unido.',
   items: [
     { name: 'I Left My Blues In Cuba', variant: 'CD', price: '£12', href: '', note: 'Firmado si lo pides.' },
     { name: 'I Left My Blues In Cuba', variant: 'Vinilo', price: '£28', href: '', note: 'En preparación. Habrá prensaje.' },

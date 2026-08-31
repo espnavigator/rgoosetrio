@@ -5,7 +5,7 @@ import { getContent } from '@/content';
 
 export const metadata = {
   title: pedal.name,
-  description: 'A tremolo built by Ramon Goose. In development.',
+  description: 'The Texas Flood: a boost built by Ramon Goose to get more out of a Strat. Gain, tone, volume. In development.',
   alternates: {
     canonical: '/goose-pedal/',
     languages: {

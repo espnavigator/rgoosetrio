@@ -115,19 +115,33 @@ export default function BandPage({ locale = 'en' }) {
             <h2>{band.guestsHeading}</h2>
           </div>
 
-          <ul className="credits">
+          <div className="member-grid">
             {band.guests.map((g) => (
-              <li key={g.name} style={{ borderBottomColor: 'rgba(243,232,213,0.2)' }}>
-                <strong>
-                  {g.name}{' '}
-                  <span style={{ color: 'var(--gold)', fontStyle: 'normal' }}>{g.role}</span>
-                </strong>
-                <span style={{ color: 'rgba(243,232,213,0.75)', maxWidth: '32rem' }}>
-                  <Txt>{g.bio}</Txt>
-                </span>
-              </li>
+              <article key={g.name} className="member">
+                {g.photo ? (
+                  <img
+                    className="member__photo"
+                    src={asset(g.photo)}
+                    alt={g.name}
+                    loading="lazy"
+                    width="400"
+                    height="400"
+                  />
+                ) : (
+                  <div className="member__photo member__photo--empty" aria-hidden="true">
+                    {g.name.trim().charAt(0).toUpperCase()}
+                  </div>
+                )}
+                <div className="member__body">
+                  <h3>{g.name}</h3>
+                  <p className="kicker kicker--muted">{g.role}</p>
+                  <p>
+                    <Txt>{g.bio}</Txt>
+                  </p>
+                </div>
+              </article>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
     </>

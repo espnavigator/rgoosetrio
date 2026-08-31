@@ -30,7 +30,7 @@ export default function sitemap() {
   // treat them as translations of one page rather than duplicates.
   return routes.flatMap((r) => {
     const en = `${site.url}${r.path}`;
-    const es = `${site.url}/es${r.path === '/' ? '' : r.path}`;
+    const es = `${site.url}/es${r.path}`;
     const alternates = { languages: { 'en-GB': en, es } };
     const changeFrequency = r.path === '/' ? 'weekly' : 'monthly';
     return [

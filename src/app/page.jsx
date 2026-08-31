@@ -20,7 +20,19 @@ export default function HomePage({ locale = 'en' }) {
                 letterspaced white oblique caps of "Mambo Sinuendo". Both lines
                 live inside the page's single <h1>. */}
             <h1 className="hero__title">
-              <CutPaper text={home.heroName} className="hero__banner" />
+              <span className="hero__billing">
+                <span className="hero__star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 1.6l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8-6.1-3.4-6.1 3.4 1.4-6.8L2.2 8.7l6.9-.8z" />
+                  </svg>
+                </span>
+                <CutPaper text={home.heroName} className="hero__banner" />
+                <span className="hero__star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 1.6l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8-6.1-3.4-6.1 3.4 1.4-6.8L2.2 8.7l6.9-.8z" />
+                  </svg>
+                </span>
+              </span>{' '}
               <span className="hero__album">{home.heroTitle}</span>
             </h1>
             <p className="hero__subtitle">

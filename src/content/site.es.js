@@ -162,7 +162,7 @@ export const music = {
   catalogue: [
     { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues y África occidental' },
     { title: 'Blues & Spirituals', year: '2014', label: 'Acoustic Music Records', role: 'Disco en solitario' },
-    { title: 'Uptown Blues', year: '2011', label: '', role: 'Disco en solitario' },
+    { title: 'Uptown Blues', year: '2011', label: 'Blues Boulevard', role: 'Disco en solitario' },
     { title: 'Drew, Mississippi', year: '', label: 'Black and Tan Records', role: 'Boo Boo Davis: producción, composición y guitarra' },
     { title: 'Snow On The Tracks', year: '', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
     { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },

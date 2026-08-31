@@ -269,7 +269,7 @@ export const music = {
     {
       title: 'Uptown Blues',
       year: '2011',
-      label: 'TODO: label',
+      label: 'Blues Boulevard',
       role: 'Solo album',
     },
     {

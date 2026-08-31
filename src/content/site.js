@@ -651,7 +651,7 @@ export const bio = {
 
   // Facts a journalist will want without having to ask.
   press: [
-    { label: 'Based', value: 'TODO: London / UK' },
+    { label: 'Based', value: 'London and Havana' },
     { label: 'Current release', value: 'I Left My Blues In Cuba' },
     { label: 'Label', value: 'Zozo Records, New York' },
     { label: 'Live formats', value: 'TODO: e.g. trio, quintet, solo' },

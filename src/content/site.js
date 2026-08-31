@@ -111,10 +111,8 @@ export const home = {
   bandBlurb: [
     'The Compadres are two bands with one name, either side of the Atlantic, playing son, guajira and bolero with an electric blues guitar where the tres would normally sit.',
     'In England it is a trio. Kieffer Santander plays percussion — Peruvian, based here, one of the leading players of Afro-Peruvian and Criollo rhythm in Europe, and the reason the band moves the way it does: cajón, congas, bongó and the quijada, a donkey’s jawbone played by rattling the teeth. Joe Goose plays bass, and is my identical twin brother, which is a shortcut through about thirty years of rehearsal.',
-    // TODO: name the Santiago players here — the rooftop photograph has four
-    // besides me (tres, congas, double bass, bongó) and naming them is the
-    // whole point of this paragraph.
-    'In Santiago de Cuba it is a five-piece, and that is the band on the record. It began in 2023 with the Cuban musician Joaquín Solórzano, and we cut the album at EGREM, the state studio that put most of what the world calls Cuban music onto tape. TODO: the other players by name.',
+    // Two of the four Santiago players still to name: double bass and bongó.
+    'In Santiago de Cuba it is a five-piece, and that is the band on the record. It began in 2023 with Joaquín Solórzano, who plays congas, and Rudy Ramon plays tres. We cut the album at EGREM, the state studio that put most of what the world calls Cuban music onto tape. TODO: the bass player and the bongó player by name.',
     'Neither half is a tribute act. The blues went to Cuba, found the music already there, and came back sounding like this.',
   ],
 
@@ -387,8 +385,13 @@ export const band = {
           photo: 'ramon-goose.jpg',
           bio: 'The constant in both bands.',
         },
-        { name: 'TODO: name', role: 'Tres / guitar', photo: '', bio: 'TODO' },
-        { name: 'TODO: name', role: 'Congas', photo: '', bio: 'TODO' },
+        { name: 'Rudy Ramon', role: 'Tres', photo: '', bio: 'TODO: a line or two on Rudy.' },
+        {
+          name: 'Joaquín Solórzano',
+          role: 'Congas',
+          photo: '',
+          bio: 'The band started with him, in Santiago in 2023. TODO: a line or two more.',
+        },
         { name: 'TODO: name', role: 'Double bass', photo: '', bio: 'TODO' },
         { name: 'TODO: name', role: 'Bongó', photo: '', bio: 'TODO' },
       ],

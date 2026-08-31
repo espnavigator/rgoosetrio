@@ -415,9 +415,9 @@ export const gear = {
           body: 'Navigator es la línea japonesa de ESP, y construyen las formas de Gibson mejor que casi nadie: una Explorer, una Firebird, una SG, una Les Paul y una semicaja estilo 335. Para un concierto de The Compadres me llevo una de las Guyatone y una de éstas, que cubre todo el terreno entre una pastilla fina y metálica y una humbucker gorda sin tener que cargar con media casa.',
         },
         {
-          name: 'Réplica de Les Paul',
-          detail: 'Una de las guitarras principales con The Compadres',
-          body: 'Una réplica de Les Paul, y una de las guitarras en las que más me apoyo con The Compadres.',
+          name: 'Daniels Guitars Les Paul',
+          detail: 'Construida por Darren Horton',
+          body: 'Una réplica de Les Paul construida por Darren Horton en Daniels Guitars, y tan buena como una del 59 de verdad: he tocado suficientes de las dos como para decirlo en serio. Una de las guitarras en las que más me apoyo con The Compadres.',
         },
         {
           name: 'Tres',

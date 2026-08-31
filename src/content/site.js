@@ -592,12 +592,10 @@ export const gear = {
             'Navigator is ESP’s Japanese line, and they build Gibson shapes better than most: an Explorer, a Firebird, an SG, a Les Paul and a 335-style semi. For a Compadres gig I take one of the Guyatones and one of these, which covers everything between a thin twangy pickup and a fat humbucker without carrying half the house.',
         },
         {
-          // CHECK: the maker's name. I heard "Daniel's" and would rather leave
-          // it blank than print a luthier's name spelled wrong.
-          name: 'Les Paul replica',
-          detail: 'One of the main guitars for The Compadres',
+          name: 'Daniels Guitars Les Paul',
+          detail: 'Built by Darren Horton',
           body:
-            'A Les Paul replica, and one of the guitars I lean on most with The Compadres. TODO: who built it.',
+            'A Les Paul replica built by Darren Horton at Daniels Guitars, and as good as a real ’59 — I have played enough of both to say that and mean it. One of the guitars I lean on most with The Compadres.',
         },
         {
           name: 'Tres',

@@ -473,9 +473,9 @@ export const gear = {
         },
         {
           name: 'WAU Goosemaster',
-          detail: 'A clone of the Green Man',
+          detail: 'Amp splitter',
           body:
-            'Built by WAU, and a clone of the Green Man — the unit Ry Cooder used. Given that half the reason this record exists is Cooder and Manuel Galbán proving an electric guitar belongs in Cuban music, running the Cuban material through his amplifier is not an accident.',
+            'Not an amplifier but a splitter, built by WAU as a clone of the Green Man, the box Ry Cooder used to drive more than one amp at once. Two amps running together do something a single amp cannot: the sound gets wider and starts to move on its own. Cooder and Manuel Galbán are a large part of why an electric guitar in Cuban music is a thing at all, so using his splitter to do it is not an accident.',
           // TODO: paste WAU's Instagram address here and this becomes a link.
           // I could not find their handle and would rather leave it blank than
           // send people to the wrong account.
@@ -531,7 +531,7 @@ export const pedal = {
   body: [
     'A boost, built to get more out of a Strat. Single coils always want a bit of help before they hit the front of an amp, and most pedals sold to do that job change the sound while they are at it. This one gets out of the way.',
     'I run it as a set-and-forget, on all the time. It works with hotter guitars too, but the Strat is what it was built around.',
-    'Three controls, no menus, no switching: gain, tone, volume. It is a bespoke build, made in limited numbers by Rockbeare Guitars, who I make The Bob & Ramon Show with.',
+    'Three controls, no menus, no switching: gain, tone, volume. A bespoke build, made in small numbers.',
   ],
 
   features: [
@@ -549,12 +549,12 @@ export const pedal = {
     },
   ],
 
-  // TODO: the price, if you want it shown here. The buy link goes to Rockbeare,
-  // who build and sell it.
+  // TODO: the price, if you want it shown here.
+  // Enquiries come straight to Ramon rather than going out to the builder.
   price: '',
-  buyHref: 'https://rockbeareguitars.com/fx/drivesboosts/ramon-goose-signature-pedal/',
+  buyHref: '',
   notifyCopy:
-    'Built in limited numbers by Rockbeare Guitars. If they are out of stock, email me and I will tell you when the next batch lands.',
+    'Built in limited numbers. Email me to order one or to ask when the next batch is ready.',
 };
 
 /* -------------------------------------------------------------------------- */

@@ -474,7 +474,12 @@ export const band = {
           photo: 'ramon-goose.jpg',
           bio: 'The constant in both bands.',
         },
-        { name: 'Rudy Ramon', role: 'Tres', photo: '', bio: 'TODO: a line or two on Rudy.' },
+        {
+          name: 'Rudy Ramon Daquín',
+          role: 'Tres',
+          photo: '',
+          bio: 'Santiago tresero, and a member of Los Jubilados del Caribe, the veteran group from the city whose reading of Siboney features the multi-instrumentalist and whistler known as El Silbador.',
+        },
         {
           name: 'Joaquín Solórzano',
           role: 'Congas',

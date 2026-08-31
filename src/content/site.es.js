@@ -284,7 +284,12 @@ export const band = {
           photo: 'ramon-goose.jpg',
           bio: 'La constante en las dos bandas.',
         },
-        { name: 'Rudy Ramon', role: 'Tres', photo: '', bio: '' },
+        {
+          name: 'Rudy Ramon Daquín',
+          role: 'Tres',
+          photo: '',
+          bio: 'Tresero santiaguero, e integrante de Los Jubilados del Caribe, el grupo veterano de la ciudad cuya versión de Siboney cuenta con la participación del multiinstrumentista y silbador El Silbador.',
+        },
         {
           name: 'Joaquín Solórzano',
           role: 'Congas',

@@ -197,7 +197,7 @@ export const music = {
       { name: 'Joe \u201CRicardo\u201D Goose', role: 'Bass' },
       { name: 'Kieffer Santander', role: 'Percussion, vocals' },
       { name: 'Rick Vito', role: 'Guitar on I Loved Another Woman' },
-      { name: 'Nancy Maura', role: 'Vocals on Porque and Si Pudiera Expresarte' },
+      { name: 'Nancy Maura', role: 'Vocals on Porque and Si Pudiera Expresarte (1935–2025)' },
       // CHECK: is Kieffer the player with the Compay Segundo / Eliades Ochoa
       // credit? If so it belongs in the press copy — it is a real lineage claim
       // and worth stating plainly rather than leaving buried.
@@ -513,12 +513,14 @@ export const band = {
     {
       name: 'Nancy Maura',
       role: 'Vocals',
-      bio: 'Cuban singer. Two songs on the album, both in Spanish.',
+      // She died on 7 April 2025, aged 90 (born Justina María Balbuena
+      // Céspedes, 1 February 1935). Confirmed by UNEAC and the Cuban press.
+      bio: 'One of the great bolero singers of Santiago de Cuba, and one of the last defenders of the form in the city. Born Justina María Balbuena Céspedes in 1935, she sang from the age of nine and never left Santiago, because she was a santiaguera and that was the end of it. She sings on Porque and Si Pudiera Expresarte. She died in April 2025, aged ninety, which makes these among the last things she recorded.',
     },
     {
       name: 'Alejandro Almenares',
-      role: 'Guitar',
-      bio: 'Trova guitarist from Santiago, and the other record — the one still being made.',
+      role: 'Guitar, tres',
+      bio: 'Born in Santiago de Cuba in 1937 and, by most accounts, the last troubadour of the golden age of trova still playing. His father helped found the Casa de la Trova, where Alejandro still plays alongside Eliades Ochoa. He has been through Cuarteto Patria, Septeto Típico Oriental and Cuarteto Oriente, has written several hundred songs, and did not make a solo record under his own name until he was seventy-six. We are making one together.',
     },
   ],
 };

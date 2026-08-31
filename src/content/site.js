@@ -662,6 +662,7 @@ export const gear = {
         {
           name: 'WAU Goosemaster',
           detail: 'Amp splitter',
+          image: '/images/gallery/10.jpg',
           body:
             'Not an amplifier but a splitter, built by WAU as a clone of the Green Man, the box Ry Cooder used to drive more than one amp at once. It is what feeds the two amps. Cooder and Manuel Galbán are a large part of why an electric guitar in Cuban music is even an idea, so using his splitter to do it is not an accident.',
           href: '',
@@ -974,9 +975,9 @@ export const gallery = {
     { src: '07.jpg', tag: 'portrait', caption: 'TODO: caption — in the workshop with a Les Paul' },
     { src: '08.jpg', tag: 'gear', caption: 'Siewa Powersonic, the guitar Ali Farka Touré played' },
     { src: '09.jpg', tag: 'gear', caption: 'Pedalboard' },
-    { src: '10.jpg', tag: 'gear', caption: 'Mystic Blues head' },
+    { src: '10.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
     { src: '11.jpg', tag: 'gear', caption: 'The Filmosound chassis, and a Celestion' },
-    { src: '12.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
+    { src: '12.jpg', tag: 'gear', caption: 'The WAU Goosemaster on the bench' },
     { src: '13.jpg', tag: 'gear', caption: 'The Chapter guitar as it was first built, before it became the tres' },
     { src: '14.jpg', tag: 'gear', caption: 'Cogmeister, controls' },
     { src: '15.jpg', tag: 'gear', caption: 'A real 1958 Les Paul belonging to Bob Wootten, with my Daniels behind it' },

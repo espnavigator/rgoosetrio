@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
@@ -44,6 +45,13 @@ export default function CubaPage({ locale = 'en' }) {
                   </figure>
                 )}
                 <Paragraphs items={s.body} />
+                {s.link && (
+                  <div className="btn-row" style={{ marginTop: '0.5rem' }}>
+                    <Link href={s.link.href} className="btn btn--sm">
+                      {s.link.label}
+                    </Link>
+                  </div>
+                )}
               </article>
             ))}
           </div>

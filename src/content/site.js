@@ -212,14 +212,14 @@ export const music = {
       { n: 9, title: 'I Loved Another Woman', credit: 'Peter Green · feat. Rick Vito' },
     ],
     personnel: [
-      { name: 'Ramon Goose', role: 'Electric guitar, vocals' },
+      { name: 'Ramon Goose', role: 'Electric guitar, tres, vocals' },
       { name: 'Joaquín Solórzano', role: 'Congas' },
       { name: 'Rudy Ramon Daquín', role: 'Tres' },
       { name: 'Calderín', role: 'Double bass' },
       { name: 'Ernesto', role: 'Bongó' },
       { name: 'Mustafa', role: 'Piano' },
       { name: 'Nancy Maura', role: 'Vocals on Porque and Si Pudiera Expresarte (1935–2025)' },
-      { name: 'Alejandro Almenares', role: 'Guitar, tres' },
+      { name: 'Alejandro Almenares', role: 'Guitar and vocals' },
       { name: 'Rick Vito', role: 'Guitar on I Loved Another Woman' },
       // TODO: the horn section, by name.
     ],
@@ -283,25 +283,29 @@ export const cuba = {
       imageCaption: 'At the desk, EGREM, Santiago de Cuba',
       body: [
         'EGREM is the state studio, and the Santiago room has recorded a large part of what the rest of the world thinks of as Cuban music. Analogue desk, high ceilings, everyone playing together in one space because that is how the room is built.',
-        'TODO: write two or three sentences here about actually being in that room — what it sounded like, what the days were like, who was in and out. This is the part press will quote, so it is worth doing in your own words.',
+        'It was very hot, and there were people coming in and out all day. It was one of the best experiences I have had: a working studio, full of noise, with that much history in it. Compay Segundo recorded there. Eliades Ochoa recorded there. So did everyone before them.',
       ],
     },
     {
       title: 'The Compadres',
+      image: '/images/gallery/g01.jpg',
+      imageCaption: 'The Compadres in Santiago',
       body: [
-        // CHECK: the 2023 date and Joaquín Solórzano come from the public
-        // record — correct them if they are wrong.
         'The Compadres came together in 2023 with the Cuban musician Joaquín Solórzano. The band plays son, guajira and bolero with an electric guitar in the middle of it, which is not the usual arrangement in either tradition.',
-        'There are two line-ups now — one here and one in Santiago — and they are set out properly on the band page.',
-        'TODO: the rest of the Santiago players, and what they played on before. Cuban musicians carry deep credits and they are worth listing by name.',
+        'Every one of the Cuban players has a long career behind him in the son of Santiago, and every one of them has played with the best there was. They are among the last living musicians of that tradition, and they are not a revival of it — they are what is left of the thing itself.',
+        'There are two line-ups now, one here and one in Santiago, and they are set out properly on the band page.',
       ],
     },
     {
       title: 'Alejandro Almenares',
+      image: '/images/gallery/a15.jpg',
+      imageCaption: 'Playing with Alejandro Almenares',
       body: [
-        'Alejandro Almenares is a guitarist from Santiago in the trova tradition, with a lineage that runs directly into the music the Buena Vista Social Club made famous. We are recording together.',
-        'TODO: how you met him, and what the sessions have been like.',
+        'Alejandro Almenares is one of the last great performers of son and trova, with a long catalogue of his own compositions behind him, and a lineage that runs directly into the music the Buena Vista Social Club made famous.',
+        'When I decided I wanted to play Cuban guitar properly, I went to his house and had lessons from him. Everything I play on the instrument now is informed by those lessons. We are recording together.',
       ],
+      // The lesson at his house, on the video page.
+      link: { label: 'Watch us playing together', href: '/video' },
     },
   ],
 
@@ -477,12 +481,6 @@ export const band = {
           bio: 'The constant in both bands.',
         },
         {
-          name: 'Rudy Ramon Daquín',
-          role: 'Tres',
-          photo: 'rudy-ramon.jpg',
-          bio: 'Santiago tresero, and a member of Los Jubilados del Caribe, the veteran group from the city whose reading of Siboney features the multi-instrumentalist and whistler known as El Silbador.',
-        },
-        {
           name: 'Joaquín Solórzano',
           role: 'Congas',
           photo: 'joaquin-solorzano.jpg',
@@ -501,6 +499,12 @@ export const band = {
           role: 'Bongó',
           photo: 'ernesto.jpg',
           bio: '',
+        },
+        {
+          name: 'Rudy Ramon Daquín',
+          role: 'Tres',
+          photo: 'rudy-ramon.jpg',
+          bio: 'Santiago tresero, and a member of Los Jubilados del Caribe, the veteran group from the city whose reading of Siboney features the multi-instrumentalist and whistler known as El Silbador.',
         },
         {
           name: 'Mustafa',

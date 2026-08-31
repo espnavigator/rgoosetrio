@@ -654,7 +654,7 @@ export const bio = {
     { label: 'Based', value: 'London and Havana' },
     { label: 'Current release', value: 'I Left My Blues In Cuba' },
     { label: 'Label', value: 'Zozo Records, New York' },
-    { label: 'Live formats', value: 'TODO: e.g. trio, quintet, solo' },
+    { label: 'Live formats', value: 'Trio in England, quintet in Santiago de Cuba' },
   ],
 
   // TODO: put a downloadable press photo and one-sheet in the public/press

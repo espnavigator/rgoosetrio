@@ -534,12 +534,6 @@ export const gear = {
       group: 'Guitars',
       items: [
         {
-          name: 'Guyatone LG-200T',
-          detail: '1960s Japanese offset',
-          body:
-            'Bought out of Japan and heavier than it has any right to be. The pickups are thin and twangy in a way that suits the Cuban material — it does a few songs a night, for the sound and for the look of the thing. It is the guitar on the album cover.',
-        },
-        {
           name: 'Guyatone LG-180T',
           detail: 'The main guitar',
           body:
@@ -547,24 +541,17 @@ export const gear = {
           image: '/images/gear/guyatone-180t.jpg',
         },
         {
-          name: 'Guyatone LG-200T',
-          detail: 'The album cover guitar',
+          name: 'Siewa Powersonic',
+          detail: 'The Ali Farka Touré guitar',
           body:
-            'Bought out of Japan and heavier than it has any right to be. The pickups are twangy in a way that suits the Cuban material, so it does a few songs a night, for the sound and for the look of the thing. This is the guitar on the album cover.',
-          image: '/images/gallery/17.jpg',
+            'The model Ali Farka Touré played. I spent years on West African music before Cuba, and this is the guitar at the centre of it — a cheap, oddly-made thing that a great player turned into a sound nobody has managed to copy since. It is on the wall for good reason.',
+          image: '/images/gallery/08.jpg',
         },
         {
           name: 'Tres',
           detail: 'Acoustic and electric',
           body:
             'I play both the acoustic tres and the electric. It is the instrument at the centre of son, and the reason the guitar has to sit where it sits in this band.',
-        },
-        {
-          name: 'Siewa Powersonic',
-          detail: 'The Ali Farka Touré guitar',
-          body:
-            'The model Ali Farka Touré played. I spent years on West African music before Cuba, and this is the guitar at the centre of it — a cheap, oddly-made thing that a great player turned into a sound nobody has managed to copy since. It is on the wall for good reason.',
-          image: '/images/gallery/08.jpg',
         },
         {
           name: 'TODO: acoustic / nylon',

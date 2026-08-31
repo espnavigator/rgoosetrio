@@ -433,7 +433,7 @@ export const gear = {
       group: 'Guitars',
       items: [
         {
-          name: 'Guyatone LG-180',
+          name: 'Guyatone LG-200T',
           detail: '1960s Japanese offset',
           body:
             'Bought out of Japan and heavier than it has any right to be. The pickups are thin and twangy in a way that suits the Cuban material — it does a few songs a night, for the sound and for the look of the thing. It is the guitar on the album cover.',
@@ -442,6 +442,12 @@ export const gear = {
           name: 'TODO: your main guitar',
           detail: 'TODO: year and model',
           body: 'TODO: a couple of lines on why this is the workhorse.',
+        },
+        {
+          name: 'Siewa Powersonic',
+          detail: 'The Ali Farka Touré guitar',
+          body:
+            'The model Ali Farka Touré played. I spent years on West African music before Cuba, and this is the guitar at the centre of it — a cheap, oddly-made thing that a great player turned into a sound nobody has managed to copy since. It is on the wall for good reason.',
         },
         {
           name: 'Tres',
@@ -726,7 +732,7 @@ export const gallery = {
     { src: '05.jpg', tag: 'gear', caption: 'Guitars under the lights' },
     { src: '06.jpg', tag: 'gear', caption: 'Vintage amplifiers, stacked' },
     { src: '07.jpg', tag: 'portrait', caption: 'TODO: caption — in the workshop with a Les Paul' },
-    { src: '08.jpg', tag: 'gear', caption: 'Red offset, neck and pickups' },
+    { src: '08.jpg', tag: 'gear', caption: 'Siewa Powersonic, the guitar Ali Farka Touré played' },
     { src: '09.jpg', tag: 'gear', caption: 'Pedalboard' },
     { src: '10.jpg', tag: 'gear', caption: 'Mystic Blues head' },
     { src: '11.jpg', tag: 'gear', caption: 'Celestion speaker and amplifier chassis' },
@@ -735,7 +741,7 @@ export const gallery = {
     { src: '14.jpg', tag: 'gear', caption: 'Cogmeister, controls' },
     { src: '15.jpg', tag: 'gear', caption: 'Two Les Pauls' },
     { src: '16.jpg', tag: 'gear', caption: 'Blonde archtop' },
-    { src: '17.jpg', tag: 'gear', caption: 'The Guyatone LG-180' },
+    { src: '17.jpg', tag: 'gear', caption: 'The Guyatone LG-200T' },
     { src: '18.jpg', tag: 'sleeve', caption: 'Long Road To Tiznit, 2017' },
     { src: '19.jpg', tag: 'portrait', caption: 'TODO: who is this? — at the drums' },
     { src: '20.jpg', tag: 'portrait', caption: 'TODO: who is this? — with the Ludwig kit' },

@@ -580,7 +580,7 @@ export const shop = {
       variant: 'Vinyl',
       price: '£28',
       href: '',
-      note: 'TODO: confirm there is a vinyl pressing.',
+      note: 'In development. A pressing is coming.',
     },
     {
       name: 'The Compadres T-shirt',

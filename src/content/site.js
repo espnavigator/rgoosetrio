@@ -1010,7 +1010,6 @@ export const gallery = {
     { src: '09.jpg', tag: 'gear', caption: 'Left to right: Crucial Audio Echo Nugget, Blackbox Quicksilver, Goose Germanium Fuzz, Goose Effects Crossfire' },
     { src: '11.jpg', tag: 'gear', caption: 'The Filmosound chassis, and a Celestion' },
     { src: '12.jpg', tag: 'gear', caption: 'The WAU Goosemaster on the bench' },
-    { src: '13.jpg', tag: 'gear', caption: 'The Chapter guitar as it was first built, before it became the tres' },
     { src: '14.jpg', tag: 'gear', caption: 'Cogmeister, controls' },
     { src: '15.jpg', tag: 'gear', caption: 'A real 1958 Les Paul belonging to Bob Wootten, with my Daniels behind it' },
     { src: '16.jpg', tag: 'gear', caption: 'The Fender D’Aquisto Deluxe, masterbuilt by Stephen Stern' },

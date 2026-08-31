@@ -586,6 +586,20 @@ export const gear = {
           image: '/images/gear/p-project.jpg',
         },
         {
+          name: 'ESP Navigator',
+          detail: 'The Gibson-style guitars',
+          body:
+            'Navigator is ESP’s Japanese line, and they build Gibson shapes better than most: an Explorer, a Firebird, an SG, a Les Paul and a 335-style semi. For a Compadres gig I take one of the Guyatones and one of these, which covers everything between a thin twangy pickup and a fat humbucker without carrying half the house.',
+        },
+        {
+          // CHECK: the maker's name. I heard "Daniel's" and would rather leave
+          // it blank than print a luthier's name spelled wrong.
+          name: 'Les Paul replica',
+          detail: 'One of the main guitars for The Compadres',
+          body:
+            'A Les Paul replica, and one of the guitars I lean on most with The Compadres. TODO: who built it.',
+        },
+        {
           name: 'Tres',
           detail: 'Acoustic and electric',
           body:

@@ -410,6 +410,16 @@ export const gear = {
           image: '/images/gear/p-project.jpg',
         },
         {
+          name: 'ESP Navigator',
+          detail: 'Las guitarras estilo Gibson',
+          body: 'Navigator es la línea japonesa de ESP, y construyen las formas de Gibson mejor que casi nadie: una Explorer, una Firebird, una SG, una Les Paul y una semicaja estilo 335. Para un concierto de The Compadres me llevo una de las Guyatone y una de éstas, que cubre todo el terreno entre una pastilla fina y metálica y una humbucker gorda sin tener que cargar con media casa.',
+        },
+        {
+          name: 'Réplica de Les Paul',
+          detail: 'Una de las guitarras principales con The Compadres',
+          body: 'Una réplica de Les Paul, y una de las guitarras en las que más me apoyo con The Compadres.',
+        },
+        {
           name: 'Tres',
           detail: 'Acústico y eléctrico',
           body: 'Toco el tres tanto acústico como eléctrico. El eléctrico me lo hizo a medida Chapter Guitars. El tres es el instrumento que está en el centro del son, y la razón por la que la guitarra se coloca donde se coloca en esta banda.',

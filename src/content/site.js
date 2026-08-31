@@ -138,6 +138,11 @@ export const home = {
       href: '/goose-pedal',
     },
     {
+      title: 'Live',
+      body: 'Where the band is playing, and how to book it.',
+      href: '/tour',
+    },
+    {
       title: 'Gallery',
       body: 'Photographs from Santiago, Havana and the road.',
       href: '/gallery',
@@ -313,6 +318,66 @@ export const cuba = {
     { label: 'Guest', value: 'Rick Vito, formerly of Fleetwood Mac' },
     { label: 'Voice', value: 'Nancy Maura' },
   ],
+};
+
+/* -------------------------------------------------------------------------- */
+/*  TOUR DATES                                                                */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Live dates.
+ *
+ * Each date needs, at minimum, a `date` and a `venue`. Write the date as
+ * YYYY-MM-DD — that is what search engines read, and the page turns it into
+ * something human ("Fri 12 Jun 2026") on its own.
+ *
+ *   date     '2026-06-12'
+ *   venue    'The 100 Club'
+ *   city     'London'
+ *   country  'United Kingdom'
+ *   lineup   'Trio' or 'Quintet' — which Compadres are playing
+ *   tickets  a ticket URL, or '' for none yet
+ *   note     anything else worth saying, or leave it out
+ *
+ * Move a date into `past` once it has happened. An empty `upcoming` list makes
+ * the page say there is nothing booked yet and point people at your email,
+ * which is better than showing an empty space.
+ */
+export const tour = {
+  heading: 'Live',
+  intro:
+    'Two line-ups, so the band works at either size. A trio here, a quintet in Cuba.',
+
+  // TODO: your actual dates. Delete these two examples once you add real ones —
+  // they are here to show the shape, and they are marked so they cannot be
+  // mistaken for real bookings.
+  upcoming: [
+    {
+      date: '',
+      venue: 'TODO: add your dates here',
+      city: '',
+      country: 'United Kingdom',
+      lineup: 'Trio',
+      tickets: '',
+    },
+  ],
+
+  pastHeading: 'Previously',
+  // TODO: dates and cities for these, and anything else worth listing.
+  past: [
+    {
+      date: '',
+      venue: 'The Cuban Embassy',
+      city: 'London',
+      country: 'United Kingdom',
+      lineup: 'Trio',
+      note: 'TODO: date',
+    },
+  ],
+
+  bookingHeading: 'Booking',
+  bookingBody:
+    'Festivals, clubs, arts centres and private events. Trio in England, quintet in Santiago de Cuba. I answer my own email and I can send a tech spec, stage plan and press photographs the same day.',
 };
 
 /* -------------------------------------------------------------------------- */
@@ -801,6 +866,7 @@ export const contact = {
 // delete the page, it just takes it out of the menu.
 export const nav = [
   { label: 'Music', href: '/music' },
+  { label: 'Live', href: '/tour' },
   { label: 'The Band', href: '/band' },
   { label: 'Cuba', href: '/cuba' },
   { label: 'Gear', href: '/gear' },

@@ -9,6 +9,7 @@ const routes = [
   { path: '/', priority: 1.0 },
   { path: '/music/', priority: 0.9 },
   { path: '/band/', priority: 0.8 },
+  { path: '/tour/', priority: 0.8 },
   { path: '/cuba/', priority: 0.8 },
   { path: '/bio/', priority: 0.8 },
   { path: '/gear/', priority: 0.7 },

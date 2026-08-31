@@ -1,4 +1,4 @@
-import { bio, identity, music, sameAs, site } from '@/content/site';
+import { bio, identity, music, sameAs, site, tour } from '@/content/site';
 
 /**
  * Schema.org structured data.
@@ -52,7 +52,34 @@ export default function JsonLd() {
     publisher: { '@id': `${site.url}/#person` },
   };
 
-  const graph = { '@context': 'https://schema.org', '@graph': [person, band, website] };
+  // Upcoming gigs, so Google can show them as events. Only dates that are
+  // actually filled in are described — a half-written placeholder would be
+  // published to search engines as a real booking, which it is not.
+  const events = tour.upcoming
+    .filter((g) => g.date && g.venue && !g.venue.trimStart().toUpperCase().startsWith('TODO'))
+    .map((g) => ({
+      '@type': 'MusicEvent',
+      name: `${site.band} at ${g.venue}`,
+      startDate: g.date,
+      eventStatus: 'https://schema.org/EventScheduled',
+      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      performer: { '@id': `${site.url}/#band` },
+      location: {
+        '@type': 'Place',
+        name: g.venue,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: g.city || undefined,
+          addressCountry: g.country || undefined,
+        },
+      },
+      ...(g.tickets ? { offers: { '@type': 'Offer', url: g.tickets } } : {}),
+    }));
+
+  const graph = {
+    '@context': 'https://schema.org',
+    '@graph': [person, band, website, ...events],
+  };
 
   return (
     <script

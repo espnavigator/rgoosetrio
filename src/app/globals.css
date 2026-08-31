@@ -870,6 +870,10 @@ a.card:hover {
   gap: clamp(1.25rem, 3vw, 1.75rem);
   margin-top: 2.25rem;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  /* The two photographs are different shapes — one a wide rooftop, one a
+     standing group. Aligning to the top lets each keep its own proportions
+     rather than cropping heads off one or the outer players off the other. */
+  align-items: start;
 }
 
 .lineup-photo {
@@ -881,8 +885,7 @@ a.card:hover {
 
 .lineup-photo img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: auto;
   display: block;
   border-bottom: 2px solid var(--ink);
 }

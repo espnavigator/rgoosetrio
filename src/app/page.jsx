@@ -72,8 +72,8 @@ export default function HomePage() {
                   src={asset(`/images/band/${photo.src}`)}
                   alt={photo.caption}
                   loading="lazy"
-                  width="1800"
-                  height="1013"
+                  width={photo.width}
+                  height={photo.height}
                 />
                 <figcaption>
                   <strong>{photo.caption}</strong>

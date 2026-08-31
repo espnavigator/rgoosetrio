@@ -121,11 +121,15 @@ export const home = {
       src: 'compadres-england.jpg',
       caption: 'The Compadres in England',
       detail: 'International Jazz Day, Bolívar Hall, London',
+      width: 1800,
+      height: 1355,
     },
     {
       src: 'compadres-santiago.jpg',
       caption: 'The Compadres in Cuba',
       detail: 'On a rooftop above Santiago de Cuba',
+      width: 1800,
+      height: 1013,
     },
   ],
 

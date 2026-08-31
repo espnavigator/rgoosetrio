@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
 import { Txt } from '@/components/Txt';
+import { asset } from '@/lib/asset';
 import { shop, site } from '@/content/site';
 
 export const metadata = {
@@ -21,6 +22,16 @@ export default function ShopPage() {
               const internal = item.href?.startsWith('/');
               return (
                 <article key={i} className="product">
+                  {item.image && (
+                    <img
+                      className="product__image"
+                      src={asset(`/images/shop/${item.image}`)}
+                      alt={item.name}
+                      loading="lazy"
+                      width="1100"
+                      height="1116"
+                    />
+                  )}
                   <span className="product__variant">
                     <Txt>{item.variant}</Txt>
                   </span>

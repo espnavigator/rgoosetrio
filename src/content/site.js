@@ -583,11 +583,12 @@ export const shop = {
       note: 'TODO: confirm there is a vinyl pressing.',
     },
     {
-      name: 'Compadres T-shirt',
+      name: 'The Compadres T-shirt',
       variant: 'TODO: sizes',
       price: 'TODO',
       href: '',
-      note: 'TODO',
+      image: 'tshirt-compadres.jpg',
+      note: 'Natural cotton, printed with the Guyatone and the palms.',
     },
     {
       name: 'Texas Flood',

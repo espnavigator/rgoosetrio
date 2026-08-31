@@ -7,7 +7,7 @@ import { getContent } from '@/content';
 
 export const metadata = {
   title: 'Shop',
-  description: 'Records, shirts and the Texas Flood pedal.',
+  description: 'Records, shirts and the Goose Effects pedals.',
   alternates: {
     canonical: '/shop/',
     languages: {

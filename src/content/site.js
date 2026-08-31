@@ -151,8 +151,8 @@ export const home = {
       href: '/gear',
     },
     {
-      title: 'Texas Flood',
-      body: 'A pedal of my own, built from the ground up. Coming soon.',
+      title: 'Goose Effects',
+      body: 'Three pedals of my own, built from the ground up. In manufacture now.',
       href: '/goose-pedal',
     },
     {
@@ -684,7 +684,7 @@ export const gear = {
           name: 'Texas Flood',
           detail: 'Thirty built by hand, manufacture next',
           body:
-            'I have built about thirty of these, hand-wired on turret boards, and they are going into proper manufacture soon. It takes its DNA from a Tube Screamer, but that is where the comparison ends. There is a page about it.',
+            'A heavily modified overdrive, built for Stevie Ray Vaughan tones with a Strat. I have built about thirty of these, hand-wired on turret boards, and they are going into proper manufacture now. Rick Vito plays one. There is a page about it and the other two.',
           href: '/goose-pedal',
         },
         {
@@ -704,7 +704,15 @@ export const gear = {
           name: 'Goose Effects Crossfire',
           detail: 'Mine',
           body:
-            'Essentially a TS-10 with modifications, built to sit better in front of the Filmosound than the original does. The Texas Flood is not a one-off; this and the fuzz came first.',
+            'Essentially a TS-10 with modifications of my own choosing, built to sit better in front of the Filmosound than the original does. The Texas Flood is not a one-off; this and the fuzz came first.',
+          href: '/goose-pedal',
+        },
+        {
+          name: 'Goose Effects Gooseboost',
+          detail: 'Mine',
+          body:
+            'One knob, and the knob is volume. It is the boost I use for slide and for the Guyatones, where the job is a push into the front of the amp and nothing else.',
+          href: '/goose-pedal',
         },
         {
           name: 'The delays',
@@ -748,42 +756,69 @@ export const gear = {
 };
 
 /* -------------------------------------------------------------------------- */
-/*  GOOSE TREM                                                                */
+/*  GOOSE EFFECTS                                                             */
 /* -------------------------------------------------------------------------- */
 
+// Three pedals, one page. To add a fourth, copy one of the blocks in `pedals`
+// below and paste it in. Photographs go in public/images/pedals/ and the file
+// name goes in `image` — leave `image` empty and the box simply has no picture.
 export const pedal = {
-  name: 'Texas Flood',
-  kicker: 'In development',
-  heading: 'Texas Flood',
-  standfirst: 'A pedal of my own, built because nothing I could buy did what I wanted.',
+  name: 'Goose Effects',
+  kicker: 'Pedals',
+  heading: 'Goose Effects',
+  standfirst: 'Three pedals of my own: the Texas Flood, the Crossfire and the Gooseboost.',
 
   body: [
-    'A boost, built to get more out of a Strat. Single coils always want a bit of help before they hit the front of an amp, and most pedals sold to do that job change the sound while they are at it. This one gets out of the way.',
-    'It takes its DNA from a Tube Screamer, and that is where the comparison ends. I run it as a set-and-forget, on all the time. It works with hotter guitars too, but the Strat is what it was built around.',
-    'Three controls, no menus, no switching: gain, tone, volume. About thirty have been built so far, every one hand-wired on turret boards, and it goes into proper manufacture soon.',
+    'All three started as very limited handmade runs, wired by hand on turret boards, one at a time. They are being rebuilt now so they can be made in proper numbers and had more widely.',
+    'Every one is built with original Toshiba diodes and transistors. That does not change with the new run.',
+    'That work is going on at the moment, so none of the three are on sale yet. More news soon.',
   ],
 
-  features: [
+  status: 'In manufacture',
+  parts: 'Original Toshiba diodes and transistors',
+  domainLabel: 'Online',
+
+  pedalsKicker: 'What is coming',
+  pedalsHeading: 'The three pedals',
+  playersLabel: 'Played by',
+
+  // Photographs live in public/images/pedals/. Swap `image` for another file
+  // name in that folder to change a picture; leave it empty and the box simply
+  // has no photograph. There is a second Texas Flood shot on the site already,
+  // 'texas-flood-alt.jpg', if you prefer that one.
+  pedals: [
     {
-      title: 'Gain',
-      body: 'How hard it pushes the front of the amp. Most of the useful range sits low.',
+      name: 'Texas Flood',
+      detail: 'Overdrive',
+      body:
+        'A heavily modified overdrive, built for Stevie Ray Vaughan tones with a Strat. Single coils always want a bit of help before they hit the front of an amp, and this gives them that without changing what the guitar sounds like. About thirty were built by hand before the rebuild.',
+      players: 'Rick Vito',
+      image: 'texas-flood.jpg',
     },
     {
-      title: 'Tone',
-      body: 'Takes the edge off single coils, or leaves it there.',
+      name: 'Crossfire',
+      detail: 'Overdrive, TS-10 based',
+      body:
+        'A TS-10 Tube Screamer at heart, with Keeley and Landgraff modifications and a few of my own on top. Built to sit better in front of the Filmosound than the original does. The bones are familiar. The voicing is not.',
+      players: '',
+      image: 'crossfire.jpg',
     },
     {
-      title: 'Volume',
-      body: 'Output level, so you can set it once and leave it on.',
+      name: 'Gooseboost',
+      detail: 'Clean boost, one knob',
+      body:
+        'One knob, and the knob is volume. In a zebra box, so there is no mistaking it on a dark stage. I use it on the Coodercaster, on the Guyatones and on an ngoni: instruments with low-output pickups that need a stronger signal into the amp to stand level with a humbucker guitar. It does that and nothing else.',
+      players: '',
+      image: '',
     },
   ],
 
-  // TODO: the price, if you want it shown here.
+  // TODO: prices, once the manufactured run is costed.
   // Enquiries come straight to Ramon rather than going out to the builder.
   price: '',
   buyHref: '',
   notifyCopy:
-    'Built in limited numbers. Email me to order one or to ask when the next batch is ready.',
+    'None of the three are for sale while they are being rebuilt for manufacture. Email me and I will let you know when they are ready.',
 };
 
 /* -------------------------------------------------------------------------- */
@@ -792,7 +827,7 @@ export const pedal = {
 
 export const shop = {
   heading: 'Shop',
-  intro: 'Records, a shirt, and the pedal. Everything posts from the UK.',
+  intro: 'Records, a shirt, and the pedals. Everything posts from the UK.',
 
   // TODO: real products, prices and links. Leave "href" empty and the item shows
   // as coming soon rather than as a dead button.
@@ -831,11 +866,11 @@ export const shop = {
       note: 'Natural cotton, printed with the Guyatone and the palms.',
     },
     {
-      name: 'Texas Flood',
-      variant: 'Pedal',
+      name: 'Goose Effects',
+      variant: 'Pedals',
       price: '',
       href: '/goose-pedal',
-      note: 'In development — join the list.',
+      note: 'Texas Flood, Crossfire and Gooseboost. In manufacture — join the list.',
     },
   ],
 };
@@ -1039,7 +1074,7 @@ export const contact = {
     },
     {
       title: 'Everything else',
-      body: 'Sessions, production, teaching, or the pedal.',
+      body: 'Sessions, production, teaching, or the pedals.',
       email: 'ramongoosemusic@gmail.com',
     },
   ],
@@ -1057,7 +1092,7 @@ export const nav = [
   { label: 'The Band', href: '/band' },
   { label: 'Cuba', href: '/cuba' },
   { label: 'Gear', href: '/gear' },
-  { label: 'Texas Flood Pedal', href: '/goose-pedal' },
+  { label: 'Goose Effects', href: '/goose-pedal' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Video', href: '/video' },
   { label: 'Shop', href: '/shop' },

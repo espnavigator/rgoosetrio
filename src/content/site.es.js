@@ -96,8 +96,8 @@ export const home = {
       href: '/gear',
     },
     {
-      title: 'Texas Flood',
-      body: 'Un pedal propio, hecho desde cero. Muy pronto.',
+      title: 'Goose Effects',
+      body: 'Tres pedales propios, hechos desde cero. Ahora en fabricación.',
       href: '/goose-pedal',
     },
     {
@@ -508,7 +508,8 @@ export const gear = {
         {
           name: 'Goose Effects Crossfire',
           detail: 'Mío',
-          body: 'Básicamente un TS-10 con modificaciones, hecho para encajar delante del Filmosound mejor que el original. El Texas Flood no es una cosa suelta: éste y el fuzz vinieron antes.',
+          body: 'Básicamente un TS-10 con modificaciones mías, de Keeley y de Landgraff, hecho para encajar delante del Filmosound mejor que el original. El Texas Flood no es una cosa suelta: éste y el fuzz vinieron antes.',
+          href: '/goose-pedal',
         },
         {
           name: 'Los delays',
@@ -519,7 +520,13 @@ export const gear = {
         {
           name: 'Texas Flood',
           detail: 'Treinta construidos a mano, y pronto en fabricación',
-          body: 'He construido unos treinta, cableados a mano sobre placas de turrets, y pronto pasan a fabricación en condiciones. Toma su ADN de un Tube Screamer, y ahí acaba la comparación. Hay una página sobre él.',
+          body: 'Un overdrive muy modificado, hecho para los tonos de Stevie Ray Vaughan con una Stratocaster. He construido unos treinta, cableados a mano sobre placas de turrets, y ya pasan a fabricación en condiciones. Rick Vito toca uno. Hay una página sobre él y sobre los otros dos.',
+          href: '/goose-pedal',
+        },
+        {
+          name: 'Goose Effects Gooseboost',
+          detail: 'Mío',
+          body: 'Un mando, y el mando es el volumen. Es el booster que uso para el slide y para las Guyatone, donde el trabajo es empujar la entrada del amplificador y nada más.',
           href: '/goose-pedal',
         },
       ],
@@ -550,31 +557,62 @@ export const gear = {
 /* -------------------------------------------------------------------------- */
 
 export const pedal = {
-  name: 'Texas Flood',
-  kicker: 'En desarrollo',
-  heading: 'Texas Flood',
-  standfirst: 'Un pedal propio, construido porque nada de lo que podía comprar hacía lo que yo quería.',
+  name: 'Goose Effects',
+  kicker: 'Pedales',
+  heading: 'Goose Effects',
+  standfirst: 'Tres pedales propios: el Texas Flood, el Crossfire y el Gooseboost.',
   body: [
-    'Un booster, hecho para sacarle más a una Stratocaster. Las pastillas de bobina simple siempre piden un poco de ayuda antes de llegar al amplificador, y casi todos los pedales que se venden para eso cambian el sonido de paso. Éste se aparta.',
-    'Lo uso encendido todo el rato, puesto y olvidado. También funciona con guitarras más calientes, pero se construyó alrededor de la Stratocaster.',
-    'Tres controles, sin menús ni conmutaciones: ganancia, tono y volumen. Se han construido unos treinta hasta ahora, todos cableados a mano sobre placas de turrets, y pronto pasa a fabricación en condiciones.',
+    'Los tres empezaron como series muy limitadas hechas a mano, cableadas una a una sobre placas de turrets. Ahora se están rehaciendo para poder fabricarlos en cantidades de verdad y que lleguen a más gente.',
+    'Todos llevan diodos y transistores Toshiba originales. Eso no cambia con la nueva serie.',
+    'Ese trabajo está en marcha, así que ninguno de los tres está a la venta todavía. Pronto habrá noticias.',
   ],
-  features: [
-    { title: 'Ganancia', body: 'Cuánto empuja la entrada del amplificador. Casi todo lo útil está en la parte baja del recorrido.' },
-    { title: 'Tono', body: 'Le quita el filo a las bobinas simples, o lo deja donde está.' },
-    { title: 'Volumen', body: 'Nivel de salida, para dejarlo ajustado una vez y no tocarlo más.' },
+
+  status: 'En fabricación',
+  parts: 'Diodos y transistores Toshiba originales',
+  domainLabel: 'En la red',
+
+  pedalsKicker: 'Lo que viene',
+  pedalsHeading: 'Los tres pedales',
+  playersLabel: 'Lo tocan',
+
+  pedals: [
+    {
+      name: 'Texas Flood',
+      detail: 'Overdrive',
+      body:
+        'Un overdrive muy modificado, hecho para los tonos de Stevie Ray Vaughan con una Stratocaster. Las pastillas de bobina simple siempre piden un poco de ayuda antes de llegar al amplificador, y éste se la da sin cambiar el sonido de la guitarra. Se hicieron unos treinta a mano antes de la nueva serie.',
+      players: 'Rick Vito',
+      image: 'texas-flood.jpg',
+    },
+    {
+      name: 'Crossfire',
+      detail: 'Overdrive, basado en el TS-10',
+      body:
+        'Un TS-10 en el fondo, con las modificaciones de Keeley y de Landgraff y alguna mía encima. Hecho para encajar delante del Filmosound mejor que el original. El esqueleto se reconoce. El sonido no.',
+      players: '',
+      image: 'crossfire.jpg',
+    },
+    {
+      name: 'Gooseboost',
+      detail: 'Booster limpio, un solo mando',
+      body:
+        'Un mando, y el mando es el volumen. En una caja de cebra, para que no haya confusión en un escenario oscuro. Lo uso con la Coodercaster, con las Guyatone y con un ngoni: instrumentos de pastillas de salida baja que necesitan una señal más fuerte para sonar al nivel de una guitarra con humbuckers. Hace eso y nada más.',
+      players: '',
+      image: '',
+    },
   ],
+
   price: '',
   buyHref: '',
   notifyCopy:
-    'Fabricado en cantidades pequeñas. Escríbeme para encargar uno o para saber cuándo sale la próxima tanda.',
+    'Ninguno de los tres está a la venta mientras se rehacen para fabricación. Escríbeme y te aviso cuando estén listos.',
 };
 
 /* -------------------------------------------------------------------------- */
 
 export const shop = {
   heading: 'Tienda',
-  intro: 'Discos, una camiseta y el pedal. Todo se envía desde el Reino Unido.',
+  intro: 'Discos, una camiseta y los pedales. Todo se envía desde el Reino Unido.',
   items: [
     { name: 'I Left My Blues In Cuba', variant: 'CD', price: '£12', href: '', note: 'Firmado si lo pides.' },
     { name: 'I Left My Blues In Cuba', variant: 'Vinilo', price: '£28', href: '', note: 'En preparación. Habrá prensaje.' },
@@ -594,7 +632,7 @@ export const shop = {
       image: 'tshirt-compadres.jpg',
       note: 'Algodón natural, estampada con la Guyatone y las palmeras.',
     },
-    { name: 'Texas Flood', variant: 'Pedal', price: '', href: '/goose-pedal', note: 'En desarrollo. Apúntate a la lista.' },
+    { name: 'Goose Effects', variant: 'Pedales', price: '', href: '/goose-pedal', note: 'Texas Flood, Crossfire y Gooseboost. En fabricación. Apúntate a la lista.' },
   ],
 };
 
@@ -701,7 +739,7 @@ export const contact = {
     },
     {
       title: 'Todo lo demás',
-      body: 'Sesiones, producción, clases, o el pedal.',
+      body: 'Sesiones, producción, clases, o los pedales.',
       email: 'ramongoosemusic@gmail.com',
     },
   ],
@@ -715,7 +753,7 @@ export const nav = [
   { label: 'La banda', href: '/band' },
   { label: 'Cuba', href: '/cuba' },
   { label: 'Equipo', href: '/gear' },
-  { label: 'Pedal Texas Flood', href: '/goose-pedal' },
+  { label: 'Goose Effects', href: '/goose-pedal' },
   { label: 'Galería', href: '/gallery' },
   { label: 'Vídeo', href: '/video' },
   { label: 'Tienda', href: '/shop' },

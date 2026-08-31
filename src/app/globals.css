@@ -921,6 +921,34 @@ a.card:hover {
   color: var(--red);
 }
 
+/* The small spec lines at the foot of each Goose Effects pedal box. Pushed to
+   the bottom so the three boxes line up however long the copy above runs. */
+.pedal-specs {
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.card .pedal-spec {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  margin: 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(27, 20, 16, 0.16);
+}
+
+.card .pedal-spec + .pedal-spec {
+  border-top: 0;
+  padding-top: 0.35rem;
+}
+
+.card .pedal-spec span {
+  color: var(--red);
+}
+
 /* ==========================================================================
    TRACKLIST AND CREDITS
    ========================================================================== */

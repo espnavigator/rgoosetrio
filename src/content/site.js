@@ -653,9 +653,22 @@ export const gear = {
       group: 'Strings, picks and the rest',
       items: [
         {
-          name: 'TODO: strings',
-          detail: 'TODO: gauge',
-          body: 'TODO',
+          name: 'Strings',
+          detail: 'Elevens, 11–49',
+          body:
+            'Elevens on the electrics. Heavier than most people use, and the reason the Cuban material holds its note the way it does: a light string goes sharp the moment you lean on it, and none of this music forgives that.',
+        },
+        {
+          name: 'Picks',
+          detail: 'Jazz III, the small ones',
+          body:
+            'The small Jazz III. Very little of it sticks out past your fingers, which is what you want when the right hand is doing the work of a tres.',
+        },
+        {
+          name: 'Slides',
+          detail: 'Diamond Bottlenecks',
+          body:
+            'Diamond Bottlenecks, made in England. Glass, and the weight is right — the years of slide playing before Cuba have not gone anywhere.',
         },
       ],
     },

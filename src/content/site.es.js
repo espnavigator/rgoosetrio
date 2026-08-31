@@ -444,6 +444,26 @@ export const gear = {
       ],
     },
     {
+      group: 'Cuerdas, púas y lo demás',
+      items: [
+        {
+          name: 'Cuerdas',
+          detail: 'Del 11 al 49',
+          body: 'Onces en las eléctricas. Más gruesas de lo que usa la mayoría, y la razón por la que el repertorio cubano mantiene la afinación: una cuerda fina se va de tono en cuanto aprietas, y esta música no lo perdona.',
+        },
+        {
+          name: 'Púas',
+          detail: 'Jazz III, las pequeñas',
+          body: 'La Jazz III pequeña. Sobresale muy poco de los dedos, que es lo que quieres cuando la mano derecha está haciendo el trabajo de un tres.',
+        },
+        {
+          name: 'Slides',
+          detail: 'Diamond Bottlenecks',
+          body: 'Diamond Bottlenecks, hechos en Inglaterra. De cristal, y con el peso justo: los años de slide antes de Cuba no se han ido a ninguna parte.',
+        },
+      ],
+    },
+    {
       group: 'Efectos',
       items: [
         {

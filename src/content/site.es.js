@@ -431,6 +431,12 @@ export const gear = {
           body: 'Una réplica de Les Paul construida por Darren Horton en Daniels Guitars, y tan buena como una del 59 de verdad: he tocado suficientes de las dos como para decirlo en serio. En la foto hay una de 1958 auténtica, de Bob Wootten, con la mía detrás, que es más o menos la prueba más justa a la que se puede someter una réplica. Una de las guitarras en las que más me apoyo con The Compadres.',
         },
         {
+          name: 'Fender D’Aquisto Deluxe',
+          detail: 'Masterbuilt por Stephen Stern',
+          body: 'Una archtop masterbuilt del Custom Shop de Fender, hecha por Stephen Stern, que después dirigió el custom shop de Gretsch y ya está retirado. Masterbuilt significa que una sola persona construyó la guitarra entera en lugar de una línea de montaje, y en una archtop eso es la diferencia entre un instrumento y un mueble.',
+          image: '/images/gallery/16.jpg',
+        },
+        {
           name: 'Tres',
           detail: 'Acústico y eléctrico',
           body: 'Toco el tres tanto acústico como eléctrico. El eléctrico me lo hizo a medida Chapter Guitars. El tres es el instrumento que está en el centro del son, y la razón por la que la guitarra se coloca donde se coloca en esta banda.',

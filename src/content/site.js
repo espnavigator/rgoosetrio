@@ -608,6 +608,13 @@ export const gear = {
             'A Les Paul replica built by Darren Horton at Daniels Guitars, and as good as a real ’59 — I have played enough of both to say that and mean it. The photograph is a genuine 1958 belonging to Bob Wootten, with mine standing behind it, which is about the fairest test a replica can be put to. One of the guitars I lean on most with The Compadres.',
         },
         {
+          name: 'Fender D’Aquisto Deluxe',
+          detail: 'Masterbuilt by Stephen Stern',
+          body:
+            'A Fender Custom Shop masterbuilt archtop, made by Stephen Stern, who went on to run the Gretsch custom shop and has since retired. Masterbuilt means one person built the whole guitar rather than a line assembling it, and on an archtop that is the difference between an instrument and a piece of furniture.',
+          image: '/images/gallery/16.jpg',
+        },
+        {
           name: 'Tres',
           detail: 'Acoustic and electric',
           body:
@@ -973,7 +980,7 @@ export const gallery = {
     { src: '13.jpg', tag: 'gear', caption: 'Guitar and amplifiers in the studio' },
     { src: '14.jpg', tag: 'gear', caption: 'Cogmeister, controls' },
     { src: '15.jpg', tag: 'gear', caption: 'A real 1958 Les Paul belonging to Bob Wootten, with my Daniels behind it' },
-    { src: '16.jpg', tag: 'gear', caption: 'Blonde archtop' },
+    { src: '16.jpg', tag: 'gear', caption: 'The Fender D’Aquisto Deluxe, masterbuilt by Stephen Stern' },
     { src: '17.jpg', tag: 'gear', caption: 'The Guyatone LG-200T' },
     { src: '18.jpg', tag: 'sleeve', caption: 'Long Road To Tiznit, 2017' },
   ],

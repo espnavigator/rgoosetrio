@@ -428,6 +428,7 @@ export const gear = {
         {
           name: 'ESP Navigator',
           detail: 'Las guitarras estilo Gibson',
+          image: '/images/gallery/01.jpg',
           body: 'Navigator es la línea japonesa de ESP, y construyen las formas de Gibson mejor que casi nadie: una Explorer, una Firebird, una SG, una Les Paul y una semicaja estilo 335, además de la N-ST azul. Para un concierto de The Compadres me llevo una de las Guyatone y una de éstas, que cubre todo el terreno entre una pastilla fina y metálica y una humbucker gorda sin tener que cargar con media casa.',
         },
         {
@@ -498,12 +499,6 @@ export const gear = {
           detail: 'Esencial para el sonido',
           body: 'Una unidad de reverb y vibrato a válvulas, cableada a mano: la reverb sobre el esquema del Fender 6G15, y el vibrato tomado de un Concert brownface del 63, que es un vibrato armónico real con cambio de tono y no un trémolo de volumen. Ahí está la diferencia. Un trémolo pulsa; éste dobla, y es lo que hace que la guitarra brille contra el tres. Esencial para el sonido de The Compadres.',
           image: '/images/gallery/02.jpg',
-        },
-        {
-          name: 'Hughes & Kettner Rotosphere',
-          detail: 'Otro ingrediente esencial',
-          body: 'Un simulador de Leslie a válvulas. Una cabina rotatoria hace algo que ningún chorus ni vibrato alcanza del todo, porque el tono y el volumen se mueven juntos al girar físicamente la trompeta, y esto es lo más cerca que ha estado una caja de conseguirlo. Junto con el Reverberato, es buena parte de por qué la guitarra queda suspendida en el aire como queda en el repertorio cubano.',
-          image: '/images/gallery/06.jpg',
         },
         {
           name: 'Goose Germanium Fuzz',

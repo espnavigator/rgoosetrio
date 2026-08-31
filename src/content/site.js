@@ -604,6 +604,7 @@ export const gear = {
         {
           name: 'ESP Navigator',
           detail: 'The Gibson-style guitars',
+          image: '/images/gallery/01.jpg',
           body:
             'Navigator is ESP’s Japanese line, and they build Gibson shapes better than most: an Explorer, a Firebird, an SG, a Les Paul and a 335-style semi, plus the blue N-ST. For a Compadres gig I take one of the Guyatones and one of these, which covers everything between a thin twangy pickup and a fat humbucker without carrying half the house.',
         },
@@ -692,13 +693,6 @@ export const gear = {
           body:
             'A hand-wired valve reverb and vibrato unit: the reverb on the Fender 6G15 layout, and the vibrato taken from a ’63 brownface Concert, which is a true pitch-shifting harmonic vibrato rather than a volume tremolo. That is the difference. A tremolo pulses; this one bends, and it is what makes the guitar shimmer against the tres. Essential to The Compadres sound, and the most labour-intensive thing Victoria build.',
           image: '/images/gallery/02.jpg',
-        },
-        {
-          name: 'Hughes & Kettner Rotosphere',
-          detail: 'Another essential ingredient',
-          body:
-            'A valve-driven Leslie simulator. A rotary cabinet does something no chorus or vibrato quite reaches — the pitch and the volume move together because the horn is physically spinning — and this is the closest a box has got to it. Along with the Reverberato, it is most of why the guitar sits in the air the way it does on the Cuban material.',
-          image: '/images/gallery/06.jpg',
         },
         {
           name: 'Goose Germanium Fuzz',
@@ -1003,15 +997,14 @@ export const gallery = {
     { src: 'c02.jpg', tag: 'cuba', caption: 'Between takes' },
     { src: 'c03.jpg', tag: 'cuba', caption: 'The Compadres' },
     { src: 'c06.jpg', tag: 'live', caption: 'Live with The Compadres' },
-    { src: 'c05.jpg', tag: 'gear', caption: 'Picks' },
+    { src: 'c05.jpg', tag: 'gear', caption: 'The small picks I use' },
 
     // Guitars, amplifiers and the workshop.
-    { src: '01.jpg', tag: 'gear', caption: 'Guitars at home' },
+    { src: '01.jpg', tag: 'gear', caption: 'The Navigators at home' },
     { src: '02.jpg', tag: 'gear', caption: 'The Victoria Reverberato chassis, valves in' },
     { src: '03.jpg', tag: 'gear', caption: 'The Daniels Les Paul replica' },
     { src: '04.jpg', tag: 'gear', caption: 'The ESP flame maple 335 and a Daniels Les Paul replica' },
     { src: '05.jpg', tag: 'gear', caption: 'The Coodercaster, and the blue ESP Navigator N-ST' },
-    { src: '06.jpg', tag: 'gear', caption: 'The Hughes & Kettner Rotosphere' },
     { src: '07.jpg', tag: 'portrait', caption: 'TODO: caption — in the workshop with a Les Paul' },
     { src: '08.jpg', tag: 'gear', caption: 'Siewa Powersonic, the guitar Ali Farka Touré played' },
     { src: '09.jpg', tag: 'gear', caption: 'Left to right: Crucial Audio Echo Nugget, Blackbox Quicksilver, Goose Germanium Fuzz, Goose Effects Crossfire' },

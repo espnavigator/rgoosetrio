@@ -195,7 +195,7 @@ export const music = {
     ],
     personnel: [
       { name: 'Ramon Goose', role: 'Electric guitar, vocals' },
-      { name: 'Joe Goose', role: 'Bass' },
+      { name: 'Joe \u201CRicardo\u201D Goose', role: 'Bass' },
       { name: 'Kieffer Santander', role: 'Percussion, vocals' },
       { name: 'Rick Vito', role: 'Guitar on I Loved Another Woman' },
       { name: 'Nancy Maura', role: 'Vocals on Porque and Si Pudiera Expresarte' },
@@ -348,30 +348,59 @@ export const tour = {
   intro:
     'Two line-ups, so the band works at either size. A trio here, a quintet in Cuba.',
 
-  // TODO: your actual dates. Delete these two examples once you add real ones —
-  // they are here to show the shape, and they are marked so they cannot be
-  // mistaken for real bookings.
   upcoming: [
     {
+      // TODO: confirm the year. The album is a 2026 release, so a January show
+      // is presumably January 2027 — I have left the date blank rather than
+      // guess, which also keeps it out of the event markup until it is real.
       date: '',
-      venue: 'TODO: add your dates here',
-      city: '',
+      venue: 'Album release show',
+      city: 'Santiago de Cuba',
+      country: 'Cuba',
+      lineup: 'Quintet',
+      tickets: '',
+      note: 'January. Venue and date to be announced.',
+    },
+    {
+      date: '',
+      venue: 'Album release show',
+      city: 'London',
       country: 'United Kingdom',
       lineup: 'Trio',
       tickets: '',
+      note: 'Venue and date to be announced.',
     },
   ],
 
   pastHeading: 'Previously',
-  // TODO: dates and cities for these, and anything else worth listing.
   past: [
     {
+      // Confirmed from the invoice, and it sits inside the festival's
+      // 7-9 August run at Radford Mill Farm.
+      date: '2026-08-08',
+      venue: 'Tangled Blues Festival',
+      city: 'Radford Mill Farm, near Bath',
+      country: 'United Kingdom',
+      lineup: 'Trio',
+      note: 'Headline slot.',
+    },
+    {
+      // TODO: the date. Crouch End Festival runs in June.
+      date: '',
+      venue: 'Crouch End Festival',
+      city: 'London',
+      country: 'United Kingdom',
+      lineup: 'Trio',
+      note: 'Headline slot. TODO: date.',
+    },
+    {
+      // TODO: the year. International Jazz Day falls on 30 April each year.
       date: '',
       venue: 'The Cuban Embassy',
       city: 'London',
       country: 'United Kingdom',
       lineup: 'Trio',
-      note: 'TODO: date',
+      note: 'International Jazz Day. TODO: year.',
     },
   ],
 
@@ -425,7 +454,7 @@ export const band = {
           ],
         },
         {
-          name: 'Joe Goose',
+          name: 'Joe \u201CRicardo\u201D Goose',
           role: 'Bass',
           photo: 'joe-goose.jpg',
           bio: 'My identical twin brother, on bass. Thirty years of listening to the same records and playing in the same rooms, which turns out to be a shortcut no amount of rehearsal replaces — the bass and the guitar move together without either of us having to look up.',

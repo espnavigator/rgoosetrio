@@ -648,10 +648,10 @@ export const gear = {
         },
         {
           name: 'Marshall JTM45 replica',
-          detail: 'Original Radiospares transformers, gigged for a year',
+          detail: 'Built by WAU Engineering, gigged for a year',
           image: '/images/gear/jtm45.jpg',
           body:
-            'A working replica, and it has been out on gigs for the past year rather than sitting in a corner as a project. Built the way it should be, which meant hunting original 1960s Radiospares De Luxe output and mains transformers rather than settling for reproductions. That pair of transformers is most of why a JTM45 sounds like a JTM45, and it is the part everybody economises on.',
+            'Put together by WAU Engineering — the same people behind the Goosemaster — using all original 1960s Radiospares parts rather than reproductions. It is a working amplifier that has been out on gigs for the past year, not a project sitting in a corner. That pair of transformers is most of why a JTM45 sounds like a JTM45, and it is the part everybody economises on.',
         },
         {
           name: 'A second JTM45',
@@ -685,6 +685,13 @@ export const gear = {
           body:
             'A tremolo built from the ground up, modelled on the one I could never get to behave the way I wanted. There is a page about it.',
           href: '/goose-pedal',
+        },
+        {
+          name: 'Victoria Reverberato',
+          detail: 'Essential to the sound',
+          body:
+            'A hand-wired valve reverb and vibrato unit: the reverb on the Fender 6G15 layout, and the vibrato taken from a ’63 brownface Concert, which is a true pitch-shifting harmonic vibrato rather than a volume tremolo. That is the difference. A tremolo pulses; this one bends, and it is what makes the guitar shimmer against the tres. Essential to The Compadres sound, and the most labour-intensive thing Victoria build.',
+          image: '/images/gallery/02.jpg',
         },
         {
           name: 'Goose Germanium Fuzz',
@@ -979,8 +986,8 @@ export const gallery = {
 
     // Live and gear.
     { src: 'a13.jpg', tag: 'portrait', caption: 'Kieffer Santander' },
-    { src: 'a12.jpg', tag: 'gear', caption: 'Marshall head' },
-    { src: 'a01.jpg', tag: 'gear', caption: 'TODO: is this one the Goosemaster too, or a different amp?' },
+    { src: 'a12.jpg', tag: 'gear', caption: 'My JTM45 replica, built by WAU Engineering on original 1960s Radiospares parts' },
+    { src: 'a01.jpg', tag: 'gear', caption: 'A Radiospares mains transformer, as used in the first Marshall JTM45s' },
     { src: 'a20.jpg', tag: 'sleeve', caption: 'TODO: what is this artwork for?' },
 
     // From the old site.
@@ -993,7 +1000,7 @@ export const gallery = {
 
     // Guitars, amplifiers and the workshop.
     { src: '01.jpg', tag: 'gear', caption: 'Guitars at home' },
-    { src: '02.jpg', tag: 'gear', caption: 'Amplifier chassis with the valves in' },
+    { src: '02.jpg', tag: 'gear', caption: 'The Victoria Reverberato chassis, valves in' },
     { src: '03.jpg', tag: 'gear', caption: 'Flame-top Les Paul' },
     { src: '04.jpg', tag: 'gear', caption: 'The ESP flame maple 335 and a Daniels Les Paul replica' },
     { src: '05.jpg', tag: 'gear', caption: 'The Coodercaster, and the blue ESP Navigator N-ST' },

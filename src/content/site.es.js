@@ -466,9 +466,9 @@ export const gear = {
         },
         {
           name: 'Réplica de Marshall JTM45',
-          detail: 'Transformadores Radiospares originales, un año de conciertos',
+          detail: 'Construido por WAU Engineering, un año de conciertos',
           image: '/images/gear/jtm45.jpg',
-          body: 'Una réplica que funciona, y que lleva un año saliendo a tocar en lugar de estar en un rincón como proyecto. Construido como debe ser, lo que significó buscar transformadores de salida y de red originales Radiospares De Luxe de los años sesenta en lugar de conformarse con reproducciones. Ese par de transformadores es buena parte de por qué un JTM45 suena como un JTM45, y es justo la pieza en la que todo el mundo ahorra.',
+          body: 'Montado por WAU Engineering, la misma gente que hace el Goosemaster, con piezas Radiospares originales de los años sesenta en lugar de reproducciones. Es un amplificador que funciona y que lleva un año saliendo a tocar, no un proyecto en un rincón. Construido como debe ser, lo que significó buscar transformadores de salida y de red originales Radiospares De Luxe de los años sesenta en lugar de conformarse con reproducciones. Ese par de transformadores es buena parte de por qué un JTM45 suena como un JTM45, y es justo la pieza en la que todo el mundo ahorra.',
         },
         {
           name: 'Un segundo JTM45',
@@ -493,6 +493,12 @@ export const gear = {
     {
       group: 'Efectos',
       items: [
+        {
+          name: 'Victoria Reverberato',
+          detail: 'Esencial para el sonido',
+          body: 'Una unidad de reverb y vibrato a válvulas, cableada a mano: la reverb sobre el esquema del Fender 6G15, y el vibrato tomado de un Concert brownface del 63, que es un vibrato armónico real con cambio de tono y no un trémolo de volumen. Ahí está la diferencia. Un trémolo pulsa; éste dobla, y es lo que hace que la guitarra brille contra el tres. Esencial para el sonido de The Compadres.',
+          image: '/images/gallery/02.jpg',
+        },
         {
           name: 'Goose Germanium Fuzz',
           detail: 'Mío',

@@ -384,22 +384,23 @@ export const tour = {
       note: 'Headline slot.',
     },
     {
-      // TODO: the date. Crouch End Festival runs in June.
-      date: '',
+      date: '2026-06-13',
       venue: 'Crouch End Festival',
-      city: 'London',
+      city: 'Hornsey Town Hall, London',
       country: 'United Kingdom',
       lineup: 'Trio',
-      note: 'Headline slot. TODO: date.',
+      note: 'Headline slot on the Big Stage, for Haringey Hot Nights.',
     },
     {
-      // TODO: the year. International Jazz Day falls on 30 April each year.
-      date: '',
-      venue: 'The Cuban Embassy',
+      // Confirmed on the Cuban Embassy's own site. Billed as the Ramon Goose
+      // Quartet, and held at Bolívar Hall — the Embassy hosted it rather than
+      // staging it at the Embassy itself.
+      date: '2025-04-30',
+      venue: 'Bolívar Hall',
       city: 'London',
       country: 'United Kingdom',
-      lineup: 'Trio',
-      note: 'International Jazz Day. TODO: year.',
+      lineup: 'Quartet',
+      note: 'International Jazz Day, hosted by the Embassy of Cuba, honouring Harry Belafonte.',
     },
   ],
 
@@ -886,9 +887,6 @@ export const gallery = {
     { src: '16.jpg', tag: 'gear', caption: 'Blonde archtop' },
     { src: '17.jpg', tag: 'gear', caption: 'The Guyatone LG-200T' },
     { src: '18.jpg', tag: 'sleeve', caption: 'Long Road To Tiznit, 2017' },
-    { src: '19.jpg', tag: 'portrait', caption: 'TODO: who is this? — at the drums' },
-    { src: '20.jpg', tag: 'portrait', caption: 'TODO: who is this? — with the Ludwig kit' },
-    { src: '21.jpg', tag: 'portrait', caption: 'TODO: caption — live, UK Blues' },
   ],
 };
 

@@ -1393,7 +1393,11 @@ a.card:hover {
   margin: calc(-1 * clamp(1.25rem, 3vw, 1.75rem));
   margin-bottom: 1.1rem;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  /* Contained, not cropped: these are mostly upright photographs of whole
+     guitars, and a 4:3 cover crop was cutting the headstock off one end and the
+     body off the other. */
+  object-fit: contain;
+  background: var(--paper-deep);
   display: block;
   border-bottom: 2px solid var(--ink);
 }

@@ -404,6 +404,12 @@ export const gear = {
           image: '/images/gallery/08.jpg',
         },
         {
+          name: 'Fernandes P-Project AI-N',
+          detail: 'Guitarra eléctrica de cuerda de nylon',
+          body: 'Una eléctrica de nylon del custom shop japonés, el modelo de firma de Dominic Miller y la guitarra por la que se le conoció durante sus años con Sting en los noventa, incluido Ten Summoner’s Tales. La uso mucho con The Compadres en el repertorio folclórico de son, donde el nylon hace algo que el acero no puede.',
+          image: '/images/gear/p-project.jpg',
+        },
+        {
           name: 'Tres',
           detail: 'Acústico y eléctrico',
           body: 'Toco el tres tanto acústico como eléctrico. Es el instrumento que está en el centro del son, y la razón por la que la guitarra se coloca donde se coloca en esta banda.',

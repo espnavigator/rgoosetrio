@@ -579,6 +579,13 @@ export const gear = {
           image: '/images/gallery/08.jpg',
         },
         {
+          name: 'Fernandes P-Project AI-N',
+          detail: 'Nylon-string electric',
+          body:
+            'A Japanese custom-shop nylon-string electric, built as Dominic Miller’s signature model and the guitar he became known for through his years with Sting in the nineties, including Ten Summoner’s Tales. I use it a lot with The Compadres on the folkloric son material, where nylon does something steel cannot.',
+          image: '/images/gear/p-project.jpg',
+        },
+        {
           name: 'Tres',
           detail: 'Acoustic and electric',
           body:

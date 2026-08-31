@@ -619,9 +619,9 @@ export const gear = {
         },
         {
           name: 'Bell & Howell Filmosound',
-          detail: 'Modified by Bill Krinard',
+          detail: 'Modified by Bill Krinard of Two-Rock',
           body:
-            'A 1950s cinema projector amplifier, converted for guitar by Bill Krinard of Two-Rock. These were built to fill a school hall with a soundtrack, not to be played, and they have a midrange no guitar amp of the period was designed to make. It is the reason the electric guitar sits where it does against the tres.',
+            'A 1950s cinema projector amplifier, converted for guitar by Bill Krinard — the man behind Two-Rock, and the person most responsible for these projector amps becoming a thing players chase at all. They were built to fill a school hall with a soundtrack, not to be played, and they have a midrange no guitar amp of the period was designed to make. It is the reason the electric guitar sits where it does against the tres.',
         },
         {
           name: 'Marshall JTM45 replica',

@@ -33,8 +33,7 @@ export const site = {
 
   social: [
     { label: 'The Guitar Show', href: 'https://youtube.com/@TheGuitarShow' },
-    // TODO: your own artist channel handle — replace the URL below.
-    { label: 'Ramon Goose on YouTube', href: 'https://youtube.com/@ramongoose' },
+    { label: 'Ramon Goose on YouTube', href: 'https://www.youtube.com/@RamonGoose' },
     // TODO: add or remove as you like. Delete a line to drop it from the site.
     { label: 'Instagram', href: 'https://instagram.com/' },
     { label: 'Spotify', href: 'https://open.spotify.com/' },
@@ -483,7 +482,7 @@ export const band = {
           name: 'Joaquín Solórzano',
           role: 'Congas',
           photo: '',
-          bio: 'The band started with him, in Santiago in 2023. TODO: a line or two more.',
+          bio: 'The band started with him, in Santiago in 2023. He played in Compay Segundo’s band for over twenty years, which is about as direct a line back to the music the Buena Vista Social Club made famous as anyone still playing can claim.',
         },
         {
           name: 'Calderín',
@@ -715,31 +714,62 @@ export const shop = {
 export const video = {
   heading: 'Video',
   intro:
-    'Two channels. One is about the history of the instrument, the other is about my own playing.',
+    'The band, the back catalogue, and the guitar history channel. All of it lives on YouTube.',
 
   channels: [
+    {
+      name: 'Ramon Goose',
+      handle: '@RamonGoose',
+      href: 'https://www.youtube.com/@RamonGoose',
+      body: 'My own channel. The Compadres, the Cuban material, and everything before it.',
+      cta: 'Subscribe',
+    },
     {
       name: 'The Guitar Show',
       handle: '@TheGuitarShow',
       href: 'https://youtube.com/@TheGuitarShow',
       body:
-        'Long-form documentaries on the guitars, amplifiers and effects of the players who defined the electric guitar — Clapton, Hendrix, Peter Green, Page, Gary Moore, Rory Gallagher and the rest. Narrated and made by me. Around 57,000 subscribers and 500 films.',
+        'Long-form documentaries on the guitars, amplifiers and effects of the players who defined the electric guitar: Clapton, Hendrix, Peter Green, Page, Gary Moore, Rory Gallagher and the rest. Narrated and made by me. Around 57,000 subscribers and 500 films.',
       cta: 'Subscribe',
-    },
-    {
-      name: 'Ramon Goose',
-      // TODO: correct handle and URL for your artist channel.
-      handle: 'TODO: @handle',
-      href: 'https://youtube.com/@ramongoose',
-      body: 'Sessions, live footage and the Cuban material.',
-      cta: 'Watch',
     },
   ],
 
-  // TODO: paste YouTube video IDs here to embed them. The ID is the part of the
-  // URL after "v=" — for youtube.com/watch?v=dQw4w9WgXcQ the ID is dQw4w9WgXcQ.
-  // An empty list simply hides this section.
-  featured: [],
+  /**
+   * To add a video: find it on YouTube, copy the part of the address after
+   * "v=", and add a line below. For youtube.com/watch?v=l4nzFHgAxPw the id is
+   * l4nzFHgAxPw. Every id here was checked against YouTube on 2026-08-30.
+   */
+  groups: [
+    {
+      title: 'The Compadres',
+      kicker: 'Cuba',
+      items: [
+        { id: '64gu8oEnvyM', title: 'The Compadres, showreel' },
+        { id: 'l4nzFHgAxPw', title: 'Havana Town' },
+        { id: 'bKqH7KbrfOA', title: 'Cumbia Por Los Muertos' },
+        { id: '2gbDm5cbRRo', title: 'Live in Leigh-on-Sea' },
+      ],
+    },
+    {
+      title: 'Before Cuba',
+      kicker: 'The back catalogue',
+      items: [
+        { id: 'X7XF_ckJCNU', title: 'Long Road To Tiznit' },
+        { id: 'VaUcno-o504', title: 'Sahara Hands' },
+        { id: 'M4aVLZ8y0xw', title: 'Little Wing' },
+        { id: 'r03YOGaMqCk', title: 'Ealing Blues Festival, with the trio' },
+      ],
+    },
+    {
+      title: 'Elsewhere',
+      kicker: 'Guests and gear',
+      items: [
+        { id: '5njYMgRJrHY', title: 'Guitars, amps and FX: rig rundown' },
+        { id: 'omSBuq-ByMg', title: "Rollin' and Tumblin' with the Malcolm Bruce Band" },
+        { id: 'OxARloKwmi8', title: 'Live at Mashed Festival' },
+      ],
+    },
+  ],
 };
 
 /* -------------------------------------------------------------------------- */

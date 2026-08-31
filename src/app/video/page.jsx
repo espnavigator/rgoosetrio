@@ -5,9 +5,29 @@ import { video } from '@/content/site';
 export const metadata = {
   title: 'Video',
   description:
-    'The Guitar Show — long-form guitar history documentaries — and the Ramon Goose artist channel.',
+    'Video from Ramon Goose & The Compadres, the back catalogue, and The Guitar Show.',
   alternates: { canonical: '/video/' },
 };
+
+/** One embedded YouTube video. */
+function Embed({ item }) {
+  return (
+    <figure className="video-item">
+      <div className="video-embed">
+        <iframe
+          // The nocookie domain means YouTube does not set tracking cookies
+          // until someone actually presses play.
+          src={`https://www.youtube-nocookie.com/embed/${item.id}`}
+          title={item.title}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
+      <figcaption>{item.title}</figcaption>
+    </figure>
+  );
+}
 
 export default function VideoPage() {
   return (
@@ -41,30 +61,25 @@ export default function VideoPage() {
         </div>
       </section>
 
-      {video.featured.length > 0 && (
-        <section className="section section--paper">
+      {video.groups.map((group, i) => (
+        <section
+          key={group.title}
+          className={i % 2 === 0 ? 'section section--paper' : 'section'}
+        >
           <div className="container">
             <div className="section-head">
-              <span className="kicker">Worth your time</span>
-              <h2>Selected films</h2>
+              <span className="kicker">{group.kicker}</span>
+              <h2>{group.title}</h2>
             </div>
 
-            <div className="grid grid--2">
-              {video.featured.map((id) => (
-                <div key={id} className="video-embed">
-                  <iframe
-                    src={`https://www.youtube-nocookie.com/embed/${id}`}
-                    title="YouTube video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                  />
-                </div>
+            <div className="video-grid">
+              {group.items.map((item) => (
+                <Embed key={item.id} item={item} />
               ))}
             </div>
           </div>
         </section>
-      )}
+      ))}
     </>
   );
 }

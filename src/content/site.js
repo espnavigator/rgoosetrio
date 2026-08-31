@@ -184,7 +184,7 @@ export const music = {
       { n: 2, title: 'Porque', credit: 'Original · feat. Nancy Maura' },
       // CHECK: is this the Otis Rush song? Delete the credit if not.
       { n: 3, title: 'All Your Love', credit: 'Otis Rush' },
-      { n: 4, title: "I'm A Real Man", credit: 'TODO: writer credit' },
+      { n: 4, title: "I'm A Real Man", credit: 'John Hiatt' },
       { n: 5, title: 'Alto Boniato', credit: 'Original' },
       { n: 6, title: 'Death Letter Blues', credit: 'Son House' },
       { n: 7, title: 'Havana Town', credit: 'Original' },
@@ -201,6 +201,10 @@ export const music = {
       // credit? If so it belongs in the press copy — it is a real lineage claim
       // and worth stating plainly rather than leaving buried.
     ],
+    // Shown in place of the streaming buttons until the links exist.
+    linksPending:
+      'Not streaming yet. The album goes up when Zozo Records release it.',
+
     // TODO: paste the streaming links in when the record is up. Any line left
     // as an empty string ('') is hidden automatically, so you can fill these in
     // one at a time as they go live.

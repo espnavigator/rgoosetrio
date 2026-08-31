@@ -48,12 +48,9 @@ export default function MusicPage() {
                 ))}
               </div>
             ) : (
-              <div className="empty-note" style={{ marginTop: '1.5rem', textAlign: 'left' }}>
-                <p style={{ marginBottom: 0 }}>
-                  Streaming links go here the moment the record is up. Add them in{' '}
-                  <code>src/content/site.js</code> under <code>music.featured.links</code>.
-                </p>
-              </div>
+              <p className="kicker kicker--muted" style={{ marginTop: '1.75rem' }}>
+                <Txt>{album.linksPending}</Txt>
+              </p>
             )}
           </div>
 

@@ -571,21 +571,24 @@ export const shop = {
     {
       name: 'I Left My Blues In Cuba',
       variant: 'CD',
-      price: 'TODO',
+      price: '£12',
       href: '',
       note: 'Signed on request.',
     },
     {
       name: 'I Left My Blues In Cuba',
       variant: 'Vinyl',
-      price: 'TODO',
+      price: '£28',
       href: '',
       note: 'TODO: confirm there is a vinyl pressing.',
     },
     {
       name: 'The Compadres T-shirt',
-      variant: 'TODO: sizes',
-      price: 'TODO',
+      variant: 'S to XXL',
+      // £25 sits above the £15 mark where a shirt starts reading as cheap, and
+      // leaves roughly a 60% margin on a decent blank plus printing. Change it
+      // here if you want to run £22 at gigs and £25 online.
+      price: '£25',
       href: '',
       image: 'tshirt-compadres.jpg',
       note: 'Natural cotton, printed with the Guyatone and the palms.',

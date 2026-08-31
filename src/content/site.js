@@ -166,10 +166,10 @@ export const music = {
   featured: {
     title: 'I Left My Blues In Cuba',
     artist: 'Ramon Goose & The Compadres',
-    // TODO: confirm with Zozo before this goes live.
-    label: 'Zozo Records, New York',
-    // TODO: the exact date, once Zozo confirm it. The year is settled.
-    releaseLine: 'Released 2026 on Zozo Records — exact date to be announced.',
+    // TODO: confirm with ZOHO before this goes live.
+    label: 'ZOHO Records, New York',
+    // TODO: the exact date, once ZOHO confirm it. The year is settled.
+    releaseLine: 'Released 2026 on ZOHO Records — exact date to be announced.',
     status: 'Out in 2026',
     cover: '/images/i-left-my-blues-in-cuba.jpg',
     recordedAt: 'EGREM Studios, Santiago de Cuba',
@@ -203,7 +203,7 @@ export const music = {
     ],
     // Shown in place of the streaming buttons until the links exist.
     linksPending:
-      'Not streaming yet. The album goes up when Zozo Records release it.',
+      'Not streaming yet. The album goes up when ZOHO Records release it.',
 
     // TODO: paste the streaming links in when the record is up. Any line left
     // as an empty string ('') is hidden automatically, so you can fill these in
@@ -642,7 +642,7 @@ export const bio = {
   heading: 'Biography',
 
   // TODO: this is the placeholder. Replace it with the biography we write for
-  // Zozo Records — the same text should serve the label, the press and this page.
+  // ZOHO Records — the same text should serve the label, the press and this page.
   short:
     'Ramon Goose is an English guitarist working in Cuban music. Born in Colchester in 1975, he has spent thirty years taking the electric guitar out of the blues — through West Africa with the West African Blues Project, and now through Santiago de Cuba with The Compadres, whose album I Left My Blues In Cuba was recorded at EGREM Studios.',
 
@@ -657,7 +657,7 @@ export const bio = {
   press: [
     { label: 'Based', value: 'London and Havana' },
     { label: 'Current release', value: 'I Left My Blues In Cuba' },
-    { label: 'Label', value: 'Zozo Records, New York' },
+    { label: 'Label', value: 'ZOHO Records, New York' },
     { label: 'Live formats', value: 'Trio in England, quintet in Santiago de Cuba' },
   ],
 

@@ -36,7 +36,7 @@ export default function JsonLd() {
       '@type': 'MusicAlbum',
       name: music.featured.title,
       byArtist: { '@id': `${site.url}/#band` },
-      recordLabel: 'Zozo Records',
+      recordLabel: 'ZOHO Records',
       numTracks: music.featured.tracks.length,
       image: `${site.url}/images/i-left-my-blues-in-cuba.jpg`,
     },

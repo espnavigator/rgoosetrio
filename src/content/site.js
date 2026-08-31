@@ -694,6 +694,13 @@ export const gear = {
           image: '/images/gallery/02.jpg',
         },
         {
+          name: 'Hughes & Kettner Rotosphere',
+          detail: 'Another essential ingredient',
+          body:
+            'A valve-driven Leslie simulator. A rotary cabinet does something no chorus or vibrato quite reaches — the pitch and the volume move together because the horn is physically spinning — and this is the closest a box has got to it. Along with the Reverberato, it is most of why the guitar sits in the air the way it does on the Cuban material.',
+          image: '/images/gallery/06.jpg',
+        },
+        {
           name: 'Goose Germanium Fuzz',
           detail: 'Mine',
           body:
@@ -1004,7 +1011,7 @@ export const gallery = {
     { src: '03.jpg', tag: 'gear', caption: 'The Daniels Les Paul replica' },
     { src: '04.jpg', tag: 'gear', caption: 'The ESP flame maple 335 and a Daniels Les Paul replica' },
     { src: '05.jpg', tag: 'gear', caption: 'The Coodercaster, and the blue ESP Navigator N-ST' },
-    { src: '06.jpg', tag: 'gear', caption: 'Vintage amplifiers, stacked' },
+    { src: '06.jpg', tag: 'gear', caption: 'The Hughes & Kettner Rotosphere' },
     { src: '07.jpg', tag: 'portrait', caption: 'TODO: caption — in the workshop with a Les Paul' },
     { src: '08.jpg', tag: 'gear', caption: 'Siewa Powersonic, the guitar Ali Farka Touré played' },
     { src: '09.jpg', tag: 'gear', caption: 'Left to right: Crucial Audio Echo Nugget, Blackbox Quicksilver, Goose Germanium Fuzz, Goose Effects Crossfire' },

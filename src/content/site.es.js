@@ -500,6 +500,12 @@ export const gear = {
           image: '/images/gallery/02.jpg',
         },
         {
+          name: 'Hughes & Kettner Rotosphere',
+          detail: 'Otro ingrediente esencial',
+          body: 'Un simulador de Leslie a válvulas. Una cabina rotatoria hace algo que ningún chorus ni vibrato alcanza del todo, porque el tono y el volumen se mueven juntos al girar físicamente la trompeta, y esto es lo más cerca que ha estado una caja de conseguirlo. Junto con el Reverberato, es buena parte de por qué la guitarra queda suspendida en el aire como queda en el repertorio cubano.',
+          image: '/images/gallery/06.jpg',
+        },
+        {
           name: 'Goose Germanium Fuzz',
           detail: 'Mío',
           body: 'De germanio y no de silicio, que es de lo que se trata: se limpia al bajar el volumen de la guitarra en lugar de simplemente sonar más bajo, así que un solo pedal cubre mucho terreno sin tener que tocarlo entre canciones.',

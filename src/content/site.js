@@ -612,25 +612,35 @@ export const gear = {
       group: 'Amplifiers',
       items: [
         {
-          name: 'Marshall JTM45',
-          detail: 'Currently being built',
+          name: 'The rig',
+          detail: 'Two amps, wet and dry',
           body:
-            'Being put together properly, which means hunting original 1960s Radiospares De Luxe output and mains transformers rather than settling for reproductions. TODO: update this once it is finished and gigged.',
+            'Two amplifiers running at once, one clean and dry and one carrying the effects, split with the WAU Goosemaster. It is more to carry, but two amps do something one cannot: the sound widens and starts to move on its own, which is exactly what the Cuban material wants under it.',
+        },
+        {
+          name: 'Bell & Howell Filmosound',
+          detail: 'Modified by Bill Krinard',
+          body:
+            'A 1950s cinema projector amplifier, converted for guitar by Bill Krinard of Two-Rock. These were built to fill a school hall with a soundtrack, not to be played, and they have a midrange no guitar amp of the period was designed to make. It is the reason the electric guitar sits where it does against the tres.',
+        },
+        {
+          name: 'Marshall JTM45 replica',
+          detail: 'Original Radiospares transformers',
+          body:
+            'Built the way it should be, which meant hunting original 1960s Radiospares De Luxe output and mains transformers rather than settling for reproductions. That pair of transformers is most of why a JTM45 sounds like a JTM45, and it is the part everybody economises on.',
+        },
+        {
+          name: 'Lazy J cabinets',
+          detail: 'Two 1x12s, Celestion loaded',
+          body:
+            'A pair of Lazy J one-by-twelves with Celestion twelves in them. Two small cabinets rather than one big one, which is what makes the wet and dry sides sit either side of you instead of on top of each other.',
         },
         {
           name: 'WAU Goosemaster',
           detail: 'Amp splitter',
           body:
-            'Not an amplifier but a splitter, built by WAU as a clone of the Green Man, the box Ry Cooder used to drive more than one amp at once. Two amps running together do something a single amp cannot: the sound gets wider and starts to move on its own. Cooder and Manuel Galbán are a large part of why an electric guitar in Cuban music is a thing at all, so using his splitter to do it is not an accident.',
-          // TODO: paste WAU's Instagram address here and this becomes a link.
-          // I could not find their handle and would rather leave it blank than
-          // send people to the wrong account.
+            'Not an amplifier but a splitter, built by WAU as a clone of the Green Man, the box Ry Cooder used to drive more than one amp at once. It is what feeds the two amps. Cooder and Manuel Galbán are a large part of why an electric guitar in Cuban music is even an idea, so using his splitter to do it is not an accident.',
           href: '',
-        },
-        {
-          name: 'TODO: the amp you actually gig',
-          detail: 'TODO',
-          body: 'TODO',
         },
       ],
     },
@@ -645,9 +655,10 @@ export const gear = {
           href: '/goose-pedal',
         },
         {
-          name: 'TODO: the rest of the board',
-          detail: 'TODO',
-          body: 'TODO: overdrive, reverb, whatever else is on there.',
+          name: 'The GigRig',
+          detail: 'Pedalboard and switching',
+          body:
+            'The board is a GigRig system. With two amps running wet and dry you need something that can send the right thing to the right side without a tap-dance between songs, and this does that.',
         },
       ],
     },

@@ -433,14 +433,29 @@ export const gear = {
       group: 'Amplificación',
       items: [
         {
-          name: 'Marshall JTM45',
-          detail: 'En construcción',
-          body: 'Se está montando como es debido, lo que significa buscar transformadores de salida y de red originales Radiospares De Luxe de los años sesenta en lugar de conformarse con reproducciones.',
+          name: 'El equipo',
+          detail: 'Dos amplificadores, seco y con efectos',
+          body: 'Dos amplificadores sonando a la vez, uno limpio y seco y otro con los efectos, repartidos con el WAU Goosemaster. Es más peso que cargar, pero dos amplificadores hacen algo que uno solo no puede: el sonido se ensancha y empieza a moverse por su cuenta, que es justo lo que pide el repertorio cubano.',
+        },
+        {
+          name: 'Bell & Howell Filmosound',
+          detail: 'Modificado por Bill Krinard',
+          body: 'Un amplificador de proyector de cine de los años cincuenta, convertido para guitarra por Bill Krinard, de Two-Rock. Se construyeron para llenar un salón de actos con una banda sonora, no para tocarlos, y tienen unos medios que ningún amplificador de guitarra de la época se diseñó para dar.',
+        },
+        {
+          name: 'Réplica de Marshall JTM45',
+          detail: 'Transformadores Radiospares originales',
+          body: 'Construido como debe ser, lo que significó buscar transformadores de salida y de red originales Radiospares De Luxe de los años sesenta en lugar de conformarse con reproducciones. Ese par de transformadores es buena parte de por qué un JTM45 suena como un JTM45, y es justo la pieza en la que todo el mundo ahorra.',
+        },
+        {
+          name: 'Pantallas Lazy J',
+          detail: 'Dos de 1x12, con Celestion',
+          body: 'Un par de Lazy J de un altavoz de doce pulgadas cada una, con Celestion dentro. Dos pantallas pequeñas en lugar de una grande, que es lo que hace que el lado seco y el lado con efectos queden uno a cada lado y no encima el uno del otro.',
         },
         {
           name: 'WAU Goosemaster',
           detail: 'Divisor de señal',
-          body: 'No es un amplificador sino un divisor, construido por WAU como clon del Green Man, la caja que usaba Ry Cooder para atacar más de un amplificador a la vez. Dos amplificadores sonando juntos hacen algo que uno solo no puede: el sonido se ensancha y empieza a moverse por su cuenta. Cooder y Manuel Galbán son buena parte de la razón por la que una guitarra eléctrica en la música cubana es siquiera una idea, así que usar su divisor para hacerlo no es casualidad.',
+          body: 'No es un amplificador sino un divisor, construido por WAU como clon del Green Man, la caja que usaba Ry Cooder para atacar más de un amplificador a la vez. Es lo que alimenta los dos amplificadores. Cooder y Manuel Galbán son buena parte de la razón por la que una guitarra eléctrica en la música cubana es siquiera una idea, así que usar su divisor para hacerlo no es casualidad.',
           href: '',
         },
       ],

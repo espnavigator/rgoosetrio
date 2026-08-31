@@ -589,12 +589,8 @@ export const gear = {
           name: 'Tres',
           detail: 'Acoustic and electric',
           body:
-            'I play both the acoustic tres and the electric. It is the instrument at the centre of son, and the reason the guitar has to sit where it sits in this band.',
-        },
-        {
-          name: 'TODO: acoustic / nylon',
-          detail: 'TODO',
-          body: 'TODO',
+            'I play both the acoustic tres and the electric. The electric one was custom made for me by Chapter Guitars. The tres is the instrument at the centre of son, and the reason the guitar has to sit where it sits in this band.',
+          image: '/images/gear/tres.jpg',
         },
       ],
     },
@@ -720,7 +716,15 @@ export const shop = {
     },
     {
       name: 'The Compadres T-shirt',
-      variant: 'S to XXL',
+      variant: 'Black, S to XXL',
+      price: '£25',
+      href: '',
+      image: 'tshirt-compadres-black.jpg',
+      note: 'Black cotton, white print, congas in place of the guitar.',
+    },
+    {
+      name: 'The Compadres T-shirt',
+      variant: 'Natural, S to XXL',
       // £25 sits above the £15 mark where a shirt starts reading as cheap, and
       // leaves roughly a 60% margin on a decent blank plus printing. Change it
       // here if you want to run £22 at gigs and £25 online.

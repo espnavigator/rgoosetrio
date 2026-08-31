@@ -412,7 +412,8 @@ export const gear = {
         {
           name: 'Tres',
           detail: 'Acústico y eléctrico',
-          body: 'Toco el tres tanto acústico como eléctrico. Es el instrumento que está en el centro del son, y la razón por la que la guitarra se coloca donde se coloca en esta banda.',
+          body: 'Toco el tres tanto acústico como eléctrico. El eléctrico me lo hizo a medida Chapter Guitars. El tres es el instrumento que está en el centro del son, y la razón por la que la guitarra se coloca donde se coloca en esta banda.',
+          image: '/images/gear/tres.jpg',
         },
       ],
     },
@@ -479,7 +480,15 @@ export const shop = {
     { name: 'I Left My Blues In Cuba', variant: 'Vinilo', price: '£28', href: '', note: 'En preparación. Habrá prensaje.' },
     {
       name: 'Camiseta The Compadres',
-      variant: 'De la S a la XXL',
+      variant: 'Negra, de la S a la XXL',
+      price: '£25',
+      href: '',
+      image: 'tshirt-compadres-black.jpg',
+      note: 'Algodón negro, estampado blanco, congas en lugar de la guitarra.',
+    },
+    {
+      name: 'Camiseta The Compadres',
+      variant: 'Natural, de la S a la XXL',
       price: '£25',
       href: '',
       image: 'tshirt-compadres.jpg',

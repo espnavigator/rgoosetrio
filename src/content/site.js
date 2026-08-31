@@ -191,7 +191,7 @@ export const music = {
     personnel: [
       { name: 'Ramon Goose', role: 'Electric guitar, vocals' },
       { name: 'Joe Goose', role: 'Bass' },
-      { name: 'Kieffer Santander', role: 'Percussion' },
+      { name: 'Kieffer Santander', role: 'Percussion, vocals' },
       { name: 'Rick Vito', role: 'Guitar on I Loved Another Woman' },
       { name: 'Nancy Maura', role: 'Vocals on Porque and Si Pudiera Expresarte' },
       // CHECK: is Kieffer the player with the Compay Segundo / Eliades Ochoa
@@ -351,7 +351,7 @@ export const band = {
         },
         {
           name: 'Kieffer Santander',
-          role: 'Musical director, percussion',
+          role: 'Musical director, percussion, vocals',
           photo: 'kieffer-santander.jpg',
           bio: [
             'Musical director of the London Compadres. Percussionist, composer, teacher and bandleader, born in Peru and based in the United Kingdom, and one of the leading players of Afro-Peruvian and Criollo percussion working in Europe, a tradition he has spent his career keeping alive a long way from home.',

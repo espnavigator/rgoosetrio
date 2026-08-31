@@ -2,7 +2,7 @@ import Link from 'next/link';
 import CutPaper from '@/components/CutPaper';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
-import { home, music, site, video } from '@/content/site';
+import { bio, home, music, site, video } from '@/content/site';
 
 export default function HomePage() {
   return (
@@ -63,6 +63,20 @@ export default function HomePage() {
             <h2>{home.bandBlurbHeading}</h2>
           </div>
           <Paragraphs items={home.bandBlurb} />
+
+          {/* The quick facts a promoter or journalist wants without reading on.
+              Same list as the biography page, so it is only written once. */}
+          <ul className="facts facts--row">
+            {bio.press.map((f) => (
+              <li key={f.label}>
+                <div className="facts__label">{f.label}</div>
+                <div className="facts__value">
+                  <Txt>{f.value}</Txt>
+                </div>
+              </li>
+            ))}
+          </ul>
+
           <div className="btn-row">
             <Link href="/band" className="btn btn--sm">
               Both line-ups

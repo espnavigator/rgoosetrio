@@ -603,8 +603,9 @@ export const gear = {
         {
           name: 'Daniels Guitars Les Paul',
           detail: 'Built by Darren Horton',
+          image: '/images/gallery/15.jpg',
           body:
-            'A Les Paul replica built by Darren Horton at Daniels Guitars, and as good as a real ’59 — I have played enough of both to say that and mean it. One of the guitars I lean on most with The Compadres.',
+            'A Les Paul replica built by Darren Horton at Daniels Guitars, and as good as a real ’59 — I have played enough of both to say that and mean it. The photograph is a genuine 1958 belonging to Bob Wootten, with mine standing behind it, which is about the fairest test a replica can be put to. One of the guitars I lean on most with The Compadres.',
         },
         {
           name: 'Tres',
@@ -971,7 +972,7 @@ export const gallery = {
     { src: '12.jpg', tag: 'gear', caption: 'The WAU Goosemaster' },
     { src: '13.jpg', tag: 'gear', caption: 'Guitar and amplifiers in the studio' },
     { src: '14.jpg', tag: 'gear', caption: 'Cogmeister, controls' },
-    { src: '15.jpg', tag: 'gear', caption: 'Two Les Pauls' },
+    { src: '15.jpg', tag: 'gear', caption: 'A real 1958 Les Paul belonging to Bob Wootten, with my Daniels behind it' },
     { src: '16.jpg', tag: 'gear', caption: 'Blonde archtop' },
     { src: '17.jpg', tag: 'gear', caption: 'The Guyatone LG-200T' },
     { src: '18.jpg', tag: 'sleeve', caption: 'Long Road To Tiznit, 2017' },

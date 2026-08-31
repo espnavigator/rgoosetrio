@@ -427,7 +427,8 @@ export const gear = {
         {
           name: 'Daniels Guitars Les Paul',
           detail: 'Construida por Darren Horton',
-          body: 'Una réplica de Les Paul construida por Darren Horton en Daniels Guitars, y tan buena como una del 59 de verdad: he tocado suficientes de las dos como para decirlo en serio. Una de las guitarras en las que más me apoyo con The Compadres.',
+          image: '/images/gallery/15.jpg',
+          body: 'Una réplica de Les Paul construida por Darren Horton en Daniels Guitars, y tan buena como una del 59 de verdad: he tocado suficientes de las dos como para decirlo en serio. En la foto hay una de 1958 auténtica, de Bob Wootten, con la mía detrás, que es más o menos la prueba más justa a la que se puede someter una réplica. Una de las guitarras en las que más me apoyo con The Compadres.',
         },
         {
           name: 'Tres',

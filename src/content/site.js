@@ -220,8 +220,9 @@ export const music = {
       { name: 'Mustafa', role: 'Piano' },
       { name: 'Nancy Maura', role: 'Vocals on Porque and Si Pudiera Expresarte (1935–2025)' },
       { name: 'Alejandro Almenares', role: 'Guitar and vocals' },
+      { name: 'Damian Busqueta Mineto', role: 'Trombone' },
+      { name: 'Benilde Aysmel Guzmán Mariño', role: 'Trumpet' },
       { name: 'Rick Vito', role: 'Guitar on I Loved Another Woman' },
-      // TODO: the horn section, by name.
     ],
     // Shown in place of the streaming buttons until the links exist.
     linksPending:
@@ -536,6 +537,16 @@ export const band = {
       bio: 'One of the great bolero singers of Santiago de Cuba, and one of the last defenders of the form in the city. Born Justina María Balbuena Céspedes in 1935, she sang from the age of nine and never left Santiago, because she was a santiaguera and that was the end of it. She sings on Porque and Si Pudiera Expresarte. She died in April 2025, aged ninety, which makes these among the last things she recorded.',
     },
     {
+      name: 'Damian Busqueta Mineto',
+      role: 'Trombone',
+      bio: 'A twice Grammy-winning producer, and the trombone on the record. The horns were tracked in Santiago after the rhythm section, which is why the album took as long as it did to finish.',
+    },
+    {
+      name: 'Benilde Aysmel Guzmán Mariño',
+      role: 'Trumpet',
+      bio: 'The trumpet on the record, cut in Santiago alongside the trombone. Horns are what separate a son band from a son septet, and they are the last thing to go on.',
+    },
+    {
       name: 'Alejandro Almenares',
       role: 'Trovador of Santiago de Cuba',
       photo: '/images/gallery/a15.jpg',
@@ -625,9 +636,15 @@ export const gear = {
         },
         {
           name: 'Marshall JTM45 replica',
-          detail: 'Original Radiospares transformers',
+          detail: 'Original Radiospares transformers, gigged for a year',
           body:
-            'Built the way it should be, which meant hunting original 1960s Radiospares De Luxe output and mains transformers rather than settling for reproductions. That pair of transformers is most of why a JTM45 sounds like a JTM45, and it is the part everybody economises on.',
+            'A working replica, and it has been out on gigs for the past year rather than sitting in a corner as a project. Built the way it should be, which meant hunting original 1960s Radiospares De Luxe output and mains transformers rather than settling for reproductions. That pair of transformers is most of why a JTM45 sounds like a JTM45, and it is the part everybody economises on.',
+        },
+        {
+          name: 'A second JTM45',
+          detail: 'In build',
+          body:
+            'Another one going together now, again on original Radiospares transformers. Finding a matched pair of originals is the whole job; the rest of a JTM45 is a weekend.',
         },
         {
           name: 'Lazy J cabinets',

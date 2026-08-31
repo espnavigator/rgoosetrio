@@ -146,6 +146,8 @@ export const music = {
       { name: 'Mustafa', role: 'Piano' },
       { name: 'Nancy Maura', role: 'Voz en Porque y Si Pudiera Expresarte (1935–2025)' },
       { name: 'Alejandro Almenares', role: 'Guitarra y voz' },
+      { name: 'Damian Busqueta Mineto', role: 'Trombón' },
+      { name: 'Benilde Aysmel Guzmán Mariño', role: 'Trompeta' },
       { name: 'Rick Vito', role: 'Guitarra en I Loved Another Woman' },
     ],
   },
@@ -322,6 +324,16 @@ export const band = {
       bio: 'Una de las grandes boleristas de Santiago de Cuba, y una de las últimas defensoras del género en la ciudad. Nacida Justina María Balbuena Céspedes en 1935, cantaba desde los nueve años y nunca se fue de Santiago, porque era santiaguera y ahí se acababa la discusión. Canta en Porque y en Si Pudiera Expresarte. Murió en abril de 2025, a los noventa años, lo que convierte estas grabaciones en de las últimas que hizo.',
     },
     {
+      name: 'Damian Busqueta Mineto',
+      role: 'Trombón',
+      bio: 'Productor ganador de dos premios Grammy, y el trombón del disco. Los metales se grabaron en Santiago después de la base rítmica, que es la razón por la que el disco tardó lo que tardó en terminarse.',
+    },
+    {
+      name: 'Benilde Aysmel Guzmán Mariño',
+      role: 'Trompeta',
+      bio: 'La trompeta del disco, grabada en Santiago junto al trombón. Los metales son lo que separa a una banda de son de un septeto, y son lo último que se pone.',
+    },
+    {
       name: 'Alejandro Almenares',
       role: 'Trovador de Santiago de Cuba',
       photo: '/images/gallery/a15.jpg',
@@ -444,8 +456,13 @@ export const gear = {
         },
         {
           name: 'Réplica de Marshall JTM45',
-          detail: 'Transformadores Radiospares originales',
-          body: 'Construido como debe ser, lo que significó buscar transformadores de salida y de red originales Radiospares De Luxe de los años sesenta en lugar de conformarse con reproducciones. Ese par de transformadores es buena parte de por qué un JTM45 suena como un JTM45, y es justo la pieza en la que todo el mundo ahorra.',
+          detail: 'Transformadores Radiospares originales, un año de conciertos',
+          body: 'Una réplica que funciona, y que lleva un año saliendo a tocar en lugar de estar en un rincón como proyecto. Construido como debe ser, lo que significó buscar transformadores de salida y de red originales Radiospares De Luxe de los años sesenta en lugar de conformarse con reproducciones. Ese par de transformadores es buena parte de por qué un JTM45 suena como un JTM45, y es justo la pieza en la que todo el mundo ahorra.',
+        },
+        {
+          name: 'Un segundo JTM45',
+          detail: 'En construcción',
+          body: 'Otro montándose ahora, otra vez con transformadores Radiospares originales. Encontrar un par de originales que casen es todo el trabajo; el resto de un JTM45 es un fin de semana.',
         },
         {
           name: 'Pantallas Lazy J',

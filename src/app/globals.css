@@ -1193,6 +1193,118 @@ a.card:hover {
   }
 }
 
+/* ==========================================================================
+   SIGNED CDs, SOLD DIRECT
+   --------------------------------------------------------------------------
+   A record sleeve and its story side by side. The sleeve keeps its square
+   shape at every width, because a squashed album cover looks wrong in a way
+   people notice before they can say why.
+   ========================================================================== */
+
+/* Each box carries a sleeve and a paragraph side by side, so it needs a good
+   deal more width than the usual two-column grid before it is worth splitting
+   the row in two. Under that they go one per row and stay readable. */
+.grid--sale {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr));
+}
+
+.forsale {
+  display: grid;
+  grid-template-columns: minmax(7rem, 11rem) 1fr;
+  gap: clamp(1rem, 3vw, 1.75rem);
+  align-items: start;
+  background: var(--paper);
+  border: var(--rule) solid var(--ink);
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+/* Below the fold of a phone the two columns are too narrow to read, so the
+   sleeve goes on top and the words underneath. */
+@media (max-width: 30rem) {
+  .forsale {
+    grid-template-columns: 1fr;
+  }
+  .forsale__cover {
+    max-width: 12rem;
+  }
+}
+
+.forsale__cover {
+  width: 100%;
+  /* A grid item's automatic minimum size is its content, and the cover files
+     are 640px square. Without this the sleeve refuses to shrink below 640px,
+     drags its own column out to match and pushes the whole page sideways. */
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--ink);
+  box-shadow: 0.35rem 0.35rem 0 rgba(27, 20, 16, 0.18);
+}
+
+/* Same reason as the sleeve: the text column must be allowed to shrink, or a
+   long unbroken word sets the floor for the whole grid. */
+.forsale__body {
+  min-width: 0;
+}
+
+.forsale__title {
+  font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.35rem);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.15em;
+}
+
+.forsale__year {
+  color: var(--red);
+  font-style: normal;
+}
+
+.forsale__label {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  margin-bottom: 0.9rem;
+}
+
+.forsale__blurb {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  max-width: none;
+}
+
+.forsale__price {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--red);
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.forsale__price span {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 0.35rem;
+}
+
+.forsale__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.forsale__note {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  margin: 0.7rem 0 0;
+}
+
 /* Fact strip down the side of the Cuba page. */
 .facts {
   list-style: none;

@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function MusicPage({ locale = 'en' }) {
   // Content comes from the language this page was built for.
-  const { music } = getContent(locale);
+  const { music, forSale, site } = getContent(locale);
   const album = music.featured;
   // Streaming links are only drawn once they actually point somewhere.
   const liveLinks = album.links.filter((l) => l.href);
@@ -137,6 +137,75 @@ export default function MusicPage({ locale = 'en' }) {
               <Paragraphs items={rec.blurb} />
             </article>
           ))}
+        </div>
+      </section>
+
+      {/* ---- SIGNED COPIES, SOLD DIRECT ---------------------------------- */}
+      <section className="section section--paper">
+        <div className="container">
+          <div className="section-head">
+            <span className="kicker">{forSale.price} {forSale.priceNote}</span>
+            <h2>{forSale.heading}</h2>
+            <p className="lead" style={{ marginBottom: 0 }}>
+              <Txt>{forSale.intro}</Txt>
+            </p>
+          </div>
+
+          <div className="grid grid--sale">
+            {forSale.items.map((rec) => (
+              <article key={rec.title} className="forsale">
+                <img
+                  className="forsale__cover"
+                  src={asset(`/images/albums/${rec.image}`)}
+                  alt={`${rec.title} — album cover`}
+                  loading="lazy"
+                  width="640"
+                  height="640"
+                />
+                <div className="forsale__body">
+                  <h3 className="forsale__title">
+                    {rec.title}{' '}
+                    <span className="forsale__year">{rec.year}</span>
+                  </h3>
+                  <p className="forsale__label">{rec.label}</p>
+                  <p className="forsale__blurb">
+                    <Txt>{rec.blurb}</Txt>
+                  </p>
+
+                  <p className="forsale__price">
+                    {forSale.price}{' '}
+                    <span>{forSale.priceNote}</span>
+                  </p>
+
+                  <div className="forsale__actions">
+                    {/* The PayPal button only exists once there is a real
+                        address to send people to. See site.js. */}
+                    {forSale.paypalHref && (
+                      <a
+                        className="btn btn--primary btn--sm"
+                        href={forSale.paypalHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {forSale.paypalLabel}
+                      </a>
+                    )}
+                    <a
+                      className={`btn btn--sm${forSale.paypalHref ? '' : ' btn--primary'}`}
+                      href={`mailto:${site.email.general}?subject=${encodeURIComponent(
+                        `CD order: ${rec.title}`
+                      )}`}
+                    >
+                      {forSale.emailLabel}
+                    </a>
+                  </div>
+                  <p className="forsale__note">
+                    <Txt>{forSale.emailNote}</Txt>
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

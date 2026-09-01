@@ -258,14 +258,14 @@ export const music = {
   listenLabel: 'Listen on Spotify',
   buyLabel: 'Buy the CD on Amazon',
   catalogue: [
-    { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues and West African crossover' , spotify: 'https://open.spotify.com/album/64X4U5MX6mmTENISv0VHDD' },
-    { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'With Modou Touré' , spotify: 'https://open.spotify.com/album/62ozl7W5YkqBNa3fpCmxiO' },
-    { title: 'Blues & Spirituals', year: '2014', label: 'Acoustic Music Records', role: 'Solo album' , spotify: 'https://open.spotify.com/album/52dBHwBuHHRZMT635jERRO' },
-    { title: 'Uptown Blues', year: '2011', label: 'Blues Boulevard', role: 'Solo album' , spotify: 'https://open.spotify.com/album/3kb9zeul2eOMjfBRCq8deQ' },
-    { title: 'Mansana Blues', year: '2010', label: 'Dixiefrog', role: 'With Diabel Cissokho, kora and slide guitar' , spotify: 'https://open.spotify.com/album/7kuJ2YGGNVdt2wAFY2D0D6' },
+    { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues and West African crossover' , spotify: 'https://open.spotify.com/album/64X4U5MX6mmTENISv0VHDD' , amazon: 'https://www.amazon.co.uk/dp/B071XKRVQG' },
+    { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'With Modou Touré' , spotify: 'https://open.spotify.com/album/62ozl7W5YkqBNa3fpCmxiO' , amazon: 'https://www.amazon.co.uk/dp/B07VSJ77HT' },
+    { title: 'Blues & Spirituals', year: '2014', label: 'Acoustic Music Records', role: 'Solo album' , spotify: 'https://open.spotify.com/album/52dBHwBuHHRZMT635jERRO' , amazon: 'https://www.amazon.co.uk/dp/B00NQMRPGG' },
+    { title: 'Uptown Blues', year: '2011', label: 'Blues Boulevard', role: 'Solo album' , spotify: 'https://open.spotify.com/album/3kb9zeul2eOMjfBRCq8deQ' , amazon: 'https://www.amazon.co.uk/dp/B005O3XWI0' },
+    { title: 'Mansana Blues', year: '2010', label: 'Dixiefrog', role: 'With Diabel Cissokho, kora and slide guitar' , spotify: 'https://open.spotify.com/album/7kuJ2YGGNVdt2wAFY2D0D6' , amazon: 'https://www.amazon.co.uk/dp/B01AXLL47S' },
     { title: 'Snow On The Tracks', year: '2008', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' , spotify: 'https://open.spotify.com/album/7076oodZropUCxSMyLXkoW' },
-    { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis — produced, co-written, guitar' , spotify: 'https://open.spotify.com/album/2BftRI72CFpx7kz0tlv7YL' },
-    { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' , spotify: 'https://open.spotify.com/album/6AovzawaPSdGeIu2IcoD8b' },
+    { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis — produced, co-written, guitar' , spotify: 'https://open.spotify.com/album/2BftRI72CFpx7kz0tlv7YL' , amazon: 'https://www.amazon.co.uk/dp/B01M9IVBQU' },
+    { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' , spotify: 'https://open.spotify.com/album/6AovzawaPSdGeIu2IcoD8b' , amazon: 'https://www.amazon.co.uk/dp/B00061QJFI' },
   ],
 };
 
@@ -820,6 +820,52 @@ export const pedal = {
   buyHref: '',
   notifyCopy:
     'None of the three are for sale while they are being rebuilt for manufacture. Email me and I will let you know when they are ready.',
+};
+
+/* -------------------------------------------------------------------------- */
+/*  SIGNED CDs, SOLD DIRECT                                                   */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * The two records Ramon has boxes of and can sign. These are sold direct
+ * rather than through a shop, so the money comes to him and the sleeve goes
+ * out signed.
+ *
+ * PAYPAL: paste your paypal.me address into `paypalHref` below — it looks like
+ * https://paypal.me/yourname — and a "Pay with PayPal" button appears on both
+ * boxes on its own. Leave it empty and the boxes simply say to email instead.
+ * Nothing broken goes out either way, so there is no rush.
+ */
+export const forSale = {
+  heading: 'Signed copies, direct from me',
+  intro:
+    'I have boxes of these two. Twelve pounds each, including postage and packing, and I will sign them before they go out.',
+  price: '£12',
+  priceNote: 'including postage and packing',
+
+  paypalHref: '',
+  paypalLabel: 'Pay £12 with PayPal',
+  emailLabel: 'Email me to order',
+  emailNote: 'Tell me which record and where to send it.',
+
+  items: [
+    {
+      title: 'Long Road To Tiznit',
+      year: '2017',
+      label: 'Riverboat Records / World Music Network',
+      image: 'long-road-to-tiznit.jpg',
+      blurb:
+        'Cut between London and Marrakesh — my own band on one side of it, Berber musicians on the other. Justin Adams plays guitar and Najma Akhtar sings in Urdu. Saharan grooves underneath old blues, Skip James and John Lee Hooker and R. L. Burnside, and a run of songs about people crossing borders: refugees, smugglers, the risk and the freedom in it. Tiznit is a town in the south of Morocco.',
+    },
+    {
+      title: 'Blues & Spirituals',
+      year: '2014',
+      label: 'Acoustic Music Records',
+      image: 'blues-and-spirituals.jpg',
+      blurb:
+        'A solo acoustic record for the German label Acoustic Music: twelve tracks, some traditional and some mine. Police Dog Blues is there for Blind Blake, alongside I Want Jesus To Walk With Me, Take Me Out The City and Going Home. Fingerpicking and slide, one man and one guitar, and no band to hide behind.',
+    },
+  ],
 };
 
 /* -------------------------------------------------------------------------- */

@@ -13,7 +13,13 @@
  * ============================================================================
  */
 
-import { identity, music as musicEn, gallery as galleryEn, video as videoEn } from './site';
+import {
+  identity,
+  music as musicEn,
+  gallery as galleryEn,
+  video as videoEn,
+  forSale as forSaleEn,
+} from './site';
 
 export const site = {
   artist: 'Ramon Goose',
@@ -766,3 +772,33 @@ export const nav = [
   { label: 'Biografía', href: '/bio' },
   { label: 'Contacto', href: '/contact' },
 ];
+
+/* -------------------------------------------------------------------------- */
+
+export const forSale = {
+  heading: 'Copias firmadas, directas de mí',
+  intro:
+    'Tengo cajas de estos dos discos. Doce libras cada uno, con el envío incluido, y los firmo antes de mandarlos.',
+  price: '£12',
+  priceNote: 'con el envío incluido',
+
+  paypalHref: forSaleEn.paypalHref,
+  paypalLabel: 'Pagar £12 con PayPal',
+  emailLabel: 'Escríbeme para pedirlo',
+  emailNote: 'Dime qué disco quieres y adónde lo mando.',
+
+  items: [
+    {
+      ...forSaleEn.items[0],
+      label: 'Riverboat Records / World Music Network',
+      blurb:
+        'Grabado entre Londres y Marrakech: mi banda de un lado, músicos bereberes del otro. Justin Adams toca la guitarra y Najma Akhtar canta en urdu. Ritmos saharianos por debajo del blues antiguo, Skip James y John Lee Hooker y R. L. Burnside, y varias canciones sobre gente que cruza fronteras: refugiados, contrabandistas, el riesgo y la libertad que hay en ello. Tiznit es un pueblo del sur de Marruecos.',
+    },
+    {
+      ...forSaleEn.items[1],
+      label: 'Acoustic Music Records',
+      blurb:
+        'Un disco acústico en solitario para el sello alemán Acoustic Music: doce temas, unos tradicionales y otros míos. Police Dog Blues está ahí por Blind Blake, junto a I Want Jesus To Walk With Me, Take Me Out The City y Going Home. Púa y slide, un hombre y una guitarra, sin banda detrás de la que esconderse.',
+    },
+  ],
+};

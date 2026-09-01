@@ -353,12 +353,12 @@ export const tour = {
       // is presumably January 2027 — I have left the date blank rather than
       // guess, which also keeps it out of the event markup until it is real.
       date: '',
-      venue: 'Album release show',
+      venue: 'Casa de la Trova',
       city: 'Santiago de Cuba',
       country: 'Cuba',
       lineup: 'Quintet',
       tickets: '',
-      note: 'January. Venue and date to be announced.',
+      note: 'Album launch, in January. Being filmed and recorded for a future live album. Date to be announced.',
     },
     {
       date: '',

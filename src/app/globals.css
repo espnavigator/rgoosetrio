@@ -736,6 +736,39 @@ p {
    follows the last word wherever that word ends up. */
 .hero__billing {
   display: block;
+  /* The whole billing shudders once as the page arrives. This is the movement
+     you actually see — the per-letter flick further down is the fine detail on
+     top of it. Hovering the title runs it again, through a second copy of the
+     keyframes under a different name: re-using the same name would do nothing,
+     because an animation that has already finished does not restart just
+     because it was re-declared. */
+  animation: billing-shake 0.78s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.hero__title:hover .hero__billing {
+  animation-name: billing-shake-again;
+}
+
+@keyframes billing-shake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-0.16em, 0.02em) rotate(-1.2deg); }
+  22% { transform: translate(0.145em, -0.018em) rotate(1.05deg); }
+  36% { transform: translate(-0.105em, 0.012em) rotate(-0.8deg); }
+  52% { transform: translate(0.07em, -0.008em) rotate(0.55deg); }
+  68% { transform: translate(-0.04em, 0) rotate(-0.32deg); }
+  84% { transform: translate(0.016em, 0) rotate(0.14deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes billing-shake-again {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-0.16em, 0.02em) rotate(-1.2deg); }
+  22% { transform: translate(0.145em, -0.018em) rotate(1.05deg); }
+  36% { transform: translate(-0.105em, 0.012em) rotate(-0.8deg); }
+  52% { transform: translate(0.07em, -0.008em) rotate(0.55deg); }
+  68% { transform: translate(-0.04em, 0) rotate(-0.32deg); }
+  84% { transform: translate(0.016em, 0) rotate(0.14deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
 }
 
 .hero__star {
@@ -744,13 +777,20 @@ p {
   margin-inline: clamp(0.3rem, 1vw, 0.8rem);
   width: clamp(1.1rem, 0.6rem + 1.8vw, 2rem);
   color: var(--gold);
-  /* A slow twinkle, out of step with each other. */
-  animation: star-twinkle 4.5s ease-in-out infinite;
+  /* Two animations, kept separate because they must not fight over the same
+     property: the twinkle owns opacity, the orbit owns transform. Written as
+     one set of keyframes, whichever came second would simply win. */
+  animation:
+    star-twinkle 4.5s ease-in-out infinite,
+    star-orbit 9s linear infinite;
 }
 
+/* The second star runs half an orbit behind the first, so the two are always
+   on opposite sides of their circles. The pair then reads as one slow turn
+   around the billing rather than two stars wobbling on their own. */
 .hero__billing .hero__star + .cutpaper + .hero__star,
 .hero__billing .hero__star:last-of-type {
-  animation-delay: -2.25s;
+  animation-delay: -2.25s, -4.5s;
 }
 
 .hero__star svg {
@@ -762,17 +802,78 @@ p {
 }
 
 @keyframes star-twinkle {
-  0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
-  50% { opacity: 0.55; transform: scale(0.86) rotate(-8deg); }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+/* A small circle, walked in eight steps, with the star turning as it goes.
+   The circle is drawn by hand rather than with sin() and cos() so it works in
+   older browsers as well. Its centre sits half a step above the star's resting
+   place, which is why the loop starts and ends at nothing. */
+@keyframes star-orbit {
+  0% { transform: translate(0em, 0em) rotate(0deg) scale(1); }
+  12.5% { transform: translate(0.141em, -0.059em) rotate(45deg) scale(0.96); }
+  25% { transform: translate(0.2em, -0.2em) rotate(90deg) scale(0.9); }
+  37.5% { transform: translate(0.141em, -0.341em) rotate(135deg) scale(0.94); }
+  50% { transform: translate(0em, -0.4em) rotate(180deg) scale(1.04); }
+  62.5% { transform: translate(-0.141em, -0.341em) rotate(225deg) scale(0.98); }
+  75% { transform: translate(-0.2em, -0.2em) rotate(270deg) scale(0.9); }
+  87.5% { transform: translate(-0.141em, -0.059em) rotate(315deg) scale(0.96); }
+  100% { transform: translate(0em, 0em) rotate(360deg) scale(1); }
 }
 
 /* The cut-paper letters sway, as though the paper is not quite stuck down.
    Each keyframe adds to the letter's own hand-cut angle rather than replacing
    it, and the delay is staggered by letter so the movement travels along the
    word instead of the whole line lifting at once. */
+/* The banner shakes itself once as the page arrives, then settles into the
+   sway. Two animations on the same property, so the order matters: of two
+   animations touching one property the later one in the list wins, but an
+   animation still inside its delay has no effect at all. Delaying the sway by
+   the length of the shake therefore hands the transform over cleanly — shake
+   first, sway from then on.
+
+   The shake is staggered a little per letter so it travels along the word like
+   a flick, and the sway is staggered the same way so the wave keeps running.
+   Both stagger forwards: a negative delay would start the sway immediately and
+   fight the shake. */
 .hero__banner .cutpaper__letter {
-  animation: paper-sway 5.5s ease-in-out infinite;
-  animation-delay: calc(var(--i, 0) * -0.14s);
+  animation:
+    paper-shake 0.9s cubic-bezier(0.36, 0.07, 0.19, 0.97) both,
+    paper-sway 5.5s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * 0.022s), calc(0.9s + var(--i, 0) * 0.14s);
+}
+
+/* One flick and a settle. It starts from the letter's own hand-cut angle and
+   finishes exactly where the sway begins, so there is no jump at the handover. */
+@keyframes paper-shake {
+  0% {
+    transform: translate(var(--tx, 0em), var(--ty, 0em)) rotate(var(--rot, 0deg));
+  }
+  12% {
+    transform: translate(calc(var(--tx, 0em) - 0.09em), calc(var(--ty, 0em) - 0.035em))
+      rotate(calc(var(--rot, 0deg) - 9deg));
+  }
+  28% {
+    transform: translate(calc(var(--tx, 0em) + 0.095em), calc(var(--ty, 0em) + 0.028em))
+      rotate(calc(var(--rot, 0deg) + 8.2deg));
+  }
+  46% {
+    transform: translate(calc(var(--tx, 0em) - 0.06em), var(--ty, 0em))
+      rotate(calc(var(--rot, 0deg) - 5.4deg));
+  }
+  64% {
+    transform: translate(calc(var(--tx, 0em) + 0.034em), var(--ty, 0em))
+      rotate(calc(var(--rot, 0deg) + 3.1deg));
+  }
+  82% {
+    transform: translate(calc(var(--tx, 0em) - 0.014em), var(--ty, 0em))
+      rotate(calc(var(--rot, 0deg) - 1.4deg));
+  }
+  100% {
+    transform: translate(var(--tx, 0em), var(--ty, 0em))
+      rotate(calc(var(--rot, 0deg) - 1.2deg));
+  }
 }
 
 @keyframes paper-sway {
@@ -790,6 +891,8 @@ p {
    the letters keep their hand-cut angles, nothing animates. */
 @media (prefers-reduced-motion: reduce) {
   .hero__star,
+  .hero__billing,
+  .hero__title:hover .hero__billing,
   .hero__banner .cutpaper__letter {
     animation: none;
   }

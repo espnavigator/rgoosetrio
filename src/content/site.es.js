@@ -185,12 +185,12 @@ export const tour = {
   upcoming: [
     {
       date: '',
-      venue: 'Concierto de presentación del disco',
+      venue: 'Casa de la Trova',
       city: 'Santiago de Cuba',
       country: 'Cuba',
       lineup: 'Quinteto',
       tickets: '',
-      note: 'En enero. Sala y fecha por anunciar.',
+      note: 'Presentación del disco, en enero. Se grabará en audio y vídeo para un futuro disco en directo. Fecha por anunciar.',
     },
     {
       date: '',

@@ -172,6 +172,7 @@ export const music = {
   catalogueHeading: 'Catálogo anterior',
   listenLabel: 'Escuchar en Spotify',
   buyLabel: 'Comprar el CD en Amazon',
+  shopLabel: 'Comprar el CD',
   catalogue: [
     { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues y África occidental' },
     { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'Con Modou Touré' },
@@ -185,7 +186,10 @@ export const music = {
     // Los enlaces viven en site.js. Aquí sólo se recogen, para que no haya dos
     // listas de URLs que mantener sincronizadas.
     const en = musicEn.catalogue.find((r) => r.title === rec.title);
-    return en ? { ...rec, spotify: en.spotify, amazon: en.amazon } : rec;
+    // La entrada inglesa primero, la española encima: así los enlaces nuevos
+    // que se añadan en site.js aparecen aquí solos, sin tener que nombrarlos
+    // uno a uno, y el texto traducido sigue mandando.
+    return en ? { ...en, ...rec } : rec;
   }),
 };
 

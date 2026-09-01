@@ -1186,6 +1186,13 @@ a.card:hover {
   color: #ff9900;
 }
 
+/* Not a brand colour, because it is not one shop — it is whichever label
+   happens to sell that record. The site's own red does the job. */
+.reclink--shop:hover,
+.reclink--shop:focus-visible {
+  color: var(--red);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reclink:hover,
   .reclink:focus-visible {

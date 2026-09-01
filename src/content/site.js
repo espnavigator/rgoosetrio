@@ -257,13 +257,15 @@ export const music = {
   // Used as the hover text and the screen-reader name on the little buttons.
   listenLabel: 'Listen on Spotify',
   buyLabel: 'Buy the CD on Amazon',
+  // Records sold somewhere other than Amazon — the label's own shop.
+  shopLabel: 'Buy the CD',
   catalogue: [
     { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues and West African crossover' , spotify: 'https://open.spotify.com/album/64X4U5MX6mmTENISv0VHDD' , amazon: 'https://www.amazon.co.uk/dp/B071XKRVQG' },
     { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'With Modou Touré' , spotify: 'https://open.spotify.com/album/62ozl7W5YkqBNa3fpCmxiO' , amazon: 'https://www.amazon.co.uk/dp/B07VSJ77HT' },
     { title: 'Blues & Spirituals', year: '2014', label: 'Acoustic Music Records', role: 'Solo album' , spotify: 'https://open.spotify.com/album/52dBHwBuHHRZMT635jERRO' , amazon: 'https://www.amazon.co.uk/dp/B00NQMRPGG' },
     { title: 'Uptown Blues', year: '2011', label: 'Blues Boulevard', role: 'Solo album' , spotify: 'https://open.spotify.com/album/3kb9zeul2eOMjfBRCq8deQ' , amazon: 'https://www.amazon.co.uk/dp/B005O3XWI0' },
     { title: 'Mansana Blues', year: '2010', label: 'Dixiefrog', role: 'With Diabel Cissokho, kora and slide guitar' , spotify: 'https://open.spotify.com/album/7kuJ2YGGNVdt2wAFY2D0D6' , amazon: 'https://www.amazon.co.uk/dp/B01AXLL47S' },
-    { title: 'Snow On The Tracks', year: '2008', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' , spotify: 'https://open.spotify.com/album/7076oodZropUCxSMyLXkoW' },
+    { title: 'Snow On The Tracks', year: '2008', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' , spotify: 'https://open.spotify.com/album/7076oodZropUCxSMyLXkoW', shop: 'https://dixiefrog-records.myshopify.com/products/nublues-snow-on-the-tracks' },
     { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis — produced, co-written, guitar' , spotify: 'https://open.spotify.com/album/2BftRI72CFpx7kz0tlv7YL' , amazon: 'https://www.amazon.co.uk/dp/B01M9IVBQU' },
     { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' , spotify: 'https://open.spotify.com/album/6AovzawaPSdGeIu2IcoD8b' , amazon: 'https://www.amazon.co.uk/dp/B00061QJFI' },
   ],

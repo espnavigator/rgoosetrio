@@ -24,13 +24,22 @@ const MARKS = {
     // The smile, with the parcel arrow curling up at the right-hand end.
     path: 'M13.93 12.36c-.53.45-1.23.7-1.9.7-.94 0-1.61-.5-1.61-1.4 0-1.14 1.03-1.66 2.66-1.66h.85v.86c0 .61-.16 1.14-.5 1.5h-.5zm3.9 1.63c-.2-.26-.4-.5-.55-.8-.16-.32-.22-.7-.22-1.24V8.6c0-1.17-.13-2.05-.86-2.72-.62-.56-1.6-.78-2.42-.78-1.98 0-3.5.83-3.87 3.05l1.9.2c.18-.94.75-1.4 1.62-1.4.47 0 .96.18 1.22.6.3.48.26 1.13.26 1.68v.3c-1.36 0-3.1.09-4.32.66-1.42.64-2.4 1.9-2.4 3.75 0 2.36 1.55 3.55 3.5 3.55 1.68 0 2.62-.4 3.92-1.74.43.63.58.94 1.36 1.6.18.1.4.09.56-.05v.02c.44-.4 1.24-1.1 1.69-1.48.18-.15.15-.4.02-.6zM21.6 17.9c-2.6 1.93-6.4 2.95-9.66 2.95-4.58 0-8.7-1.7-11.82-4.52-.25-.22-.03-.53.27-.36 3.37 1.96 7.53 3.14 11.83 3.14 2.9 0 6.08-.6 9.02-1.84.44-.19.81.29.36.63zm1.08-1.24c-.33-.43-2.2-.2-3.05-.1-.25.03-.29-.19-.06-.35 1.5-1.05 3.95-.75 4.23-.4.29.36-.07 2.82-1.47 4-.22.18-.43.08-.33-.16.32-.8 1.02-2.57.68-3z',
   },
+  shop: {
+    className: 'reclink--shop',
+    viewBox: '0 0 24 24',
+    // A shopping bag, for records sold somewhere that is not Amazon — the
+    // label's own shop, usually. Deliberately not another ring: Spotify's mark
+    // is a circle already, and two circles side by side would read as a pair.
+    path: 'M12 2a4.6 4.6 0 0 0-4.6 4.6V8H3.9l1.3 13.7A2.5 2.5 0 0 0 7.7 24h8.6a2.5 2.5 0 0 0 2.5-2.3L20.1 8h-3.5V6.6A4.6 4.6 0 0 0 12 2zm0 2a2.6 2.6 0 0 1 2.6 2.6V8H9.4V6.6A2.6 2.6 0 0 1 12 4z',
+    fillRule: 'evenodd',
+  },
 };
 
 function Mark({ kind }) {
   const mark = MARKS[kind];
   return (
     <svg viewBox={mark.viewBox} aria-hidden="true" focusable="false">
-      <path d={mark.path} />
+      <path d={mark.path} fillRule={mark.fillRule} />
     </svg>
   );
 }
@@ -39,6 +48,7 @@ export default function RecordLinks({ record, labels }) {
   const links = [
     { kind: 'spotify', href: record.spotify, label: labels.listen },
     { kind: 'amazon', href: record.amazon, label: labels.buy },
+    { kind: 'shop', href: record.shop, label: labels.shop },
   ].filter((l) => l.href);
 
   if (links.length === 0) return null;

@@ -234,7 +234,11 @@ export default function MusicPage({ locale = 'en' }) {
                 </span>
                 <RecordLinks
                   record={rec}
-                  labels={{ listen: music.listenLabel, buy: music.buyLabel }}
+                  labels={{
+                    listen: music.listenLabel,
+                    buy: music.buyLabel,
+                    shop: music.shopLabel,
+                  }}
                 />
               </li>
             ))}

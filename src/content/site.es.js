@@ -164,7 +164,8 @@ export const music = {
   ],
 
   catalogueHeading: 'Catálogo anterior',
-  catalogueNote: 'Una selección, de lo más reciente a lo más antiguo.',
+  listenLabel: 'Escuchar en Spotify',
+  buyLabel: 'Comprar el CD en Amazon',
   catalogue: [
     { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues y África occidental' },
     { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'Con Modou Touré' },
@@ -174,7 +175,12 @@ export const music = {
     { title: 'Snow On The Tracks', year: '2008', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
     { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis: producción, composición y guitarra' },
     { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
-  ],
+  ].map((rec) => {
+    // Los enlaces viven en site.js. Aquí sólo se recogen, para que no haya dos
+    // listas de URLs que mantener sincronizadas.
+    const en = musicEn.catalogue.find((r) => r.title === rec.title);
+    return en ? { ...rec, spotify: en.spotify, amazon: en.amazon } : rec;
+  }),
 };
 
 /* -------------------------------------------------------------------------- */

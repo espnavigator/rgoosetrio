@@ -1,4 +1,5 @@
 import PageHeader from '@/components/PageHeader';
+import RecordLinks from '@/components/RecordLinks';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { music } from '@/content/site';
@@ -147,7 +148,7 @@ export default function MusicPage({ locale = 'en' }) {
             <h2>{music.catalogueHeading}</h2>
           </div>
 
-          <ul className="credits" style={{ color: 'var(--paper)' }}>
+          <ul className="credits credits--links" style={{ color: 'var(--paper)' }}>
             {music.catalogue.map((rec) => (
               <li
                 key={rec.title}
@@ -162,13 +163,13 @@ export default function MusicPage({ locale = 'en' }) {
                 <span style={{ color: 'rgba(243,232,213,0.7)' }}>
                   <Txt>{rec.role}</Txt> · <Txt>{rec.label}</Txt>
                 </span>
+                <RecordLinks
+                  record={rec}
+                  labels={{ listen: music.listenLabel, buy: music.buyLabel }}
+                />
               </li>
             ))}
           </ul>
-
-          <p style={{ marginTop: '1.5rem', fontSize: '0.9rem' }}>
-            <Txt>{music.catalogueNote}</Txt>
-          </p>
         </div>
       </section>
     </>

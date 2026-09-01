@@ -254,17 +254,18 @@ export const music = {
 
   // ---- BACK CATALOGUE -----------------------------------------------------
   catalogueHeading: 'Back catalogue',
-  catalogueNote:
-    'A selection, newest first. TODO: check the years marked below and add anything missing.',
+  // Used as the hover text and the screen-reader name on the little buttons.
+  listenLabel: 'Listen on Spotify',
+  buyLabel: 'Buy the CD on Amazon',
   catalogue: [
-    { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues and West African crossover' },
-    { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'With Modou Touré' },
-    { title: 'Blues & Spirituals', year: '2014', label: 'Acoustic Music Records', role: 'Solo album' },
-    { title: 'Uptown Blues', year: '2011', label: 'Blues Boulevard', role: 'Solo album' },
-    { title: 'Mansana Blues', year: '2010', label: 'Dixiefrog', role: 'With Diabel Cissokho, kora and slide guitar' },
-    { title: 'Snow On The Tracks', year: '2008', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
-    { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis — produced, co-written, guitar' },
-    { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' },
+    { title: 'Long Road To Tiznit', year: '2017', label: 'World Music Network', role: 'Blues and West African crossover' , spotify: 'https://open.spotify.com/album/64X4U5MX6mmTENISv0VHDD' },
+    { title: 'The West African Blues Project', year: '2015', label: 'ARC Music', role: 'With Modou Touré' , spotify: 'https://open.spotify.com/album/62ozl7W5YkqBNa3fpCmxiO' },
+    { title: 'Blues & Spirituals', year: '2014', label: 'Acoustic Music Records', role: 'Solo album' , spotify: 'https://open.spotify.com/album/52dBHwBuHHRZMT635jERRO' },
+    { title: 'Uptown Blues', year: '2011', label: 'Blues Boulevard', role: 'Solo album' , spotify: 'https://open.spotify.com/album/3kb9zeul2eOMjfBRCq8deQ' },
+    { title: 'Mansana Blues', year: '2010', label: 'Dixiefrog', role: 'With Diabel Cissokho, kora and slide guitar' , spotify: 'https://open.spotify.com/album/7kuJ2YGGNVdt2wAFY2D0D6' },
+    { title: 'Snow On The Tracks', year: '2008', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' , spotify: 'https://open.spotify.com/album/7076oodZropUCxSMyLXkoW' },
+    { title: 'Drew, Mississippi', year: '2006', label: 'Black and Tan Records', role: 'Boo Boo Davis — produced, co-written, guitar' , spotify: 'https://open.spotify.com/album/2BftRI72CFpx7kz0tlv7YL' },
+    { title: 'Dreams Of A Blues Man', year: '2004', label: 'Dixiefrog / 21st Century Blues', role: 'NuBlues' , spotify: 'https://open.spotify.com/album/6AovzawaPSdGeIu2IcoD8b' },
   ],
 };
 

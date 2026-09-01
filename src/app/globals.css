@@ -1125,6 +1125,74 @@ a.card:hover {
   font-style: italic;
 }
 
+/* A catalogue row that carries Spotify and Amazon buttons.
+
+   Two columns rather than the plain flex row the other credit lists use: the
+   title and the label sit stacked in the first column and the buttons hold the
+   right-hand edge across both rows, so they line up down the page instead of
+   drifting with the length of each record's description. */
+.credits--links li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 0.15rem 1.25rem;
+}
+
+.credits--links li > strong,
+.credits--links li > span:not(.reclinks) {
+  grid-column: 1;
+}
+
+.reclinks {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  display: flex;
+  gap: 0.55rem;
+  font-style: normal;
+}
+
+.reclink {
+  display: inline-flex;
+  width: 1.55rem;
+  height: 1.55rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* Off-brand grey until pointed at, so eight rows of logos do not turn the
+     catalogue into an advertising hoarding. The colour arrives on hover. */
+  color: rgba(243, 232, 213, 0.55);
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.reclink svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.reclink:hover,
+.reclink:focus-visible {
+  transform: translateY(-2px) scale(1.08);
+}
+
+.reclink--spotify:hover,
+.reclink--spotify:focus-visible {
+  color: #1db954;
+}
+
+.reclink--amazon:hover,
+.reclink--amazon:focus-visible {
+  color: #ff9900;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reclink:hover,
+  .reclink:focus-visible {
+    transform: none;
+  }
+}
+
 /* Fact strip down the side of the Cuba page. */
 .facts {
   list-style: none;

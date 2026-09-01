@@ -26,9 +26,9 @@ export const site = {
   email: {
     // TODO: confirm which addresses you want public. A single contact address is
     // fine — just point all three at the same one.
-    general: 'ramongoosemusic@gmail.com',
-    booking: 'ramongoosemusic@gmail.com',
-    press: 'ramongoosemusic@gmail.com',
+    general: 'james.wpdesign@gmail.com',
+    booking: 'james.wpdesign@gmail.com',
+    press: 'james.wpdesign@gmail.com',
   },
 
   social: [
@@ -1114,17 +1114,17 @@ export const contact = {
     {
       title: 'Live bookings',
       body: 'Festivals, clubs and private events, in trio or full-band format.',
-      email: 'ramongoosemusic@gmail.com',
+      email: 'james.wpdesign@gmail.com',
     },
     {
       title: 'Press and radio',
       body: 'Interviews, review copies and high-resolution photographs.',
-      email: 'ramongoosemusic@gmail.com',
+      email: 'james.wpdesign@gmail.com',
     },
     {
       title: 'Everything else',
       body: 'Sessions, production, teaching, or the pedals.',
-      email: 'ramongoosemusic@gmail.com',
+      email: 'james.wpdesign@gmail.com',
     },
   ],
 };

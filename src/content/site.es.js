@@ -29,9 +29,9 @@ export const site = {
     'Ramon Goose es un guitarrista inglés que trabaja en la música cubana. Guitarra eléctrica cubana, son y blues, grabado en los Estudios EGREM de Santiago de Cuba.',
   url: 'https://ramongoose.co.uk',
   email: {
-    general: 'ramongoosemusic@gmail.com',
-    booking: 'ramongoosemusic@gmail.com',
-    press: 'ramongoosemusic@gmail.com',
+    general: 'james.wpdesign@gmail.com',
+    booking: 'james.wpdesign@gmail.com',
+    press: 'james.wpdesign@gmail.com',
   },
   social: [
     { label: 'The Guitar Show', href: 'https://youtube.com/@TheGuitarShow' },
@@ -746,17 +746,17 @@ export const contact = {
     {
       title: 'Contratación de conciertos',
       body: 'Festivales, clubes y eventos privados, en formato de trío o de banda completa.',
-      email: 'ramongoosemusic@gmail.com',
+      email: 'james.wpdesign@gmail.com',
     },
     {
       title: 'Prensa y radio',
       body: 'Entrevistas, copias para reseña y fotografías en alta resolución.',
-      email: 'ramongoosemusic@gmail.com',
+      email: 'james.wpdesign@gmail.com',
     },
     {
       title: 'Todo lo demás',
       body: 'Sesiones, producción, clases, o los pedales.',
-      email: 'ramongoosemusic@gmail.com',
+      email: 'james.wpdesign@gmail.com',
     },
   ],
 };

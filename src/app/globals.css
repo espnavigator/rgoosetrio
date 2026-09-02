@@ -1327,6 +1327,65 @@ a.card:hover {
   margin: 0.7rem 0 0;
 }
 
+/* ==========================================================================
+   GEAR TABS  +  EMBEDDED SHORTS
+   ========================================================================== */
+
+.geartabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: -1rem;
+}
+
+.geartabs__tab {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  color: var(--ink);
+  padding: 0.6rem 1.1rem;
+  border: 2px solid var(--ink);
+  background: transparent;
+}
+
+.geartabs__tab:hover {
+  background: var(--paper-shade);
+  color: var(--ink);
+}
+
+/* The page you are on. Solid, so it reads as selected rather than as one of
+   two identical buttons. */
+.geartabs__tab[aria-current='page'] {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--paper);
+}
+
+/* Joe's shorts are filmed upright, so the player is held in a tall 9:16 frame
+   rather than the usual widescreen box — a portrait video in a landscape
+   window is mostly black bars. */
+.short {
+  position: relative;
+  width: 100%;
+  max-width: 15rem;
+  aspect-ratio: 9 / 16;
+  margin-bottom: 1.25rem;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+}
+
+.short iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 /* Fact strip down the side of the Cuba page. */
 .facts {
   list-style: none;

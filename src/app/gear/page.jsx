@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
+import GearTabs from '@/components/GearTabs';
 import { Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { gallery, gear } from '@/content/site';
@@ -29,6 +30,10 @@ export default function GearPage({ locale = 'en' }) {
   return (
     <>
       <PageHeader kicker="Guitars, amps, effects" title={gear.heading} lead={gear.intro} />
+
+      <div className="container">
+        <GearTabs locale={locale} current="guitar" labels={gear.tabs} />
+      </div>
 
       {gear.groups.map((group, i) => (
         <section

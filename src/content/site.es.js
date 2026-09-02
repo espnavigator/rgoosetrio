@@ -19,6 +19,7 @@ import {
   gallery as galleryEn,
   video as videoEn,
   forSale as forSaleEn,
+  bassGear as bassGearEn,
 } from './site';
 
 export const site = {
@@ -411,6 +412,11 @@ export const cuba = {
 /* -------------------------------------------------------------------------- */
 
 export const gear = {
+  tabs: {
+    guitar: 'El equipo de Ramon',
+    bass: 'El equipo de Joe',
+    aria: 'Secciones de equipo',
+  },
   photosKicker: 'El taller',
   photosHeading: 'En imágenes',
   heading: 'El equipo',
@@ -811,6 +817,56 @@ export const forSale = {
       label: 'Acoustic Music Records',
       blurb:
         'Un disco acústico en solitario para el sello alemán Acoustic Music: doce temas, unos tradicionales y otros míos. Police Dog Blues está ahí por Blind Blake, junto a I Want Jesus To Walk With Me, Take Me Out The City y Going Home. Púa y slide, un hombre y una guitarra, sin banda detrás de la que esconderse.',
+    },
+  ],
+};
+
+/* -------------------------------------------------------------------------- */
+
+export const bassGear = {
+  ...bassGearEn,
+  heading: 'El equipo de Joe',
+  intro:
+    'Joe Goose toca el bajo en los Compadres ingleses y lleva el canal Bass Guitar Show. Esto es lo que usa, sacado de sus propios vídeos.',
+  channelLabel: 'The Bass Guitar Show',
+  channelBlurb:
+    'Joe lleva el Bass Guitar Show, donde enseña y da consejos a bajistas que empiezan y a los de nivel intermedio. Los vídeos de los que salen estos clips están todos allí.',
+  watchLabel: 'Ver en YouTube',
+  groups: [
+    {
+      group: 'Los bajos',
+      items: [
+        {
+          ...bassGearEn.groups[0].items[0],
+          spec: 'Cuatro cuerdas · cuerpo de fresno · su bajo principal',
+          note: 'El marrón, y el que hace casi todo el trabajo. Un cuatro cuerdas de la primera serie de TRB, con el cuerpo de fresno gastado hasta la madera de tantos años tocándolo. Las pastillas no son las de fábrica.',
+        },
+        {
+          ...bassGearEn.groups[0].items[1],
+          spec: 'Cuatro cuerdas · hecho en Japón · fresno · diapasón de palisandro',
+          note: 'El segundo TRB, el de repuesto: el mismo modelo, sin trastes. Fabricado en Japón, cuerpo de fresno, mástil de palisandro. Joe llama a los dos sus Mark One.',
+        },
+        {
+          ...bassGearEn.groups[0].items[2],
+          spec: 'Sin pala · mástil pasante de grafito · años ochenta',
+          note: 'Un bajo inglés sin pala de los años ochenta, construido sobre un mástil de grafito que recorre el instrumento entero, con alas de madera veteada a los lados. Status es ese sonido que mucha gente identifica con los ochenta sin saber el nombre.',
+        },
+        {
+          ...bassGearEn.groups[0].items[3],
+          spec: 'Azul perla · hecho a mano en Birmingham',
+          note: 'El bajo de Mark King: el modelo que John Diggins construyó para Level 42, que es la razón por la que casi todo el mundo reconoce esa forma. El de Joe es azul perla.',
+        },
+      ],
+    },
+    {
+      group: 'El equipo',
+      items: [
+        {
+          ...bassGearEn.groups[1].items[0],
+          spec: 'Apilados, con la cabeza encima',
+          note: 'Barefaced fabrica pantallas muy ligeras en Brighton, algo que importa más de lo que parece cuando hay que subir el equipo por las escaleras de un pub de Londres. Joe usa dos, una sobre otra, con una pedalera delante.',
+        },
+      ],
     },
   ],
 };

@@ -797,8 +797,6 @@ export const forSale = {
 
   paypal: forSaleEn.paypal,
   paypalLabel: 'Pagar £12 con PayPal',
-  emailLabel: 'Escríbeme para pedirlo',
-  emailNote: 'Dime qué disco quieres y adónde lo mando.',
 
   items: [
     {

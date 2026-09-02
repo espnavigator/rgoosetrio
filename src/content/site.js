@@ -869,8 +869,6 @@ export const forSale = {
     currency: 'GBP',
   },
   paypalLabel: 'Pay £12 with PayPal',
-  emailLabel: 'Email me to order',
-  emailNote: 'Tell me which record and where to send it.',
 
   items: [
     {

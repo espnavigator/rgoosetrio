@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function MusicPage({ locale = 'en' }) {
   // Content comes from the language this page was built for.
-  const { music, forSale, site } = getContent(locale);
+  const { music, forSale } = getContent(locale);
   const album = music.featured;
 
   /**
@@ -202,8 +202,9 @@ export default function MusicPage({ locale = 'en' }) {
                   </p>
 
                   <div className="forsale__actions">
-                    {/* The PayPal button only exists once there is an account
-                        to pay into. See site.js. */}
+                    {/* PayPal is now the only way to buy these, so emptying the
+                        PayPal account in site.js leaves the box with no button
+                        at all. Put the account back, or add another route. */}
                     {paypalHref(rec) && (
                       <a
                         className="btn btn--primary btn--sm"
@@ -214,18 +215,7 @@ export default function MusicPage({ locale = 'en' }) {
                         {forSale.paypalLabel}
                       </a>
                     )}
-                    <a
-                      className={`btn btn--sm${paypalHref(rec) ? '' : ' btn--primary'}`}
-                      href={`mailto:${site.email.general}?subject=${encodeURIComponent(
-                        `CD order: ${rec.title}`
-                      )}`}
-                    >
-                      {forSale.emailLabel}
-                    </a>
                   </div>
-                  <p className="forsale__note">
-                    <Txt>{forSale.emailNote}</Txt>
-                  </p>
                 </div>
               </article>
             ))}

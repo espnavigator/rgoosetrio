@@ -200,6 +200,15 @@ export const tour = {
   intro: 'Dos formaciones, para que la banda funcione en cualquiera de los dos tamaños. Un trío aquí, un quinteto en Cuba.',
   upcoming: [
     {
+      date: '2026-11-07',
+      venue: 'The Antwerp Arms',
+      city: 'Tottenham, Londres',
+      country: 'Reino Unido',
+      lineup: 'Trío',
+      tickets: '',
+      note: 'Entrada libre.',
+    },
+    {
       date: '',
       venue: 'Casa de la Trova',
       city: 'Santiago de Cuba',

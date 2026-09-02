@@ -352,6 +352,15 @@ export const tour = {
 
   upcoming: [
     {
+      date: '2026-11-07',
+      venue: 'The Antwerp Arms',
+      city: 'Tottenham, London',
+      country: 'United Kingdom',
+      lineup: 'Trio',
+      tickets: '',
+      note: 'Free entry.',
+    },
+    {
       // TODO: confirm the year. The album is a 2026 release, so a January show
       // is presumably January 2027 — I have left the date blank rather than
       // guess, which also keeps it out of the event markup until it is real.

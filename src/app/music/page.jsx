@@ -22,6 +22,30 @@ export default function MusicPage({ locale = 'en' }) {
   // Content comes from the language this page was built for.
   const { music, forSale, site } = getContent(locale);
   const album = music.featured;
+
+  /**
+   * The PayPal link for one record. Everything the payment needs travels in
+   * the URL: who is being paid, how much, and which album — so the payment
+   * notification names the record rather than just showing £12 from a stranger.
+   * `no_shipping: 2` makes PayPal ask for a postal address and insist on it,
+   * because a CD has to go somewhere.
+   *
+   * With no PayPal account set in site.js this returns nothing and the button
+   * is left out altogether.
+   */
+  const paypalHref = (rec) => {
+    const pp = forSale.paypal;
+    if (!pp || !pp.email) return '';
+    const params = new URLSearchParams({
+      cmd: '_xclick',
+      business: pp.email,
+      item_name: `${rec.title} — signed CD`,
+      amount: pp.amount,
+      currency_code: pp.currency,
+      no_shipping: '2',
+    });
+    return `https://www.paypal.com/cgi-bin/webscr?${params}`;
+  };
   // Streaming links are only drawn once they actually point somewhere.
   const liveLinks = album.links.filter((l) => l.href);
 
@@ -178,12 +202,12 @@ export default function MusicPage({ locale = 'en' }) {
                   </p>
 
                   <div className="forsale__actions">
-                    {/* The PayPal button only exists once there is a real
-                        address to send people to. See site.js. */}
-                    {forSale.paypalHref && (
+                    {/* The PayPal button only exists once there is an account
+                        to pay into. See site.js. */}
+                    {paypalHref(rec) && (
                       <a
                         className="btn btn--primary btn--sm"
-                        href={forSale.paypalHref}
+                        href={paypalHref(rec)}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -191,7 +215,7 @@ export default function MusicPage({ locale = 'en' }) {
                       </a>
                     )}
                     <a
-                      className={`btn btn--sm${forSale.paypalHref ? '' : ' btn--primary'}`}
+                      className={`btn btn--sm${paypalHref(rec) ? '' : ' btn--primary'}`}
                       href={`mailto:${site.email.general}?subject=${encodeURIComponent(
                         `CD order: ${rec.title}`
                       )}`}

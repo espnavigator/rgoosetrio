@@ -845,7 +845,20 @@ export const forSale = {
   price: '£12',
   priceNote: 'including postage and packing',
 
-  paypalHref: '',
+  /**
+   * PayPal. The money goes to the account below, and the album title is sent
+   * across with the payment as the item name — so the notification that lands
+   * in your inbox tells you which of the two records to sign and post. The
+   * buyer is asked for a postal address as part of paying, and can pay by card
+   * without having a PayPal account of their own.
+   *
+   * To stop taking PayPal, empty the email line and the buttons disappear.
+   */
+  paypal: {
+    email: 'desertroadproductions@gmail.com',
+    amount: '12.00',
+    currency: 'GBP',
+  },
   paypalLabel: 'Pay £12 with PayPal',
   emailLabel: 'Email me to order',
   emailNote: 'Tell me which record and where to send it.',

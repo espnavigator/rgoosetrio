@@ -786,7 +786,7 @@ export const forSale = {
   price: '£12',
   priceNote: 'con el envío incluido',
 
-  paypalHref: forSaleEn.paypalHref,
+  paypal: forSaleEn.paypal,
   paypalLabel: 'Pagar £12 con PayPal',
   emailLabel: 'Escríbeme para pedirlo',
   emailNote: 'Dime qué disco quieres y adónde lo mando.',

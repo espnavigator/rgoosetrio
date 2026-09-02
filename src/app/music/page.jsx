@@ -187,6 +187,7 @@ export default function MusicPage({ locale = 'en' }) {
                   height="640"
                 />
                 <div className="forsale__body">
+                  <span className="forsale__badge">{forSale.badge}</span>
                   <h3 className="forsale__title">
                     {rec.title}{' '}
                     <span className="forsale__year">{rec.year}</span>

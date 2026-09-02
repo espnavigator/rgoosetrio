@@ -796,6 +796,7 @@ export const forSale = {
   priceNote: 'con el envío incluido',
 
   paypal: forSaleEn.paypal,
+  badge: 'CD firmado',
   paypalLabel: 'Pagar £12 con PayPal',
 
   items: [

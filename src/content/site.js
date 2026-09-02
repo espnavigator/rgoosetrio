@@ -868,6 +868,8 @@ export const forSale = {
     amount: '12.00',
     currency: 'GBP',
   },
+  // The little red tag at the top of each box.
+  badge: 'Signed CD',
   paypalLabel: 'Pay £12 with PayPal',
 
   items: [

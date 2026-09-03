@@ -20,6 +20,7 @@ import {
   video as videoEn,
   forSale as forSaleEn,
   bassGear as bassGearEn,
+  shop as shopEn,
 } from './site';
 
 export const site = {
@@ -664,7 +665,12 @@ export const shop = {
       note: 'Algodón natural, estampada con la Guyatone y las palmeras.',
     },
     { name: 'Goose Effects', variant: 'Pedales', price: '', href: '/goose-pedal', note: 'Texas Flood, Crossfire y Gooseboost. En fabricación. Apúntate a la lista.' },
-  ],
+  ].map((rec, i) => ({
+    // Las fotos viven en site.js: aquí se recogen por posición para no tener
+    // que añadir cada imagen dos veces. Las dos listas van en el mismo orden.
+    ...shopEn.items[i],
+    ...rec,
+  })),
 };
 
 /* -------------------------------------------------------------------------- */

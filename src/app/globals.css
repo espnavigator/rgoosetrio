@@ -304,6 +304,13 @@ p {
   align-items: start;
 }
 
+/* A grid item will not shrink below its content's own width unless told to, so
+   a wide image inside a column drags that column out and pushes the page
+   sideways. This lets both columns shrink as intended. */
+.split > * {
+  min-width: 0;
+}
+
 @media (min-width: 56rem) {
   .split {
     grid-template-columns: 1.35fr 1fr;

@@ -30,7 +30,33 @@ export default function BioPage({ locale = 'en' }) {
         <div className="container split">
           <div>
             {bio.longHeading && <h2>{bio.longHeading}</h2>}
-            <Paragraphs items={bio.long} />
+            {/* The biography, with the photographs set between the
+                paragraphs rather than collected at the foot of the page —
+                plenty of readers never reach the bottom. Which paragraph each
+                one follows is set in src/content/site.js. */}
+            {bio.long.map((para, i) => (
+              <div key={i}>
+                <p>
+                  <Txt>{para}</Txt>
+                </p>
+                {(bio.photos || [])
+                  .filter((ph) => ph.after === i)
+                  .map((ph) => (
+                    <figure key={ph.src} className="biopic">
+                      <img
+                        src={asset(`/images/bio/${ph.src}`)}
+                        alt={ph.caption}
+                        loading="lazy"
+                        width={ph.width}
+                        height={ph.height}
+                      />
+                      <figcaption>
+                        <Txt>{ph.caption}</Txt>
+                      </figcaption>
+                    </figure>
+                  ))}
+              </div>
+            ))}
 
             {downloads.length > 0 && (
               <div className="btn-row">
@@ -64,30 +90,6 @@ export default function BioPage({ locale = 'en' }) {
         </div>
       </section>
 
-      {/* Photographs. Kept to a modest size — they illustrate the text rather
-          than take over from it. */}
-      {bio.photos?.length > 0 && (
-        <section className="section section--paper">
-          <div className="container">
-            <div className="grid grid--3">
-              {bio.photos.map((photo) => (
-                <figure key={photo.src} className="biopic">
-                  <img
-                    src={asset(`/images/bio/${photo.src}`)}
-                    alt={photo.caption}
-                    loading="lazy"
-                    width={photo.width}
-                    height={photo.height}
-                  />
-                  <figcaption>
-                    <Txt>{photo.caption}</Txt>
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
     </>
   );
 }

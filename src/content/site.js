@@ -1121,18 +1121,27 @@ export const bio = {
   photos: [
     {
       src: 'control-room.jpg',
+      // Sits below paragraph 1 of the biography. Change the number to
+      // move it; 0 is the first paragraph.
+      after: 0,
       caption: 'In the control room, in front of the desk and the multitrack.',
       width: 1400,
       height: 1050,
     },
     {
       src: 'egrem-estudio-18.jpg',
+      // Sits below paragraph 2 of the biography. Change the number to
+      // move it; 0 is the first paragraph.
+      after: 1,
       caption: 'Estudio 18 at EGREM, with the Guyatone.',
       width: 1400,
       height: 1400,
     },
     {
       src: 'in-the-studio.jpg',
+      // Sits below paragraph 3 of the biography. Change the number to
+      // move it; 0 is the first paragraph.
+      after: 2,
       caption: 'In the studio in Cuba, between takes.',
       width: 1400,
       height: 1050,

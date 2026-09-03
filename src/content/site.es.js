@@ -809,12 +809,14 @@ export const forSale = {
     {
       ...forSaleEn.items[0],
       label: 'Riverboat Records / World Music Network',
+      shopNote: 'Blues y ritmos saharianos, grabado entre Londres y Marrakech. Firmado.',
       blurb:
         'Grabado entre Londres y Marrakech: mi banda de un lado, músicos bereberes del otro. Justin Adams toca la guitarra y Najma Akhtar canta en urdu. Ritmos saharianos por debajo del blues antiguo, Skip James y John Lee Hooker y R. L. Burnside, y varias canciones sobre gente que cruza fronteras: refugiados, contrabandistas, el riesgo y la libertad que hay en ello. Tiznit es un pueblo del sur de Marruecos.',
     },
     {
       ...forSaleEn.items[1],
       label: 'Acoustic Music Records',
+      shopNote: 'Acústico en solitario, doce temas de púa y slide. Firmado.',
       blurb:
         'Un disco acústico en solitario para el sello alemán Acoustic Music: doce temas, unos tradicionales y otros míos. Police Dog Blues está ahí por Blind Blake, junto a I Want Jesus To Walk With Me, Take Me Out The City y Going Home. Púa y slide, un hombre y una guitarra, sin banda detrás de la que esconderse.',
     },

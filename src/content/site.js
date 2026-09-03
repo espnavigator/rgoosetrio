@@ -884,6 +884,9 @@ export const forSale = {
       year: '2017',
       label: 'Riverboat Records / World Music Network',
       image: 'long-road-to-tiznit.jpg',
+      // The one-liner used on the shop card, where there is no room for the
+      // full account above.
+      shopNote: 'Blues and Saharan grooves, cut between London and Marrakesh. Signed.',
       blurb:
         'Cut between London and Marrakesh — my own band on one side of it, Berber musicians on the other. Justin Adams plays guitar and Najma Akhtar sings in Urdu. Saharan grooves underneath old blues, Skip James and John Lee Hooker and R. L. Burnside, and a run of songs about people crossing borders: refugees, smugglers, the risk and the freedom in it. Tiznit is a town in the south of Morocco.',
     },
@@ -892,6 +895,7 @@ export const forSale = {
       year: '2014',
       label: 'Acoustic Music Records',
       image: 'blues-and-spirituals.jpg',
+      shopNote: 'Solo acoustic, twelve tracks of fingerpicking and slide. Signed.',
       blurb:
         'A solo acoustic record for the German label Acoustic Music: twelve tracks, some traditional and some mine. Police Dog Blues is there for Blind Blake, alongside I Want Jesus To Walk With Me, Take Me Out The City and Going Home. Fingerpicking and slide, one man and one guitar, and no band to hide behind.',
     },
@@ -1019,6 +1023,12 @@ export const shop = {
       variant: 'Pedals',
       price: '',
       href: '/goose-pedal',
+      // Two shots side by side inside the card rather than one across the top,
+      // since there are two pedals to show and neither should get the billing.
+      pair: [
+        { src: '/images/pedals/texas-flood.jpg', alt: 'Goose Effects Texas Flood pedal' },
+        { src: '/images/pedals/crossfire.jpg', alt: 'Goose Effects Crossfire pedal' },
+      ],
       note: 'Texas Flood, Crossfire and Gooseboost. In manufacture — join the list.',
     },
   ],

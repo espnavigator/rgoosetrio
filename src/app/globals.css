@@ -1802,6 +1802,36 @@ a.card:hover {
   background: var(--paper-deep);
 }
 
+/* Two product shots side by side, flush into the top of a card. Used where a
+   box covers more than one thing — the pedals — so neither gets top billing. */
+.product__pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  width: calc(100% + 3rem);
+  margin: -1.5rem -1.5rem 1.1rem;
+  background: var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+.product__pair img {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--paper-deep);
+}
+
+.product__pricenote {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-top: 0.2rem;
+}
+
 .product__variant {
   font-family: var(--font-display);
   font-size: 0.72rem;

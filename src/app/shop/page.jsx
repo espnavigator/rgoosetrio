@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
+import SignedCds from '@/components/SignedCds';
 import { Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { shop, site } from '@/content/site';
@@ -97,6 +98,9 @@ export default function ShopPage({ locale = 'en' }) {
           </p>
         </div>
       </section>
+
+      {/* The same two boxes as the music page, from one shared component. */}
+      <SignedCds locale={locale} />
     </>
   );
 }

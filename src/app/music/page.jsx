@@ -1,5 +1,6 @@
 import PageHeader from '@/components/PageHeader';
 import RecordLinks from '@/components/RecordLinks';
+import SignedCds from '@/components/SignedCds';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { music } from '@/content/site';
@@ -20,32 +21,9 @@ export const metadata = {
 
 export default function MusicPage({ locale = 'en' }) {
   // Content comes from the language this page was built for.
-  const { music, forSale } = getContent(locale);
+  const { music } = getContent(locale);
   const album = music.featured;
 
-  /**
-   * The PayPal link for one record. Everything the payment needs travels in
-   * the URL: who is being paid, how much, and which album — so the payment
-   * notification names the record rather than just showing £12 from a stranger.
-   * `no_shipping: 2` makes PayPal ask for a postal address and insist on it,
-   * because a CD has to go somewhere.
-   *
-   * With no PayPal account set in site.js this returns nothing and the button
-   * is left out altogether.
-   */
-  const paypalHref = (rec) => {
-    const pp = forSale.paypal;
-    if (!pp || !pp.email) return '';
-    const params = new URLSearchParams({
-      cmd: '_xclick',
-      business: pp.email,
-      item_name: `${rec.title} — signed CD`,
-      amount: pp.amount,
-      currency_code: pp.currency,
-      no_shipping: '2',
-    });
-    return `https://www.paypal.com/cgi-bin/webscr?${params}`;
-  };
   // Streaming links are only drawn once they actually point somewhere.
   const liveLinks = album.links.filter((l) => l.href);
 
@@ -165,64 +143,7 @@ export default function MusicPage({ locale = 'en' }) {
       </section>
 
       {/* ---- SIGNED COPIES, SOLD DIRECT ---------------------------------- */}
-      <section className="section section--paper">
-        <div className="container">
-          <div className="section-head">
-            <span className="kicker">{forSale.price} {forSale.priceNote}</span>
-            <h2>{forSale.heading}</h2>
-            <p className="lead" style={{ marginBottom: 0 }}>
-              <Txt>{forSale.intro}</Txt>
-            </p>
-          </div>
-
-          <div className="grid grid--sale">
-            {forSale.items.map((rec) => (
-              <article key={rec.title} className="forsale">
-                <img
-                  className="forsale__cover"
-                  src={asset(`/images/albums/${rec.image}`)}
-                  alt={`${rec.title} — album cover`}
-                  loading="lazy"
-                  width="640"
-                  height="640"
-                />
-                <div className="forsale__body">
-                  <span className="forsale__badge">{forSale.badge}</span>
-                  <h3 className="forsale__title">
-                    {rec.title}{' '}
-                    <span className="forsale__year">{rec.year}</span>
-                  </h3>
-                  <p className="forsale__label">{rec.label}</p>
-                  <p className="forsale__blurb">
-                    <Txt>{rec.blurb}</Txt>
-                  </p>
-
-                  <p className="forsale__price">
-                    {forSale.price}{' '}
-                    <span>{forSale.priceNote}</span>
-                  </p>
-
-                  <div className="forsale__actions">
-                    {/* PayPal is now the only way to buy these, so emptying the
-                        PayPal account in site.js leaves the box with no button
-                        at all. Put the account back, or add another route. */}
-                    {paypalHref(rec) && (
-                      <a
-                        className="btn btn--primary btn--sm"
-                        href={paypalHref(rec)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {forSale.paypalLabel}
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SignedCds locale={locale} />
 
       {/* ---- BACK CATALOGUE --------------------------------------------- */}
       <section className="section section--ink">

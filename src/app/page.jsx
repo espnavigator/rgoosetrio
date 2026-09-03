@@ -3,7 +3,7 @@ import CutPaper from '@/components/CutPaper';
 import { Paragraphs, Txt } from '@/components/Txt';
 import { asset } from '@/lib/asset';
 import { bio, home, music, site, video } from '@/content/site';
-import { getContent } from '@/content';
+import { getContent, localeHref } from '@/content';
 
 export default function HomePage({ locale = 'en' }) {
   // Content comes from the language this page was built for.
@@ -39,10 +39,10 @@ export default function HomePage({ locale = 'en' }) {
               <Txt>{home.heroSubtitle}</Txt>
             </p>
             <div className="btn-row">
-              <Link href={home.heroCtaPrimary.href} className="btn btn--primary">
+              <Link href={localeHref(home.heroCtaPrimary.href, locale)} className="btn btn--primary">
                 {home.heroCtaPrimary.label}
               </Link>
-              <Link href={home.heroCtaSecondary.href} className="btn">
+              <Link href={localeHref(home.heroCtaSecondary.href, locale)} className="btn">
                 {home.heroCtaSecondary.label}
               </Link>
             </div>
@@ -112,10 +112,10 @@ export default function HomePage({ locale = 'en' }) {
           </ul>
 
           <div className="btn-row">
-            <Link href="/band" className="btn btn--sm">
-              Both line-ups
+            <Link href={localeHref('/band', locale)} className="btn btn--sm">
+              Meet The Compadres
             </Link>
-            <Link href="/bio" className="btn btn--sm">
+            <Link href={localeHref('/bio', locale)} className="btn btn--sm">
               Biography
             </Link>
           </div>
@@ -132,7 +132,7 @@ export default function HomePage({ locale = 'en' }) {
 
           <div className="grid grid--3">
             {home.cards.map((card) => (
-              <Link key={card.href} href={card.href} className="card">
+              <Link key={card.href} href={localeHref(card.href, locale)} className="card">
                 <h3>{card.title}</h3>
                 <p>
                   <Txt>{card.body}</Txt>
@@ -160,7 +160,7 @@ export default function HomePage({ locale = 'en' }) {
               >
                 {video.channels[0].cta}
               </a>
-              <Link href="/video" className="btn btn--onink">
+              <Link href={localeHref('/video', locale)} className="btn btn--onink">
                 Both channels
               </Link>
             </div>

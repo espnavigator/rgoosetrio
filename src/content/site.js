@@ -438,7 +438,7 @@ export const tour = {
 export const band = {
   heading: 'The Compadres',
   standfirst:
-    'Two line-ups, one band. One in England, one in Santiago de Cuba — so the music works whether the gig is in Hackney or Havana.',
+    'The Compadres are Ramon Goose’s Cuban band: two line-ups under one name, one in London and one in Santiago de Cuba, playing son, guajira and bolero with an electric blues guitar in place of the tres.',
 
   groups: [
     {
@@ -1250,7 +1250,7 @@ export const contact = {
 export const nav = [
   { label: 'Music', href: '/music' },
   { label: 'Live', href: '/tour' },
-  { label: 'The Band', href: '/band' },
+  { label: 'The Compadres', href: '/band' },
   { label: 'Cuba', href: '/cuba' },
   { label: 'Gear', href: '/gear' },
   { label: 'Goose Effects', href: '/goose-pedal' },

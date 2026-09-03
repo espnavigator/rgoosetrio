@@ -266,7 +266,7 @@ export const tour = {
 export const band = {
   heading: 'The Compadres',
   standfirst:
-    'Dos formaciones, una banda. Una en Inglaterra y otra en Santiago de Cuba, para que la música funcione tanto si el concierto es en Hackney como en La Habana.',
+    'The Compadres son la banda cubana de Ramon Goose: dos formaciones bajo un mismo nombre, una en Londres y otra en Santiago de Cuba, tocando son, guajira y bolero con una guitarra eléctrica de blues en lugar del tres.',
   groups: [
     {
       id: 'england',
@@ -787,7 +787,7 @@ export const contact = {
 export const nav = [
   { label: 'Música', href: '/music' },
   { label: 'En directo', href: '/tour' },
-  { label: 'La banda', href: '/band' },
+  { label: 'The Compadres', href: '/band' },
   { label: 'Cuba', href: '/cuba' },
   { label: 'Equipo', href: '/gear' },
   { label: 'Goose Effects', href: '/goose-pedal' },

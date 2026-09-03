@@ -5,9 +5,29 @@ import { band } from '@/content/site';
 import { getContent } from '@/content';
 
 export const metadata = {
-  title: 'The Compadres',
+  /* Set absolutely, so the site-wide "— Ramon Goose | Cuban Electric Guitar"
+     suffix is not appended. With it, this title ran to 78 characters and said
+     Ramon's name twice; Google cuts the line at about 60 and the important
+     words are the ones at the front. */
+  title: {
+    absolute: 'The Compadres — Ramon Goose’s Cuban Band, London & Santiago',
+  },
   description:
-    'The two Compadres line-ups — Santiago de Cuba and England — and the guests on the record.',
+    'The Compadres are Ramon Goose’s Cuban band: two line-ups, one in London and one in Santiago de Cuba, playing son, guajira and bolero with electric blues guitar. Meet both line-ups and the players on the record.',
+  keywords: [
+    'The Compadres',
+    'The Compadres band',
+    'Ramon Goose The Compadres',
+    'The Compadres Cuban band',
+    'The Compadres London',
+    'The Compadres Santiago de Cuba',
+  ],
+  openGraph: {
+    title: 'The Compadres — Ramon Goose’s Cuban Band',
+    description:
+      'Two line-ups under one name: London and Santiago de Cuba. Son, guajira and bolero with electric blues guitar.',
+    type: 'profile',
+  },
   alternates: {
     canonical: '/band/',
     languages: {

@@ -1,4 +1,4 @@
-import { bio, identity, music, sameAs, site, tour } from '@/content/site';
+import { band as band0, bio, identity, music, sameAs, site, tour } from '@/content/site';
 
 /**
  * Schema.org structured data.
@@ -24,13 +24,31 @@ export default function JsonLd() {
     sameAs: sameAs(),
   };
 
+  // Everyone in either line-up, named once. Google uses these to attach the
+  // right people to the right band.
+  const bandMembers = band0.groups.flatMap((g) => g.members);
+
   const band = {
     '@type': 'MusicGroup',
     '@id': `${site.url}/#band`,
     name: site.band,
-    url: site.url,
+    /* "The Compadres" on its own is a common name — there are Cuban duos,
+       mariachi groups and restaurants using it. These alternate names, the
+       founding place and the named members are what let Google tell this
+       particular Compadres apart from the rest. */
+    alternateName: ['The Compadres', 'Ramón Goose & The Compadres', 'Ramon Goose and The Compadres'],
+    url: `${site.url}/band/`,
+    mainEntityOfPage: `${site.url}/band/`,
+    description: band0.standfirst,
     genre: identity.genres,
-    member: { '@id': `${site.url}/#person` },
+    member: [
+      { '@id': `${site.url}/#person` },
+      ...bandMembers.map((m) => ({ '@type': 'Person', name: m.name, roleName: m.role })),
+    ],
+    foundingLocation: [
+      { '@type': 'Place', name: 'Santiago de Cuba, Cuba' },
+      { '@type': 'Place', name: 'London, United Kingdom' },
+    ],
     foundingDate: '2023',
     album: {
       '@type': 'MusicAlbum',

@@ -1800,6 +1800,11 @@ a.card:hover {
   display: block;
   border-bottom: 2px solid var(--ink);
   background: var(--paper-deep);
+  /* Square, so a row of cards lines up whether the picture behind it is an
+     album sleeve, a shirt or a pedal. Sleeves are square already; anything
+     taller is cropped rather than letterboxed. */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 /* Two product shots side by side, flush into the top of a card. Used where a

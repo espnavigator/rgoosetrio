@@ -990,6 +990,7 @@ export const shop = {
       variant: 'CD',
       price: '£12',
       href: '',
+      imagePath: '/images/i-left-my-blues-in-cuba.jpg',
       note: 'Signed on request.',
     },
     {
@@ -997,6 +998,7 @@ export const shop = {
       variant: 'Vinyl',
       price: '£28',
       href: '',
+      imagePath: '/images/i-left-my-blues-in-cuba.jpg',
       note: 'In development. A pressing is coming.',
     },
     {

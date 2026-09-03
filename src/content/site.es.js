@@ -21,6 +21,7 @@ import {
   forSale as forSaleEn,
   bassGear as bassGearEn,
   shop as shopEn,
+  bio as bioEn,
 } from './site';
 
 export const site = {
@@ -728,6 +729,11 @@ export const video = {
 /* -------------------------------------------------------------------------- */
 
 export const bio = {
+  photos: [
+    { ...bioEn.photos[0], caption: 'En la sala de control, delante de la mesa y el multipistas.' },
+    { ...bioEn.photos[1], caption: 'El Estudio 18 de la EGREM, con la Guyatone.' },
+    { ...bioEn.photos[2], caption: 'En el estudio en Cuba, entre tomas.' },
+  ],
   heading: 'Biografía',
   short:
     'Ramon Goose es un guitarrista inglés que trabaja en la música cubana. Nacido en Colchester en 1975, ha pasado treinta años sacando la guitarra eléctrica del blues: por África occidental con el West African Blues Project, y ahora por Santiago de Cuba con The Compadres, cuyo disco I Left My Blues In Cuba se grabó en los Estudios EGREM.',

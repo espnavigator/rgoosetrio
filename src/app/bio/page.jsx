@@ -63,6 +63,31 @@ export default function BioPage({ locale = 'en' }) {
           </ul>
         </div>
       </section>
+
+      {/* Photographs. Kept to a modest size — they illustrate the text rather
+          than take over from it. */}
+      {bio.photos?.length > 0 && (
+        <section className="section section--paper">
+          <div className="container">
+            <div className="grid grid--3">
+              {bio.photos.map((photo) => (
+                <figure key={photo.src} className="biopic">
+                  <img
+                    src={asset(`/images/bio/${photo.src}`)}
+                    alt={photo.caption}
+                    loading="lazy"
+                    width={photo.width}
+                    height={photo.height}
+                  />
+                  <figcaption>
+                    <Txt>{photo.caption}</Txt>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

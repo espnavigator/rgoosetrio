@@ -1386,6 +1386,32 @@ a.card:hover {
   display: block;
 }
 
+/* Biography photographs. Square crops so the row lines up whatever shape the
+   original was, with the caption printed underneath like a plate in a book. */
+.biopic {
+  margin: 0;
+  /* A grid item's automatic minimum size is its content, and these files are
+     1400px wide. Without this the figure refuses to shrink below that, drags
+     its column out to match and pushes the page sideways. */
+  min-width: 0;
+}
+
+.biopic img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+.biopic figcaption {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
 /* Fact strip down the side of the Cuba page. */
 .facts {
   list-style: none;

@@ -1111,6 +1111,34 @@ export const bio = {
   short:
     'Ramon Goose is an English guitarist working in Cuban music. Born in Colchester in 1975, he has spent thirty years taking the electric guitar out of the blues — through West Africa with the West African Blues Project, and now through Santiago de Cuba with The Compadres, whose album I Left My Blues In Cuba was recorded at EGREM Studios.',
 
+  /**
+   * Photographs down the biography page.
+   *
+   * Ramon — the captions are the bit worth checking. I wrote them from what is
+   * visible in each picture, so change any that are wrong. The middle one is
+   * certain: the studio name is painted on the wall behind you.
+   */
+  photos: [
+    {
+      src: 'control-room.jpg',
+      caption: 'In the control room, in front of the desk and the multitrack.',
+      width: 1400,
+      height: 1050,
+    },
+    {
+      src: 'egrem-estudio-18.jpg',
+      caption: 'Estudio 18 at EGREM, with the Guyatone.',
+      width: 1400,
+      height: 1400,
+    },
+    {
+      src: 'in-the-studio.jpg',
+      caption: 'In the studio in Cuba, between takes.',
+      width: 1400,
+      height: 1050,
+    },
+  ],
+
   longHeading: 'Where the blues went',
   long: [
     'Ramon Goose is an English guitarist, singer and producer, born in Colchester in 1975 and playing professionally since the 1990s. He has spent that career carrying the electric guitar out of the blues and into whatever the blues touched: hip-hop and Delta guitar with NuBlues, Mississippi by way of Mali with the West African Blues Project, and now the son and guajira of eastern Cuba.',

@@ -35,7 +35,6 @@ export default function BassGearPage({ locale = 'en' }) {
         >
           <div className="container">
             <div className="section-head">
-              <span className="kicker">{String(i + 1).padStart(2, '0')}</span>
               <h2>{group.group}</h2>
             </div>
 

@@ -13,6 +13,7 @@ export default function GearTabs({ locale = 'en', current, labels }) {
   const tabs = [
     { key: 'guitar', href: '/gear', label: labels.guitar },
     { key: 'bass', href: '/gear/bass', label: labels.bass },
+    { key: 'sale', href: '/gear/for-sale', label: labels.sale },
   ];
 
   return (

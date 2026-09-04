@@ -7,9 +7,33 @@ import { gallery, gear } from '@/content/site';
 import { getContent } from '@/content';
 
 export const metadata = {
-  title: 'Gear',
+  /* Absolute, so the site-wide suffix is not appended — the gear names are
+     what people search for and they need to be at the front of the line. */
+  title: { absolute: 'Gear — Guyatone, Coodercaster and Ry Cooder Tones' },
   description:
-    'The guitars, amplifiers and effects behind the Cuban electric guitar records — including the Guyatone LG-180.',
+    'The guitars, amps and effects Ramon Goose actually plays: Guyatone LG-180T and LG-200T, a Coodercaster with original gold foil and Valco pickups, Siewa Powersonic, Victoria Reverberato and a Bell & Howell Filmosound.',
+  /* Google ignores this tag, but Bing and a few others still read it, and it
+     costs nothing. The work that counts is the same names being in the page's
+     headings and opening paragraph, which they now are. */
+  keywords: [
+    'Ry Cooder gear',
+    'Ry Cooder tone',
+    'Coodercaster',
+    'gold foil pickup',
+    'Valco pickup',
+    'Guyatone LG-180T',
+    'Guyatone LG-200T',
+    'Siewa Powersonic',
+    'Ali Farka Toure guitar',
+    'Victoria Reverberato',
+    'Bell & Howell Filmosound',
+    'Crucial Audio Echo Nugget',
+    'Blackbox Quicksilver',
+    'Marshall JTM45 replica',
+    'Lazy J cabinet',
+    'Fernandes P-Project',
+    'Cuban electric guitar gear',
+  ],
   alternates: {
     canonical: '/gear/',
     languages: {
@@ -42,7 +66,6 @@ export default function GearPage({ locale = 'en' }) {
         >
           <div className="container">
             <div className="section-head">
-              <span className="kicker">{String(i + 1).padStart(2, '0')}</span>
               <h2>{group.group}</h2>
             </div>
 

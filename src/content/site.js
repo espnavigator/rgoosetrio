@@ -361,16 +361,13 @@ export const tour = {
       note: 'Free entry.',
     },
     {
-      // TODO: confirm the year. The album is a 2026 release, so a January show
-      // is presumably January 2027 — I have left the date blank rather than
-      // guess, which also keeps it out of the event markup until it is real.
-      date: '',
+      date: '2026-12-30',
       venue: 'Casa de la Trova',
       city: 'Santiago de Cuba',
       country: 'Cuba',
       lineup: 'Quintet',
       tickets: '',
-      note: 'Album launch, in January. Being filmed and recorded for a future live album. Date to be announced.',
+      note: 'The album launch. Being filmed and recorded for a future live album.',
     },
     {
       date: '',
@@ -572,13 +569,14 @@ export const gear = {
   tabs: {
     guitar: "Ramon's Guitar Gear",
     bass: "Joe's Bass Gear",
+    sale: 'For Sale',
     aria: 'Gear sections',
   },
   photosKicker: 'The workshop',
   photosHeading: 'In pictures',
   heading: 'The Gear',
   intro:
-    'What I actually play, and what actually went down on the record. No endorsements, no pretending — if it is on here it is because I use it.',
+    'What I actually play, and what actually went down on the record. Guyatone LG-180T and LG-200T, a Coodercaster built for Ry Cooder’s gold foil and Valco sound, the Siewa Powersonic, a Victoria Reverberato and a Bell & Howell Filmosound. No endorsements, no pretending — if it is on here it is because I use it.',
 
   groups: [
     {
@@ -733,7 +731,7 @@ export const gear = {
           href: '/goose-pedal',
         },
         {
-          name: 'The delays',
+          name: 'Crucial Audio Echo Nugget and Blackbox Quicksilver',
           detail: 'Crucial Audio and Blackbox',
           body:
             'A Crucial Audio Echo Nugget and a Blackbox Quicksilver. Two delays rather than one because the wet side of the rig carries them, and the two do different jobs: one for slap, one for the long repeats the Cuban material sits inside.',
@@ -971,6 +969,55 @@ export const bassGear = {
         },
       ],
     },
+  ],
+};
+
+/* -------------------------------------------------------------------------- */
+/*  GEAR FOR SALE                                                             */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Gear Ramon is selling, at /gear/for-sale.
+ *
+ * TO LIST SOMETHING: copy one of the commented-out blocks below into `items`,
+ * fill it in, and it appears on the site. Leave `price` empty and the card
+ * reads "Price on asking" instead. Set `sold: true` and it stays on the page
+ * with a SOLD stamp across it, which is worth doing for a while — people like
+ * seeing what went.
+ *
+ * With `items` empty the page still works: it says nothing is listed at the
+ * moment and gives them the email address.
+ */
+export const gearForSale = {
+  heading: 'Gear For Sale',
+  intro:
+    'Things passing through. I buy and sell guitars and amplifiers, and what I am not using goes back out.',
+  emptyNote: 'Nothing listed at the moment. If you are after something in particular, email me and I will keep an eye out.',
+  enquireLabel: 'Ask about this',
+  soldLabel: 'Sold',
+  priceOnAsking: 'Price on asking',
+
+  items: [
+    {
+      name: 'Fernandes P-Project AI-N',
+      spec: 'Nylon-string electric · Japanese custom shop',
+      price: '£1,200',
+      condition: 'The Dominic Miller signature model',
+      note: 'The nylon-string electric Dominic Miller played through his years with Sting. I have two of them, and this is the second — the one in the photograph. Email me for more details.',
+      // Already on the gear page, so the same file is used rather than a
+      // second copy of it.
+      image: '/images/gear/p-project.jpg',
+      sold: false,
+    },
+    // {
+    //   name: 'Guyatone LG-200T',
+    //   spec: '1960s · Japan',
+    //   price: '£850',
+    //   condition: 'Player’s condition, original pickups',
+    //   note: 'One line about it here.',
+    //   image: '',        // a file in public/images/for-sale/
+    //   sold: false,
+    // },
   ],
 };
 

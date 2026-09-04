@@ -22,6 +22,7 @@ import {
   bassGear as bassGearEn,
   shop as shopEn,
   bio as bioEn,
+  gearForSale as gearForSaleEn,
 } from './site';
 
 export const site = {
@@ -212,13 +213,13 @@ export const tour = {
       note: 'Entrada libre.',
     },
     {
-      date: '',
+      date: '2026-12-30',
       venue: 'Casa de la Trova',
       city: 'Santiago de Cuba',
       country: 'Cuba',
       lineup: 'Quinteto',
       tickets: '',
-      note: 'Presentación del disco, en enero. Se grabará en audio y vídeo para un futuro disco en directo. Fecha por anunciar.',
+      note: 'La presentación del disco. Se grabará en audio y vídeo para un futuro disco en directo.',
     },
     {
       date: '',
@@ -417,6 +418,7 @@ export const gear = {
   tabs: {
     guitar: 'El equipo de Ramon',
     bass: 'El equipo de Joe',
+    sale: 'En venta',
     aria: 'Secciones de equipo',
   },
   photosKicker: 'El taller',
@@ -545,7 +547,7 @@ export const gear = {
           href: '/goose-pedal',
         },
         {
-          name: 'Los delays',
+          name: 'Crucial Audio Echo Nugget y Blackbox Quicksilver',
           detail: 'Crucial Audio y Blackbox',
           body: 'Un Crucial Audio Echo Nugget y un Blackbox Quicksilver. Dos delays en lugar de uno porque el lado con efectos del equipo es el que los lleva, y hacen trabajos distintos: uno para el slap y otro para las repeticiones largas dentro de las que se asienta el repertorio cubano.',
           image: '/images/gallery/09.jpg',
@@ -883,4 +885,23 @@ export const bassGear = {
       ],
     },
   ],
+};
+
+/* -------------------------------------------------------------------------- */
+
+export const gearForSale = {
+  ...gearForSaleEn,
+  heading: 'Equipo en venta',
+  intro:
+    'Cosas que van pasando por mis manos. Compro y vendo guitarras y amplificadores, y lo que no uso vuelve a salir.',
+  emptyNote: 'Ahora mismo no hay nada en la lista. Si buscas algo en concreto, escríbeme y estaré atento.',
+  enquireLabel: 'Preguntar por esto',
+  soldLabel: 'Vendido',
+  priceOnAsking: 'Precio a consultar',
+  items: gearForSaleEn.items.map((it) => ({
+    ...it,
+    spec: 'Guitarra eléctrica de cuerdas de nylon · custom shop japonés',
+    condition: 'El modelo firma de Dominic Miller',
+    note: 'La eléctrica de nylon que tocó Dominic Miller durante sus años con Sting. Tengo dos, y ésta es la segunda: la de la foto. Escríbeme para más detalles.',
+  })),
 };

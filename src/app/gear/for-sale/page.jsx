@@ -7,7 +7,7 @@ import { getContent } from '@/content';
 export const metadata = {
   title: { absolute: 'Gear For Sale — Fernandes P-Project AI-N | Ramon Goose' },
   description:
-    'Guitars and amplifiers Ramon Goose is selling. A Fernandes P-Project AI-N nylon-string electric, the Dominic Miller model, £1,200.',
+    'Guitars and amplifiers Ramon Goose is selling. A Fernandes P-Project AI-N nylon-string electric, the Dominic Miller model.',
   keywords: [
     'Fernandes P-Project',
     'Fernandes P-Project AI-N',
@@ -73,7 +73,11 @@ export default function GearForSalePage({ locale = 'en' }) {
                     <Txt>{item.spec}</Txt>
                   </span>
                   <span className="product__name">{item.name}</span>
-                  <span className="product__price">
+                  <span
+                    className={`product__price${
+                      item.sold || !item.price ? ' product__price--ask' : ''
+                    }`}
+                  >
                     {item.sold ? gearForSale.soldLabel : item.price || gearForSale.priceOnAsking}
                   </span>
                   {item.condition && (

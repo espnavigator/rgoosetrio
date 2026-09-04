@@ -1870,6 +1870,16 @@ a.card:hover {
   margin-top: 0.2rem;
 }
 
+/* "Email me for the price" is a sentence, not a figure — it should not be set
+   at the size a price is set at. */
+.product__price--ask {
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
 /* Sold, but left on the page for a while — people like seeing what went. */
 .product--sold {
   opacity: 0.62;

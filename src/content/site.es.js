@@ -897,7 +897,7 @@ export const gearForSale = {
   emptyNote: 'Ahora mismo no hay nada en la lista. Si buscas algo en concreto, escríbeme y estaré atento.',
   enquireLabel: 'Preguntar por esto',
   soldLabel: 'Vendido',
-  priceOnAsking: 'Precio a consultar',
+  priceOnAsking: 'Escríbeme para saber el precio',
   items: gearForSaleEn.items.map((it) => ({
     ...it,
     spec: 'Guitarra eléctrica de cuerdas de nylon · custom shop japonés',

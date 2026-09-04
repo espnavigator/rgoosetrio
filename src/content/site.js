@@ -995,13 +995,14 @@ export const gearForSale = {
   emptyNote: 'Nothing listed at the moment. If you are after something in particular, email me and I will keep an eye out.',
   enquireLabel: 'Ask about this',
   soldLabel: 'Sold',
-  priceOnAsking: 'Price on asking',
+  priceOnAsking: 'Email me for the price',
 
   items: [
     {
       name: 'Fernandes P-Project AI-N',
       spec: 'Nylon-string electric · Japanese custom shop',
-      price: '£1,200',
+      // Leave this empty and the card shows `priceOnAsking` instead.
+      price: '',
       condition: 'The Dominic Miller signature model',
       note: 'The nylon-string electric Dominic Miller played through his years with Sting. I have two of them, and this is the second — the one in the photograph. Email me for more details.',
       // Already on the gear page, so the same file is used rather than a

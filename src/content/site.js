@@ -1124,7 +1124,7 @@ export const bio = {
       // Sits below paragraph 1 of the biography. Change the number to
       // move it; 0 is the first paragraph.
       after: 0,
-      caption: 'In the control room, in front of the desk and the multitrack.',
+      caption: 'In the control room at EGREM Siboney, Santiago de Cuba.',
       width: 1400,
       height: 1050,
     },
@@ -1138,11 +1138,11 @@ export const bio = {
       height: 1400,
     },
     {
-      src: 'in-the-studio.jpg',
+      src: 'joaquin-solorzano.jpg',
       // Sits below paragraph 3 of the biography. Change the number to
       // move it; 0 is the first paragraph.
       after: 2,
-      caption: 'In the studio in Cuba, between takes.',
+      caption: 'With Joaquín Solórzano, the most highly regarded conga player in Cuba.',
       width: 1400,
       height: 1050,
     },

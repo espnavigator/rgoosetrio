@@ -730,9 +730,9 @@ export const video = {
 
 export const bio = {
   photos: [
-    { ...bioEn.photos[0], caption: 'En la sala de control, delante de la mesa y el multipistas.' },
+    { ...bioEn.photos[0], caption: 'En la sala de control de los Estudios Siboney de la EGREM, Santiago de Cuba.' },
     { ...bioEn.photos[1], caption: 'El Estudio 18 de la EGREM, con la Guyatone.' },
-    { ...bioEn.photos[2], caption: 'En el estudio en Cuba, entre tomas.' },
+    { ...bioEn.photos[2], caption: 'Con Joaquín Solórzano, el conguero más respetado de Cuba.' },
   ],
   heading: 'Biografía',
   short:

@@ -66,7 +66,7 @@ export const home = {
   bandBlurbHeading: 'The Compadres',
   bandBlurb: [
     'The Compadres son dos bandas con un mismo nombre, una a cada lado del Atlántico, tocando son, guajira y bolero con una guitarra eléctrica de blues donde normalmente iría el tres.',
-    'En Inglaterra, Kieffer Santander toca la percusión: peruano, radicado aquí, uno de los principales intérpretes de percusión afroperuana y criolla en Europa, y la razón por la que la banda se mueve como se mueve, con cajón, congas, bongó y la quijada, la mandíbula de un burro que se toca haciendo sonar los dientes.',
+    'En Inglaterra es un trío, liderado por Ramon Goose y Kieffer Santander. Kieffer toca la percusión: peruano, radicado aquí, uno de los principales intérpretes de percusión afroperuana y criolla en Europa, y la razón por la que la banda se mueve como se mueve, con cajón, congas, bongó y la quijada, la mandíbula de un burro que se toca haciendo sonar los dientes.',
     'En Santiago de Cuba es un quinteto, y ésa es la banda del disco: Joaquín Solórzano en las congas, con quien empezó todo en 2023, Rudy Ramon en el tres, Calderín en el contrabajo y Ernesto en el bongó. Grabamos el disco en EGREM, el estudio estatal que puso en cinta buena parte de lo que el mundo entiende por música cubana.',
     'Ninguna de las dos mitades es un tributo. El blues se fue a Cuba, encontró allí la música que ya existía, y volvió sonando así.',
   ],
@@ -266,7 +266,7 @@ export const band = {
       id: 'england',
       name: 'The Compadres — Inglaterra',
       blurb:
-        'La formación que toca aquí: festivales, clubes y cualquier cosa de este lado del agua. Repertorio cubano con un percusionista peruano dentro, lo que lleva el ritmo a un sitio al que ninguna de las dos tradiciones habría llegado sola.',
+        'Un trío, liderado por Ramon Goose y Kieffer Santander. La formación que toca aquí: festivales, clubes y cualquier cosa de este lado del agua. Repertorio cubano con un percusionista peruano dentro, lo que lleva el ritmo a un sitio al que ninguna de las dos tradiciones habría llegado sola.',
       members: [
         {
           name: 'Ramon Goose',

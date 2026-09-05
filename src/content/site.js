@@ -109,7 +109,7 @@ export const home = {
   bandBlurbHeading: 'The Compadres',
   bandBlurb: [
     'The Compadres are two bands with one name, either side of the Atlantic, playing son, guajira and bolero with an electric blues guitar where the tres would normally sit.',
-    'In England, Kieffer Santander plays percussion — Peruvian, based here, one of the leading players of Afro-Peruvian and Criollo rhythm in Europe, and the reason the band moves the way it does: cajón, congas, bongó and the quijada, a donkey’s jawbone played by rattling the teeth.',
+    'In England it is a trio, led by Ramon Goose and Kieffer Santander. Kieffer plays percussion — Peruvian, based here, one of the leading players of Afro-Peruvian and Criollo rhythm in Europe, and the reason the band moves the way it does: cajón, congas, bongó and the quijada, a donkey’s jawbone played by rattling the teeth.',
     'In Santiago de Cuba it is a five-piece, and that is the band on the record: Joaquín Solórzano on congas, who the band began with in 2023, Rudy Ramon on tres, Calderín on double bass and Ernesto on bongó. We cut the album at EGREM, the state studio that put most of what the world calls Cuban music onto tape.',
     'Neither half is a tribute act. The blues went to Cuba, found the music already there, and came back sounding like this.',
   ],
@@ -435,7 +435,7 @@ export const band = {
       id: 'england',
       name: 'The Compadres — England',
       blurb:
-        'The line-up that plays here: festivals, clubs and anything on this side of the water. Cuban repertoire with a Peruvian percussionist in it, which sends the rhythm somewhere neither tradition would have gone on its own.',
+        'A trio, led by Ramon Goose and Kieffer Santander. The line-up that plays here: festivals, clubs and anything on this side of the water. Cuban repertoire with a Peruvian percussionist in it, which sends the rhythm somewhere neither tradition would have gone on its own.',
       members: [
         {
           name: 'Ramon Goose',

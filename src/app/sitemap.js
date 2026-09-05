@@ -13,7 +13,6 @@ const routes = [
   { path: '/cuba/', priority: 0.8 },
   { path: '/bio/', priority: 0.8 },
   { path: '/gear/', priority: 0.7 },
-  { path: '/gear/bass/', priority: 0.6 },
   { path: '/gear/for-sale/', priority: 0.6 },
   { path: '/goose-pedal/', priority: 0.6 },
   { path: '/gallery/', priority: 0.6 },

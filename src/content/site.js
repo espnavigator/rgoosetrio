@@ -109,7 +109,7 @@ export const home = {
   bandBlurbHeading: 'The Compadres',
   bandBlurb: [
     'The Compadres are two bands with one name, either side of the Atlantic, playing son, guajira and bolero with an electric blues guitar where the tres would normally sit.',
-    'In England it is a trio. Kieffer Santander plays percussion — Peruvian, based here, one of the leading players of Afro-Peruvian and Criollo rhythm in Europe, and the reason the band moves the way it does: cajón, congas, bongó and the quijada, a donkey’s jawbone played by rattling the teeth. Joe Goose plays bass, and is my identical twin brother, which is a shortcut through about thirty years of rehearsal.',
+    'In England, Kieffer Santander plays percussion — Peruvian, based here, one of the leading players of Afro-Peruvian and Criollo rhythm in Europe, and the reason the band moves the way it does: cajón, congas, bongó and the quijada, a donkey’s jawbone played by rattling the teeth.',
     'In Santiago de Cuba it is a five-piece, and that is the band on the record: Joaquín Solórzano on congas, who the band began with in 2023, Rudy Ramon on tres, Calderín on double bass and Ernesto on bongó. We cut the album at EGREM, the state studio that put most of what the world calls Cuban music onto tape.',
     'Neither half is a tribute act. The blues went to Cuba, found the music already there, and came back sounding like this.',
   ],
@@ -117,13 +117,6 @@ export const home = {
   // The two line-ups, side by side on the front page. Both files already live
   // in public/images/band/ and are used on the band page too.
   bandPhotos: [
-    {
-      src: 'compadres-england-trio.jpg',
-      caption: 'The Compadres in England',
-      detail: 'Kieffer Santander, Ramon Goose and Joe “Ricardo” Goose. International Jazz Day, London.',
-      width: 1800,
-      height: 1355,
-    },
     {
       src: 'compadres-santiago.jpg',
       caption: 'The Compadres in Cuba',
@@ -441,8 +434,6 @@ export const band = {
     {
       id: 'england',
       name: 'The Compadres — England',
-      photo: 'compadres-england-trio.jpg',
-      photoCaption: 'The Compadres at the Cuban Embassy in London. Left to right: Kieffer Santander, Ramon Goose and Joe “Ricardo” Goose.',
       blurb:
         'The line-up that plays here: festivals, clubs and anything on this side of the water. Cuban repertoire with a Peruvian percussionist in it, which sends the rhythm somewhere neither tradition would have gone on its own.',
       members: [
@@ -460,15 +451,6 @@ export const band = {
             'Musical director of the London Compadres. Percussionist, composer, teacher and bandleader, born in Peru and based in the United Kingdom, and one of the leading players of Afro-Peruvian and Criollo percussion working in Europe, a tradition he has spent his career keeping alive a long way from home.',
             'That is what makes this band sound the way it does. The cajón and the quijada — the jawbone of a donkey, played by rattling the teeth in the socket — are Afro-Peruvian instruments, not Cuban ones. Putting them underneath son and guajira sends the rhythm somewhere neither tradition would have reached by itself.',
             'Raised in Lima, where he trained at the Escuela de Bellas Artes before taking a degree in business administration at the Universidad Ricardo Palma. After moving to the UK he carried on at Queen’s Way College and sharpened his reading and Latin percussion at the Studio Tom Allien Centre in Stratford.',
-          ],
-        },
-        {
-          name: 'Joe \u201CRicardo\u201D Goose',
-          role: 'Bass',
-          photo: 'joe-goose.jpg',
-          bio: [
-            'My identical twin brother, on bass. Thirty years of listening to the same records and playing in the same rooms, which turns out to be a shortcut no amount of rehearsal replaces: the bass and the guitar move together without either of us having to look up.',
-            'He has played with Pee Wee Ellis and toured with Eric Bibb, and spent seven years on the Paris jazz scene. That is where he learned the tumbao, the Cuban bass figure the whole band sits on. Most bass players coming to this music have to be taught it. He already had it.',
           ],
         },
       ],
@@ -568,7 +550,6 @@ export const gear = {
   // The two tabs at the top of both gear pages.
   tabs: {
     guitar: "Ramon's Guitar Gear",
-    bass: "Joe's Bass Gear",
     sale: 'For Sale',
     aria: 'Gear sections',
   },
@@ -896,78 +877,6 @@ export const forSale = {
       shopNote: 'Solo acoustic, twelve tracks of fingerpicking and slide. Signed.',
       blurb:
         'A solo acoustic record for the German label Acoustic Music: twelve tracks, some traditional and some mine. Police Dog Blues is there for Blind Blake, alongside I Want Jesus To Walk With Me, Take Me Out The City and Going Home. Fingerpicking and slide, one man and one guitar, and no band to hide behind.',
-    },
-  ],
-};
-
-/* -------------------------------------------------------------------------- */
-/*  JOE'S BASS GEAR                                                           */
-/* -------------------------------------------------------------------------- */
-
-/**
- * Joe's side of the gear page, at /gear/bass.
- *
- * Everything here was taken from Joe's own shorts on the Bass Guitar Show
- * channel, and each box embeds the short it came from so people can see and
- * hear the instrument rather than take my word for it.
- *
- * The `video` field is the YouTube id. Leave it empty and the box simply has
- * no player.
- *
- * TODO for Joe: the amp head, the pedals, and the pickups in the brown TRB.
- * I could not read the badges off the video and would rather leave them out
- * than guess at them.
- */
-export const bassGear = {
-  heading: "Joe's Bass Gear",
-  intro:
-    'Joe Goose plays the bass in the English Compadres, and runs the Bass Guitar Show. This is what he uses, taken from his own rundowns.',
-  channelLabel: 'The Bass Guitar Show',
-  channelBlurb:
-    'Joe runs the Bass Guitar Show, teaching and giving tips to bassists starting out and to intermediate players. The rundowns these clips come from are all on there.',
-  channelHref: 'https://www.youtube.com/@bassguitarshow',
-  watchLabel: 'Watch on YouTube',
-
-  groups: [
-    {
-      group: 'The basses',
-      items: [
-        {
-          name: 'Yamaha TRB Mk I',
-          spec: 'Four-string · ash body · his main bass',
-          video: 'KRO-YiA9yQg',
-          note: 'The brown one, and the one that does most of the work. An ash-bodied four-string from the first run of TRBs, worn down to the wood across the front from years of playing. The pickups in it are not the ones it left the factory with.',
-        },
-        {
-          name: 'Yamaha TRB Mk I fretless',
-          spec: 'Four-string · made in Japan · ash body · rosewood board',
-          video: 'GUdGIJHl_WQ',
-          note: 'The second TRB, and the backup: same model, no frets. Japanese-made, ash body, rosewood neck. Joe calls the pair of them his two Mark Ones.',
-        },
-        {
-          name: 'Status Graphite Series 2',
-          spec: 'Headless · carbon graphite through-neck · 1980s',
-          video: '96MMUrGRrbs',
-          note: 'A headless English bass from the 1980s, built around a carbon graphite neck that runs the whole length of the instrument, with figured wood wings either side. Status is the sound a lot of people hear as the eighties without knowing the name.',
-        },
-        {
-          name: 'JayDee Supernatural Series 3',
-          spec: 'Pearl blue · hand-built in Birmingham',
-          video: 'lqI9mzRRQbM',
-          note: 'The Mark King bass — the model John Diggins built for Level 42, which is most of why anyone under fifty recognises the shape. Joe\u2019s is in pearl blue.',
-        },
-      ],
-    },
-    {
-      group: 'The rig',
-      items: [
-        {
-          name: 'Two Barefaced cabinets',
-          spec: 'Stacked, with the head on top',
-          video: 'TddGK3lNBc0',
-          note: 'Barefaced build very light cabs in Brighton, which matters more than it sounds when the gear has to go up the stairs of a London pub. Joe runs two of them, one on the other, with a pedalboard in front.',
-        },
-      ],
     },
   ],
 };

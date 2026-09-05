@@ -19,7 +19,6 @@ import {
   gallery as galleryEn,
   video as videoEn,
   forSale as forSaleEn,
-  bassGear as bassGearEn,
   shop as shopEn,
   bio as bioEn,
   gearForSale as gearForSaleEn,
@@ -67,19 +66,12 @@ export const home = {
   bandBlurbHeading: 'The Compadres',
   bandBlurb: [
     'The Compadres son dos bandas con un mismo nombre, una a cada lado del Atlántico, tocando son, guajira y bolero con una guitarra eléctrica de blues donde normalmente iría el tres.',
-    'En Inglaterra es un trío. Kieffer Santander toca la percusión: peruano, radicado aquí, uno de los principales intérpretes de percusión afroperuana y criolla en Europa, y la razón por la que la banda se mueve como se mueve, con cajón, congas, bongó y la quijada, la mandíbula de un burro que se toca haciendo sonar los dientes. Joe Goose toca el bajo y es mi hermano gemelo idéntico, lo cual es un atajo que ahorra unos treinta años de ensayo.',
+    'En Inglaterra, Kieffer Santander toca la percusión: peruano, radicado aquí, uno de los principales intérpretes de percusión afroperuana y criolla en Europa, y la razón por la que la banda se mueve como se mueve, con cajón, congas, bongó y la quijada, la mandíbula de un burro que se toca haciendo sonar los dientes.',
     'En Santiago de Cuba es un quinteto, y ésa es la banda del disco: Joaquín Solórzano en las congas, con quien empezó todo en 2023, Rudy Ramon en el tres, Calderín en el contrabajo y Ernesto en el bongó. Grabamos el disco en EGREM, el estudio estatal que puso en cinta buena parte de lo que el mundo entiende por música cubana.',
     'Ninguna de las dos mitades es un tributo. El blues se fue a Cuba, encontró allí la música que ya existía, y volvió sonando así.',
   ],
 
   bandPhotos: [
-    {
-      src: 'compadres-england-trio.jpg',
-      caption: 'The Compadres en Inglaterra',
-      detail: 'Kieffer Santander, Ramon Goose y Joe “Ricardo” Goose. Día Internacional del Jazz, Londres.',
-      width: 1800,
-      height: 1355,
-    },
     {
       src: 'compadres-santiago.jpg',
       caption: 'The Compadres en Cuba',
@@ -273,8 +265,6 @@ export const band = {
     {
       id: 'england',
       name: 'The Compadres — Inglaterra',
-      photo: 'compadres-england-trio.jpg',
-      photoCaption: 'The Compadres en la Embajada de Cuba en Londres. De izquierda a derecha: Kieffer Santander, Ramon Goose y Joe “Ricardo” Goose.',
       blurb:
         'La formación que toca aquí: festivales, clubes y cualquier cosa de este lado del agua. Repertorio cubano con un percusionista peruano dentro, lo que lleva el ritmo a un sitio al que ninguna de las dos tradiciones habría llegado sola.',
       members: [
@@ -292,15 +282,6 @@ export const band = {
             'Director musical de los Compadres de Londres. Percusionista, compositor, profesor y director de banda, nacido en Perú y radicado en el Reino Unido, y uno de los principales intérpretes de percusión afroperuana y criolla que trabajan en Europa, una tradición que ha dedicado su carrera a mantener viva muy lejos de casa.',
             'Eso es lo que hace que esta banda suene como suena. El cajón y la quijada, la mandíbula de un burro que se toca haciendo sonar los dientes en su hueco, son instrumentos afroperuanos, no cubanos. Ponerlos debajo del son y la guajira lleva el ritmo a un sitio al que ninguna de las dos tradiciones habría llegado por su cuenta.',
             'Se crió en Lima, donde estudió en la Escuela de Bellas Artes antes de licenciarse en administración de empresas en la Universidad Ricardo Palma. Tras mudarse al Reino Unido siguió formándose en Queen’s Way College y afinó su lectura y su percusión latina en el Studio Tom Allien Centre de Stratford.',
-          ],
-        },
-        {
-          name: 'Joe “Ricardo” Goose',
-          role: 'Bajo',
-          photo: 'joe-goose.jpg',
-          bio: [
-            'Mi hermano gemelo idéntico, al bajo. Treinta años escuchando los mismos discos y tocando en las mismas salas, lo cual resulta ser un atajo que ningún ensayo sustituye: el bajo y la guitarra se mueven juntos sin que ninguno de los dos tenga que levantar la vista.',
-            'Ha tocado con Pee Wee Ellis y ha girado con Eric Bibb, y pasó siete años en la escena del jazz de París. Ahí fue donde aprendió el tumbao, la figura de bajo cubana sobre la que se asienta toda la banda. A la mayoría de los bajistas que llegan a esta música hay que enseñársela. Él ya la traía.',
           ],
         },
       ],
@@ -417,7 +398,6 @@ export const cuba = {
 export const gear = {
   tabs: {
     guitar: 'El equipo de Ramon',
-    bass: 'El equipo de Joe',
     sale: 'En venta',
     aria: 'Secciones de equipo',
   },
@@ -839,53 +819,7 @@ export const forSale = {
 
 /* -------------------------------------------------------------------------- */
 
-export const bassGear = {
-  ...bassGearEn,
-  heading: 'El equipo de Joe',
-  intro:
-    'Joe Goose toca el bajo en los Compadres ingleses y lleva el canal Bass Guitar Show. Esto es lo que usa, sacado de sus propios vídeos.',
-  channelLabel: 'The Bass Guitar Show',
-  channelBlurb:
-    'Joe lleva el Bass Guitar Show, donde enseña y da consejos a bajistas que empiezan y a los de nivel intermedio. Los vídeos de los que salen estos clips están todos allí.',
-  watchLabel: 'Ver en YouTube',
-  groups: [
-    {
-      group: 'Los bajos',
-      items: [
-        {
-          ...bassGearEn.groups[0].items[0],
-          spec: 'Cuatro cuerdas · cuerpo de fresno · su bajo principal',
-          note: 'El marrón, y el que hace casi todo el trabajo. Un cuatro cuerdas de la primera serie de TRB, con el cuerpo de fresno gastado hasta la madera de tantos años tocándolo. Las pastillas no son las de fábrica.',
-        },
-        {
-          ...bassGearEn.groups[0].items[1],
-          spec: 'Cuatro cuerdas · hecho en Japón · fresno · diapasón de palisandro',
-          note: 'El segundo TRB, el de repuesto: el mismo modelo, sin trastes. Fabricado en Japón, cuerpo de fresno, mástil de palisandro. Joe llama a los dos sus Mark One.',
-        },
-        {
-          ...bassGearEn.groups[0].items[2],
-          spec: 'Sin pala · mástil pasante de grafito · años ochenta',
-          note: 'Un bajo inglés sin pala de los años ochenta, construido sobre un mástil de grafito que recorre el instrumento entero, con alas de madera veteada a los lados. Status es ese sonido que mucha gente identifica con los ochenta sin saber el nombre.',
-        },
-        {
-          ...bassGearEn.groups[0].items[3],
-          spec: 'Azul perla · hecho a mano en Birmingham',
-          note: 'El bajo de Mark King: el modelo que John Diggins construyó para Level 42, que es la razón por la que casi todo el mundo reconoce esa forma. El de Joe es azul perla.',
-        },
-      ],
-    },
-    {
-      group: 'El equipo',
-      items: [
-        {
-          ...bassGearEn.groups[1].items[0],
-          spec: 'Apilados, con la cabeza encima',
-          note: 'Barefaced fabrica pantallas muy ligeras en Brighton, algo que importa más de lo que parece cuando hay que subir el equipo por las escaleras de un pub de Londres. Joe usa dos, una sobre otra, con una pedalera delante.',
-        },
-      ],
-    },
-  ],
-};
+
 
 /* -------------------------------------------------------------------------- */
 

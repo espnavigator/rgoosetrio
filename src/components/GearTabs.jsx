@@ -1,5 +1,5 @@
 /**
- * The two halves of the gear section: Ramon's guitars, Joe's basses.
+ * The two halves of the gear section: the gear Ramon plays, and what is for sale.
  *
  * This is a plain pair of links rather than a drop-down menu. A menu that
  * opens on hover is unusable on a phone, and one that opens on tap needs
@@ -12,7 +12,6 @@ import { localeHref } from '@/content';
 export default function GearTabs({ locale = 'en', current, labels }) {
   const tabs = [
     { key: 'guitar', href: '/gear', label: labels.guitar },
-    { key: 'bass', href: '/gear/bass', label: labels.bass },
     { key: 'sale', href: '/gear/for-sale', label: labels.sale },
   ];
 

@@ -226,7 +226,7 @@ export const music = {
     ],
     // Shown in place of the streaming buttons until the links exist.
     linksPending:
-      'Not streaming yet. The album goes up when ZOHO Records release it.',
+      'The album goes up when ZOHO Records release it. Two singles from the sessions are out already, below.',
 
     // TODO: paste the streaming links in when the record is up. Any line left
     // as an empty string ('') is hidden automatically, so you can fill these in
@@ -240,6 +240,33 @@ export const music = {
   },
 
   // ---- IN PROGRESS --------------------------------------------------------
+  // ---- OUT NOW ------------------------------------------------------------
+
+  /**
+   * Singles already on the platforms, while the album waits on ZOHO.
+   *
+   * Both were checked against Spotify's own embed data, which returns the
+   * title and the lead artist, so neither points at somebody else's record.
+   */
+  singlesHeading: 'Out now',
+  singlesIntro: 'The album is not up yet, but these are.',
+  singles: [
+    {
+      title: 'Porque',
+      credit: 'Ramon Goose, featuring Nancy Maura',
+      year: '2025',
+      note: 'Track two of the album, and one of the last things Nancy Maura recorded.',
+      spotify: 'https://open.spotify.com/album/1a1DBFzmU5dVDKKJ8fK1Or',
+    },
+    {
+      title: 'Cumbia Por Los Muertos',
+      credit: 'Ramon Goose with Alejandro Almenares',
+      year: '2025',
+      note: 'From the sessions with Alejandro Almenares, the record that is still being finished.',
+      spotify: 'https://open.spotify.com/album/2o9FIK6InUODs0gsjcU0Xo',
+    },
+  ],
+
   upcoming: [
     {
       title: 'The Alejandro Almenares Sessions',

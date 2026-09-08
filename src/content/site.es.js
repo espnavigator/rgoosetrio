@@ -146,7 +146,8 @@ export const music = {
       'Nueve temas grabados en Santiago de Cuba con una banda cubana. Seis canciones traídas del blues y tres escritas en la isla.',
       'Abre y cierra con Peter Green: Black Magic Woman al principio y I Loved Another Woman al final, con Rick Vito, que tocó esas canciones en Fleetwood Mac. En medio hay son, guajira y guitarra del Delta en la misma sala, que es de lo que va el disco.',
     ],
-    linksPending: 'Todavía no está en las plataformas. Saldrá cuando ZOHO Records lo publique.',
+    linksPending:
+      'El disco saldrá cuando lo publique ZOHO Records. Dos sencillos de aquellas sesiones ya están fuera, aquí debajo.',
     personnel: [
       { name: 'Ramon Goose', role: 'Guitarra eléctrica, tres, voz' },
       { name: 'Joaquín Solórzano', role: 'Congas' },
@@ -161,6 +162,20 @@ export const music = {
       { name: 'Rick Vito', role: 'Guitarra solista en I Loved Another Woman' },
     ],
   },
+
+  singlesHeading: 'Ya disponible',
+  singlesIntro: 'El disco todavía no está, pero éstos sí.',
+  singles: musicEn.singles.map((sg, i) => ({
+    ...sg,
+    credit: [
+      'Ramon Goose, con Nancy Maura',
+      'Ramon Goose con Alejandro Almenares',
+    ][i],
+    note: [
+      'El segundo tema del disco, y una de las últimas cosas que grabó Nancy Maura.',
+      'De las sesiones con Alejandro Almenares, el disco que aún se está terminando.',
+    ][i],
+  })),
 
   upcoming: [
     {

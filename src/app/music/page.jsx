@@ -80,6 +80,40 @@ export default function MusicPage({ locale = 'en' }) {
         </div>
       </section>
 
+      {/* ---- SINGLES ALREADY OUT ----------------------------------------- */}
+      {music.singles?.length > 0 && (
+        <section className="section section--tight">
+          <div className="container">
+            <div className="section-head">
+              <span className="kicker">{music.singlesIntro}</span>
+              <h2>{music.singlesHeading}</h2>
+            </div>
+
+            <ul className="credits credits--links">
+              {music.singles.map((sg) => (
+                <li key={sg.title}>
+                  <strong>
+                    {sg.title}{' '}
+                    <span style={{ color: 'var(--red)', fontStyle: 'normal' }}>{sg.year}</span>
+                  </strong>
+                  <span>
+                    <Txt>{sg.credit}</Txt> · <Txt>{sg.note}</Txt>
+                  </span>
+                  <RecordLinks
+                    record={sg}
+                    labels={{
+                      listen: music.listenLabel,
+                      buy: music.buyLabel,
+                      shop: music.shopLabel,
+                    }}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       {/* ---- TRACKS AND CREDITS ----------------------------------------- */}
       <section className="section section--paper">
         <div className="container split split--even">

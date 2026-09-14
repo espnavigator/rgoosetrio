@@ -219,6 +219,18 @@ export const tour = {
   intro: 'Dos formaciones, para que la banda funcione en cualquiera de los dos tamaños. Un trío aquí, un quinteto en Cuba.',
   upcoming: [
     {
+      date: '2026-10-13',
+      time: '20:00',
+      start: '20:00',
+      venue: 'Jam in a Jar',
+      address: '599–601 Green Lanes',
+      city: 'Harringay, Londres',
+      postcode: 'N8 0RE',
+      country: 'Reino Unido',
+      lineup: 'Trío',
+      tickets: '',
+    },
+    {
       date: '2026-11-07',
       venue: 'The Antwerp Arms',
       city: 'Tottenham, Londres',

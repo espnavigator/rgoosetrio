@@ -367,6 +367,11 @@ export const cuba = {
  *   lineup   'Trio' or 'Quintet' — which Compadres are playing
  *   tickets  a ticket URL, or '' for none yet
  *   note     anything else worth saying, or leave it out
+ *   time     how the start time reads on the page, e.g. '8pm' (optional)
+ *   start    the same time for search engines, 24-hour: '20:00' (optional)
+ *   address  street address, e.g. '599 Green Lanes' (optional)
+ *   postcode e.g. 'N8 0RE' (optional)
+ *   timeZone only for gigs outside the UK, e.g. 'America/Havana'
  *
  * Move a date into `past` once it has happened. An empty `upcoming` list makes
  * the page say there is nothing booked yet and point people at your email,
@@ -378,6 +383,19 @@ export const tour = {
     'Two line-ups, so the band works at either size. A trio here, a quintet in Cuba.',
 
   upcoming: [
+    {
+      // Address and postcode as the venue gives them on its own site.
+      date: '2026-10-13',
+      time: '8pm',
+      start: '20:00',
+      venue: 'Jam in a Jar',
+      address: '599–601 Green Lanes',
+      city: 'Harringay, London',
+      postcode: 'N8 0RE',
+      country: 'United Kingdom',
+      lineup: 'Trio',
+      tickets: '',
+    },
     {
       date: '2026-11-07',
       venue: 'The Antwerp Arms',

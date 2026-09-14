@@ -1,6 +1,21 @@
 import { band as band0, bio, identity, music, sameAs, site, tour } from '@/content/site';
 
 /**
+ * The UTC offset for a place on a given day: "+01:00" in British Summer Time,
+ * "+00:00" in a London winter, "-05:00" in Santiago de Cuba. A start time on a
+ * listing is the time on the clock where the gig is; without the offset a
+ * search engine has to guess which hour "20:00" means.
+ */
+function utcOffset(isoDate, timeZone) {
+  const noonUtc = new Date(`${isoDate}T12:00:00Z`);
+  const localHour = Number(
+    new Intl.DateTimeFormat('en-GB', { timeZone, hour: '2-digit', hourCycle: 'h23' }).format(noonUtc)
+  );
+  const diff = localHour - 12;
+  return `${diff < 0 ? '-' : '+'}${String(Math.abs(diff)).padStart(2, '0')}:00`;
+}
+
+/**
  * Schema.org structured data.
  *
  * This is the invisible block of machine-readable facts Google reads to work out
@@ -78,7 +93,11 @@ export default function JsonLd() {
     .map((g) => ({
       '@type': 'MusicEvent',
       name: `${site.band} at ${g.venue}`,
-      startDate: g.date,
+      // With a start time, the full moment in the venue's own time zone;
+      // without one, just the day, as before.
+      startDate: g.start
+        ? `${g.date}T${g.start}:00${utcOffset(g.date, g.timeZone || 'Europe/London')}`
+        : g.date,
       eventStatus: 'https://schema.org/EventScheduled',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       performer: { '@id': `${site.url}/#band` },
@@ -87,7 +106,9 @@ export default function JsonLd() {
         name: g.venue,
         address: {
           '@type': 'PostalAddress',
+          streetAddress: g.address || undefined,
           addressLocality: g.city || undefined,
+          postalCode: g.postcode || undefined,
           addressCountry: g.country || undefined,
         },
       },

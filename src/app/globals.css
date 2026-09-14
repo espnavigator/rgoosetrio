@@ -1556,6 +1556,16 @@ a.card:hover {
   color: var(--red);
 }
 
+/* The start time, under the date on a gig row. */
+.gig__time {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
 .gig__what {
   display: flex;
   flex-direction: column;

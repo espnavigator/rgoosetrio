@@ -33,12 +33,17 @@ function formatDate(value) {
 
 function Gig({ gig, past }) {
   const when = formatDate(gig.date);
-  const place = [gig.city, gig.country].filter(Boolean).join(', ');
+  // Street and postcode go in when a listing has them, so the venue can be
+  // found from the page alone. Entries without them read exactly as before.
+  const place = [gig.address, [gig.city, gig.postcode].filter(Boolean).join(' '), gig.country]
+    .filter(Boolean)
+    .join(', ');
 
   return (
     <li className="gig">
       <div className="gig__when">
         {when || <span className="todo">Date to be confirmed</span>}
+        {when && gig.time && <span className="gig__time">{gig.time}</span>}
       </div>
 
       <div className="gig__what">

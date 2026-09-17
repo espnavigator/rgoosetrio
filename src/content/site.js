@@ -713,7 +713,7 @@ export const gear = {
             { src: '/images/gear/red-strat-cuba.jpg', alt: 'Ramon Goose with the red Strat he keeps in Cuba' },
           ],
           body:
-            'In Cuba I play through a 10-inch Eminence Blue in a Hughes & Kettner cab and a 12-inch Jensen ceramic in a Filmosound cab. The Filmosound runs at 110 volts, which is what Cuba runs on, so it works as long as the electricity is on. The red Strat is one of the two electric guitars I keep there.',
+            'In Cuba I play through a 10-inch Eminence Blue in a Hughes & Kettner cab and a 12-inch Jensen ceramic in a Filmosound cab. The Filmosound amplifier runs at 110 volts, which is what Cuba runs on, so it works as long as the electricity is on. The red Strat is one of the two electric guitars I keep there.',
         },
         {
           name: 'The rig',

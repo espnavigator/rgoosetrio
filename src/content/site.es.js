@@ -530,7 +530,7 @@ export const gear = {
             { src: '/images/gear/cuban-rig.jpg', alt: 'El amplificador Bell & Howell Filmosound sobre su pantalla, en Cuba' },
             { src: '/images/gear/red-strat-cuba.jpg', alt: 'Ramon Goose con la Strat roja que tiene en Cuba' },
           ],
-          body: 'En Cuba toco con un Eminence Blue de 10 pulgadas en una pantalla Hughes & Kettner y un Jensen cerámico de 12 pulgadas en una pantalla Filmosound. El Filmosound funciona a 110 voltios, que es la corriente de Cuba, así que suena mientras haya luz. La Strat roja es una de las dos guitarras eléctricas que tengo allí.',
+          body: 'En Cuba toco con un Eminence Blue de 10 pulgadas en una pantalla Hughes & Kettner y un Jensen cerámico de 12 pulgadas en una pantalla Filmosound. El amplificador Filmosound funciona a 110 voltios, que es la corriente de Cuba, así que suena mientras haya luz. La Strat roja es una de las dos guitarras eléctricas que tengo allí.',
         },
         {
           name: 'El equipo',

@@ -489,9 +489,9 @@ export const gear = {
         },
         {
           name: 'ESP Navigator',
-          detail: 'Las guitarras estilo Gibson',
+          detail: '1975–2025',
           image: '/images/gallery/01.jpg',
-          body: 'Navigator es la línea japonesa de ESP, y construyen las formas de Gibson mejor que casi nadie: una Explorer, una Firebird, una SG, una Les Paul y una semicaja estilo 335, además de la N-ST azul. Para un concierto de The Compadres me llevo una de las Guyatone y una de éstas, que cubre todo el terreno entre una pastilla fina y metálica y una humbucker gorda sin tener que cargar con media casa.',
+          body: 'La línea japonesa de ESP, fabricada por primera vez en 1975. ESP decidió dejar de fabricarlas en 2025, cincuenta años después. Tengo muchas, y uso la que tenga más a mano.',
         },
         {
           name: 'Daniels Guitars Les Paul',

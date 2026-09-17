@@ -664,10 +664,10 @@ export const gear = {
         },
         {
           name: 'ESP Navigator',
-          detail: 'The Gibson-style guitars',
+          detail: '1975–2025',
           image: '/images/gallery/01.jpg',
           body:
-            'Navigator is ESP’s Japanese line, and they build Gibson shapes better than most: an Explorer, a Firebird, an SG, a Les Paul and a 335-style semi, plus the blue N-ST. For a Compadres gig I take one of the Guyatones and one of these, which covers everything between a thin twangy pickup and a fat humbucker without carrying half the house.',
+            'ESP’s Japanese line, first made in 1975. ESP decided to discontinue them in 2025, fifty years on. I have a lot of them, and I grab whichever one comes to hand.',
         },
         {
           name: 'Daniels Guitars Les Paul',
@@ -1337,7 +1337,7 @@ export const gallery = {
     { src: '02.jpg', tag: 'gear', caption: 'The Victoria Reverberato chassis, valves in' },
     { src: '03.jpg', tag: 'gear', caption: 'The Daniels Les Paul replica' },
     { src: '04.jpg', tag: 'gear', caption: 'The ESP flame maple 335 and a Daniels Les Paul replica' },
-    { src: '05.jpg', tag: 'gear', caption: 'The Coodercaster, and the blue ESP Navigator N-ST' },
+    { src: '05.jpg', tag: 'gear', caption: 'The Coodercaster, and an ESP Navigator' },
     { src: '07.jpg', tag: 'portrait', caption: 'TODO: caption — in the workshop with a Les Paul' },
     { src: '08.jpg', tag: 'gear', caption: 'Siewa Powersonic, the guitar Ali Farka Touré played' },
     { src: '09.jpg', tag: 'gear', caption: 'Left to right: Crucial Audio Echo Nugget, Blackbox Quicksilver, Goose Germanium Fuzz, Goose Effects Crossfire' },

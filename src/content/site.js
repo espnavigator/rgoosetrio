@@ -706,7 +706,17 @@ export const gear = {
           name: 'The rig',
           detail: 'Two amps, wet and dry',
           body:
-            'Two amplifiers running at once, one clean and dry and one carrying the effects, split with the WAU Goosemaster. It is more to carry, but two amps do something one cannot: the sound widens and starts to move on its own, which is exactly what the Cuban material wants under it.',
+            'Two amplifiers running at once, one clean and dry and one carrying the effects, split with the WAU Goosemaster. It is more to carry, but two amps do something one cannot: the sound widens and starts to move on its own, which is exactly what the Cuban material wants under it. For live playing and recording the speakers are 1990s Fender Eminence Blue 10-inches and a Celestion 100 alnico 12-inch. Live, I also use old 15-inch Rola speakers and a 10-inch ceramic Revere.',
+        },
+        {
+          // Set apart on purpose, so anyone booking or visiting can see at a
+          // glance what is already waiting on the island.
+          name: 'In Cuba',
+          detail: 'What stays on the island',
+          highlight: true,
+          image: '/images/gallery/a15.jpg',
+          body:
+            'In Cuba I play through a 10-inch Eminence Blue in a Hughes & Kettner cab and a 12-inch Jensen ceramic in a Filmosound cab. The red Strat in the photograph, with Alejandro Almenares, is one of the two electric guitars I keep there.',
         },
         {
           name: 'Bell & Howell Filmosound',

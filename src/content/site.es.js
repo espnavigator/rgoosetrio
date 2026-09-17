@@ -525,7 +525,14 @@ export const gear = {
         {
           name: 'El equipo',
           detail: 'Dos amplificadores, seco y con efectos',
-          body: 'Dos amplificadores sonando a la vez, uno limpio y seco y otro con los efectos, repartidos con el WAU Goosemaster. Es más peso que cargar, pero dos amplificadores hacen algo que uno solo no puede: el sonido se ensancha y empieza a moverse por su cuenta, que es justo lo que pide el repertorio cubano.',
+          body: 'Dos amplificadores sonando a la vez, uno limpio y seco y otro con los efectos, repartidos con el WAU Goosemaster. Es más peso que cargar, pero dos amplificadores hacen algo que uno solo no puede: el sonido se ensancha y empieza a moverse por su cuenta, que es justo lo que pide el repertorio cubano. Para tocar en directo y grabar uso altavoces Eminence Blue de Fender de 10 pulgadas, de los años noventa, y un Celestion 100 alnico de 12 pulgadas. En directo también uso altavoces Rola antiguos de 15 pulgadas y un Revere cerámico de 10 pulgadas.',
+        },
+        {
+          name: 'En Cuba',
+          detail: 'Lo que se queda en la isla',
+          highlight: true,
+          image: '/images/gallery/a15.jpg',
+          body: 'En Cuba toco con un Eminence Blue de 10 pulgadas en una pantalla Hughes & Kettner y un Jensen cerámico de 12 pulgadas en una pantalla Filmosound. La Strat roja de la foto, con Alejandro Almenares, es una de las dos guitarras eléctricas que tengo allí.',
         },
         {
           name: 'Bell & Howell Filmosound',

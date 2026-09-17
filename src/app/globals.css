@@ -1419,6 +1419,22 @@ a.card:hover {
   font-style: italic;
 }
 
+/* A gear box that has to be spotted at a glance — what Ramon keeps in Cuba.
+   Thicker red border and a big red heading, so it reads from across the page
+   rather than waiting to be found in the grid. */
+.card--highlight {
+  border: 4px solid var(--red);
+  box-shadow: 8px 8px 0 var(--red);
+}
+
+.card--highlight h3 {
+  font-size: clamp(2rem, 1.4rem + 2.6vw, 3.2rem);
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--red);
+}
+
 /* Fact strip down the side of the Cuba page. */
 .facts {
   list-style: none;

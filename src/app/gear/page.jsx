@@ -73,7 +73,10 @@ export default function GearPage({ locale = 'en' }) {
 
             <div className="grid grid--2">
               {group.items.map((item) => (
-                <article key={item.name} className="card">
+                <article
+                  key={item.name}
+                  className={item.highlight ? 'card card--highlight' : 'card'}
+                >
                   {item.image && (
                     <img
                       className="gear-photo"

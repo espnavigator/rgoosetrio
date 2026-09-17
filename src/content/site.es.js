@@ -506,6 +506,12 @@ export const gear = {
           image: '/images/gallery/16.jpg',
         },
         {
+          name: 'Guild Artist Award',
+          detail: '1994 · mini humbucker Kent Armstrong',
+          body: 'La archtop insignia de Guild, construida en Westerly, Rhode Island, en 1994. El golpeador es de reemplazo. La tapa de la pastilla es la original, pero lo que lleva dentro ahora es un mini humbucker de Kent Armstrong. Sigue flotando sobre el final del mástil en lugar de ir encastrada en la tapa, así que la tapa tallada queda libre para sonar.',
+          image: '/images/gear/guild-artist-award.jpg',
+        },
+        {
           name: 'Tres',
           detail: 'Acústico y eléctrico',
           body: 'Toco el tres tanto acústico como eléctrico. El eléctrico me lo hizo a medida Chapter Guitars, y empezó siendo una guitarra: inspirada en la Siewa Powersonic que tocaba Ali Farka Touré, y construida sobre todo con maderas africanas. Después se convirtió en tres. Así que el instrumento con el que toco el repertorio cubano es, por debajo, una guitarra de África occidental, lo cual es una casualidad o es toda la historia según cómo se mire. El tres está en el centro del son, y es la razón por la que la guitarra se coloca donde se coloca en esta banda.',

@@ -684,6 +684,13 @@ export const gear = {
           image: '/images/gallery/16.jpg',
         },
         {
+          name: 'Guild Artist Award',
+          detail: '1994 · Kent Armstrong mini humbucker',
+          body:
+            'Guild’s flagship archtop, built in Westerly, Rhode Island, in 1994. The pickguard is a replacement. The pickup cover is the original, but what sits inside it now is a Kent Armstrong mini humbucker. It still floats off the end of the neck rather than being set into the top, so the carved top is left free to ring.',
+          image: '/images/gear/guild-artist-award.jpg',
+        },
+        {
           name: 'Tres',
           detail: 'Acoustic and electric',
           body:

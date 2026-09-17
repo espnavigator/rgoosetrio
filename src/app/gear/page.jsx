@@ -32,6 +32,8 @@ export const metadata = {
     'Marshall JTM45 replica',
     'Lazy J cabinet',
     'Fernandes P-Project',
+    'Guild Artist Award',
+    'Kent Armstrong floating pickup',
     'Cuban electric guitar gear',
   ],
   alternates: {

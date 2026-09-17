@@ -87,6 +87,22 @@ export default function GearPage({ locale = 'en' }) {
                       height="1200"
                     />
                   )}
+                  {/* Two photographs side by side, for a box that covers more
+                      than one thing. Each is shown whole, never cropped. */}
+                  {item.images?.length > 0 && (
+                    <div className="gear-pair">
+                      {item.images.map((ph) => (
+                        <img
+                          key={ph.src}
+                          src={asset(ph.src)}
+                          alt={ph.alt}
+                          loading="lazy"
+                          width="1200"
+                          height="1500"
+                        />
+                      ))}
+                    </div>
+                  )}
                   <h3>
                     <Txt>{item.name}</Txt>
                   </h3>

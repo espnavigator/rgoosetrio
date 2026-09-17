@@ -1427,6 +1427,33 @@ a.card:hover {
   box-shadow: 8px 8px 0 var(--red);
 }
 
+/* Full width of its section, so it is not one box among many. */
+.card--highlight {
+  grid-column: 1 / -1;
+}
+
+/* Two photographs flush into the top of a gear box. Contained rather than
+   cropped, for the same reason as .gear-photo: cropping was cutting off
+   headstocks. The paper colour fills round a photo of a different shape. */
+.gear-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  width: calc(100% + 2 * clamp(1.25rem, 3vw, 1.75rem));
+  margin: calc(-1 * clamp(1.25rem, 3vw, 1.75rem));
+  margin-bottom: 1.1rem;
+  background: var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+
+.gear-pair img {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: var(--paper-deep);
+}
+
 .card--highlight h3 {
   font-size: clamp(2rem, 1.4rem + 2.6vw, 3.2rem);
   font-style: italic;

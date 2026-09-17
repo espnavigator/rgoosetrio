@@ -530,7 +530,7 @@ export const gear = {
             { src: '/images/gear/cuban-rig.jpg', alt: 'El amplificador Bell & Howell Filmosound sobre su pantalla, en Cuba' },
             { src: '/images/gear/red-strat-cuba.jpg', alt: 'Ramon Goose con la Strat roja que tiene en Cuba' },
           ],
-          body: 'En Cuba toco con un Eminence Blue de 10 pulgadas en una pantalla Hughes & Kettner y un Jensen cerámico de 12 pulgadas en una pantalla Filmosound. El amplificador Filmosound funciona a 110 voltios, que es la corriente de Cuba, así que suena mientras haya luz. La Strat roja es una de las dos guitarras eléctricas que tengo allí, y lleva un trémolo invertido, como las de Jimi Hendrix y Stevie Ray Vaughan.',
+          body: 'En Cuba toco con un Eminence Blue de 10 pulgadas en una pantalla Hughes & Kettner y un Jensen cerámico de 12 pulgadas en una pantalla Filmosound. El amplificador Filmosound funciona a 110 voltios, que es la corriente de Cuba, así que suena mientras haya luz. La Strat roja es una de las dos guitarras eléctricas que tengo allí. Lleva pastillas de Alan Dingwall, diapasón de palisandro brasileño, trastes Jim Dunlop 6100 y un trémolo invertido, como las de Jimi Hendrix y Stevie Ray Vaughan.',
         },
         {
           name: 'El equipo',

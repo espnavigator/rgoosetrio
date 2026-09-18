@@ -592,7 +592,7 @@ export const gear = {
         {
           name: 'Crucial Audio Echo Nugget y Blackbox Quicksilver',
           detail: 'Crucial Audio y Blackbox',
-          body: 'Un Crucial Audio Echo Nugget y un Blackbox Quicksilver. Dos delays en lugar de uno porque el lado con efectos del equipo es el que los lleva, y hacen trabajos distintos: uno para el slap y otro para las repeticiones largas dentro de las que se asienta el repertorio cubano.',
+          body: 'Un Crucial Audio Echo Nugget y un Blackbox Quicksilver. Dos delays en lugar de uno porque el lado con efectos del equipo es el que los lleva, y hacen trabajos distintos: uno para el slap y otro para las repeticiones largas dentro de las que se asienta el repertorio cubano. El Quicksilver es, en mi opinión, el mejor pedal de delay que se ha fabricado, y mantiene la señal original analógica de principio a fin.',
           image: '/images/gallery/09.jpg',
         },
         {

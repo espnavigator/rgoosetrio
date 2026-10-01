@@ -254,7 +254,7 @@ export const tour = {
       note: 'Entrada libre.',
     },
     {
-      date: '2026-12-30',
+      date: '2026-12-26',
       venue: 'Casa de la Trova',
       city: 'Santiago de Cuba',
       country: 'Cuba',

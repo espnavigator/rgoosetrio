@@ -223,12 +223,14 @@ export const tour = {
       time: '19:30',
       start: '19:30',
       venue: 'St Mary the Virgin with All Saints',
+      address: 'St Mary Church Street',
       city: 'Rotherhithe, Londres',
       postcode: 'SE16 4JE',
       country: 'Reino Unido',
       lineup: 'Trío',
       tickets: '',
-      note: 'Tuned in London presenta a Ramon Goose & The Compadres.',
+      event: 'https://fb.me/e/5bjaPLSOj',
+      note: 'Tuned In London presenta a Ramon Goose & The Compadres.',
     },
     {
       date: '2026-10-13',
@@ -270,6 +272,7 @@ export const tour = {
       note: 'Sala y fecha por anunciar.',
     },
   ],
+  eventLabel: 'Evento en Facebook',
   pastHeading: 'Anteriormente',
   past: [
     {

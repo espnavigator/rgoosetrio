@@ -31,7 +31,7 @@ function formatDate(value) {
   }).format(d);
 }
 
-function Gig({ gig, past }) {
+function Gig({ gig, past, eventLabel }) {
   const when = formatDate(gig.date);
   // Street and postcode go in when a listing has them, so the venue can be
   // found from the page alone. Entries without them read exactly as before.
@@ -61,24 +61,41 @@ function Gig({ gig, past }) {
       <div className="gig__lineup">{gig.lineup}</div>
 
       <div className="gig__action">
-        {past ? null : gig.tickets ? (
-          <a
-            href={gig.tickets}
-            className="btn btn--primary btn--sm"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tickets
-          </a>
-        ) : (
-          <a
-            href={`mailto:${site.email.booking}?subject=${encodeURIComponent(
-              `Enquiry: ${gig.venue}`
-            )}`}
-            className="btn btn--sm"
-          >
-            Ask
-          </a>
+        {past ? null : (
+          <>
+            {gig.tickets && (
+              <a
+                href={gig.tickets}
+                className="btn btn--primary btn--sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tickets
+              </a>
+            )}
+            {/* An event page rather than a ticket link: its own button, so it
+                is not mistaken for somewhere to buy a ticket. */}
+            {gig.event && (
+              <a
+                href={gig.event}
+                className={`btn btn--sm${gig.tickets ? '' : ' btn--primary'}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {eventLabel}
+              </a>
+            )}
+            {!gig.tickets && !gig.event && (
+              <a
+                href={`mailto:${site.email.booking}?subject=${encodeURIComponent(
+                  `Enquiry: ${gig.venue}`
+                )}`}
+                className="btn btn--sm"
+              >
+                Ask
+              </a>
+            )}
+          </>
         )}
       </div>
     </li>
@@ -106,7 +123,7 @@ export default function TourPage({ locale = 'en' }) {
           {hasUpcoming ? (
             <ul className="gig-list">
               {upcoming.map((g, i) => (
-                <Gig key={i} gig={g} />
+                <Gig eventLabel={tour.eventLabel} key={i} gig={g} />
               ))}
             </ul>
           ) : (
@@ -130,7 +147,7 @@ export default function TourPage({ locale = 'en' }) {
             </div>
             <ul className="gig-list gig-list--past">
               {tour.past.map((g, i) => (
-                <Gig key={i} gig={g} past />
+                <Gig eventLabel={tour.eventLabel} key={i} gig={g} past />
               ))}
             </ul>
           </div>

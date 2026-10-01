@@ -388,12 +388,15 @@ export const tour = {
       time: '7.30pm',
       start: '19:30',
       venue: 'St Mary the Virgin with All Saints',
+      address: 'St Mary Church Street',
       city: 'Rotherhithe, London',
       postcode: 'SE16 4JE',
       country: 'United Kingdom',
       lineup: 'Trio',
       tickets: '',
-      note: 'Tuned in London presents Ramon Goose & The Compadres.',
+      // A Facebook event page, not a ticket link — it gets its own button.
+      event: 'https://fb.me/e/5bjaPLSOj',
+      note: 'Tuned In London presents Ramon Goose & The Compadres.',
     },
     {
       // Address and postcode as the venue gives them on its own site.
@@ -436,6 +439,9 @@ export const tour = {
       note: 'Venue and date to be announced.',
     },
   ],
+
+  // Wording on the button that opens a gig's event page.
+  eventLabel: 'Facebook event',
 
   pastHeading: 'Previously',
   past: [

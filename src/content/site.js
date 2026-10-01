@@ -384,6 +384,18 @@ export const tour = {
 
   upcoming: [
     {
+      date: '2026-10-09',
+      time: '7.30pm',
+      start: '19:30',
+      venue: 'St Mary the Virgin with All Saints',
+      city: 'Rotherhithe, London',
+      postcode: 'SE16 4JE',
+      country: 'United Kingdom',
+      lineup: 'Trio',
+      tickets: '',
+      note: 'Tuned in London presents Ramon Goose & The Compadres.',
+    },
+    {
       // Address and postcode as the venue gives them on its own site.
       date: '2026-10-13',
       time: '8pm',

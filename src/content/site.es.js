@@ -219,6 +219,18 @@ export const tour = {
   intro: 'Dos formaciones, para que la banda funcione en cualquiera de los dos tamaños. Un trío aquí, un quinteto en Cuba.',
   upcoming: [
     {
+      date: '2026-10-09',
+      time: '19:30',
+      start: '19:30',
+      venue: 'St Mary the Virgin with All Saints',
+      city: 'Rotherhithe, Londres',
+      postcode: 'SE16 4JE',
+      country: 'Reino Unido',
+      lineup: 'Trío',
+      tickets: '',
+      note: 'Tuned in London presenta a Ramon Goose & The Compadres.',
+    },
+    {
       date: '2026-10-13',
       time: '20:00',
       start: '20:00',

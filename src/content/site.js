@@ -393,7 +393,7 @@ export const tour = {
       postcode: 'SE16 4JE',
       country: 'United Kingdom',
       lineup: 'Trio',
-      tickets: '',
+      tickets: 'https://tunedin.london/',
       // A Facebook event page, not a ticket link — it gets its own button.
       event: 'https://fb.me/e/5bjaPLSOj',
       note: 'Tuned In London presents Ramon Goose & The Compadres.',

@@ -228,7 +228,7 @@ export const tour = {
       postcode: 'SE16 4JE',
       country: 'Reino Unido',
       lineup: 'Trío',
-      tickets: '',
+      tickets: 'https://tunedin.london/',
       event: 'https://fb.me/e/5bjaPLSOj',
       note: 'Tuned In London presenta a Ramon Goose & The Compadres.',
     },

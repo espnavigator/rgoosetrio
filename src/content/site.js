@@ -191,7 +191,7 @@ export const music = {
     // TODO: the exact date, once ZOHO confirm it. The year is settled.
     releaseLine: 'Released 2026 on ZOHO Records — exact date to be announced.',
     status: 'Out in 2026',
-    cover: '/images/i-left-my-blues-in-cuba.jpg',
+    cover: '/images/i-left-my-blues-in-cuba-sleeve.jpg',
     recordedAt: 'EGREM Studios, Santiago de Cuba',
     blurb: [
       'Nine tracks cut in Santiago de Cuba with a Cuban band. Six songs carried in from the blues and three written on the island.',
@@ -1121,7 +1121,7 @@ export const shop = {
       variant: 'CD',
       price: '£12',
       href: '',
-      imagePath: '/images/i-left-my-blues-in-cuba.jpg',
+      imagePath: '/images/i-left-my-blues-in-cuba-sleeve.jpg',
       note: 'Signed on request.',
     },
     {
@@ -1129,7 +1129,7 @@ export const shop = {
       variant: 'Vinyl',
       price: '£28',
       href: '',
-      imagePath: '/images/i-left-my-blues-in-cuba.jpg',
+      imagePath: '/images/i-left-my-blues-in-cuba-sleeve.jpg',
       note: 'In development. A pressing is coming.',
     },
     {

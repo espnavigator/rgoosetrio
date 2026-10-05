@@ -71,7 +71,7 @@ export default function JsonLd() {
       byArtist: { '@id': `${site.url}/#band` },
       recordLabel: 'ZOHO Records',
       numTracks: music.featured.tracks.length,
-      image: `${site.url}/images/i-left-my-blues-in-cuba.jpg`,
+      image: `${site.url}/images/i-left-my-blues-in-cuba-sleeve.jpg`,
     },
   };
 

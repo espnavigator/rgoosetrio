@@ -260,7 +260,13 @@ export const tour = {
       country: 'Cuba',
       lineup: 'Quinteto',
       tickets: '',
-      note: 'La presentación del disco. Se grabará en audio y vídeo para un futuro disco en directo.',
+      note: 'La presentación del disco, con Alejandro Almenares e invitados especiales. Se grabará en audio y vídeo para un futuro disco en directo.',
+      poster: {
+        src: '/images/tour/casa-de-la-trova-santiago-de-cuba-26-december-2026.jpg',
+        alt: 'Cartel: Ramon Goose y The Compadres con Alejandro Almenares en la Casa de la Trova, Santiago de Cuba, 26 de diciembre de 2026',
+        caption:
+          'Ramon Goose y The Compadres, con Alejandro Almenares e invitados especiales. Ramon Goose (voz y guitarra), Joaquín Solórzano (congas), Osvaldo Calderín (contrabajo), Eduardo Calzado (bongó), Damian Busqueta Mineto (trombón), Benilde Aysmel Guzmán Mariño (trompeta), Rudy Ramón (tres). Tocando canciones del nuevo álbum grabado en Santiago de Cuba.',
+      },
     },
     {
       date: '',

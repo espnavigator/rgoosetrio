@@ -112,6 +112,8 @@ export default function JsonLd() {
           addressCountry: g.country || undefined,
         },
       },
+      // Google shows an image with an event result when one is given.
+      ...(g.poster ? { image: `${site.url}${g.poster.src}` } : {}),
       ...(g.tickets ? { offers: { '@type': 'Offer', url: g.tickets } } : {}),
     }));
 

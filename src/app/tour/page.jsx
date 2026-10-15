@@ -1,5 +1,6 @@
 import PageHeader from '@/components/PageHeader';
 import { Txt, isTodo } from '@/components/Txt';
+import { asset } from '@/lib/asset';
 import { site, tour } from '@/content/site';
 import { getContent } from '@/content';
 
@@ -55,6 +56,25 @@ function Gig({ gig, past, eventLabel }) {
           <span className="gig__note">
             <Txt>{gig.note}</Txt>
           </span>
+        )}
+
+        {/* The poster, with its wording written out underneath: the picture is
+            unreadable to a search engine, the caption is not. */}
+        {gig.poster && (
+          <figure className="gig__poster">
+            <a href={asset(gig.poster.src)} target="_blank" rel="noopener noreferrer">
+              <img
+                src={asset(gig.poster.src)}
+                alt={gig.poster.alt}
+                loading="lazy"
+                width="1080"
+                height="1350"
+              />
+            </a>
+            <figcaption>
+              <Txt>{gig.poster.caption}</Txt>
+            </figcaption>
+          </figure>
         )}
       </div>
 

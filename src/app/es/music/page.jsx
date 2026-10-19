@@ -4,7 +4,7 @@ import Page from '@/app/music/page';
 // content, so there is one set of page code rather than two that can drift.
 export const metadata = {
   title: 'Música',
-  description: 'I Left My Blues In Cuba, grabado en los Estudios EGREM de Santiago de Cuba.',
+  description: 'Left My Blues In Cuba, grabado en los Estudios EGREM de Santiago de Cuba.',
   alternates: {
     canonical: '/es/music/',
     languages: {

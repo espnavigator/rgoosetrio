@@ -58,7 +58,7 @@ export function sameAs() {
 export const home = {
   heroName: 'Ramón Goose & The Compadres',
   heroKicker: 'Santiago de Cuba · Londres',
-  heroTitle: 'I Left My Blues In Cuba',
+  heroTitle: 'Left My Blues In Cuba',
   heroSubtitle:
     'Ramon Goose es un guitarrista inglés que trabaja en la música cubana. Llevó el blues a Santiago de Cuba, encontró a The Compadres y volvió con un disco.',
   heroCtaPrimary: { label: 'Escuchar el disco', href: '/music' },
@@ -713,8 +713,8 @@ export const shop = {
   heading: 'Tienda',
   intro: 'Discos, una camiseta y los pedales. Todo se envía desde el Reino Unido.',
   items: [
-    { name: 'I Left My Blues In Cuba', variant: 'CD', price: '£12', href: '', note: 'Firmado si lo pides.' },
-    { name: 'I Left My Blues In Cuba', variant: 'Vinilo', price: '£28', href: '', note: 'En preparación. Habrá prensaje.' },
+    { name: 'Left My Blues In Cuba', variant: 'CD', price: '£12', href: '', note: 'Firmado si lo pides.' },
+    { name: 'Left My Blues In Cuba', variant: 'Vinilo', price: '£28', href: '', note: 'En preparación. Habrá prensaje.' },
     {
       name: 'Camiseta The Compadres',
       variant: 'Negra, de la S a la XXL',
@@ -802,7 +802,7 @@ export const bio = {
   ],
   heading: 'Biografía',
   short:
-    'Ramon Goose es un guitarrista inglés que trabaja en la música cubana. Nacido en Colchester en 1975, ha pasado treinta años sacando la guitarra eléctrica del blues: por África occidental con el West African Blues Project, y ahora por Santiago de Cuba con The Compadres, cuyo disco I Left My Blues In Cuba se grabó en los Estudios EGREM.',
+    'Ramon Goose es un guitarrista inglés que trabaja en la música cubana. Nacido en Colchester en 1975, ha pasado treinta años sacando la guitarra eléctrica del blues: por África occidental con el West African Blues Project, y ahora por Santiago de Cuba con The Compadres, cuyo disco Left My Blues In Cuba se grabó en los Estudios EGREM.',
   longHeading: 'A dónde se fue el blues',
   long: [
     'Ramon Goose es guitarrista, cantante y productor inglés, nacido en Colchester en 1975 y tocando profesionalmente desde los años noventa. Ha pasado esa carrera llevando la guitarra eléctrica fuera del blues y hacia todo lo que el blues tocó: hip-hop y guitarra del Delta con NuBlues, Misisipi vía Malí con el West African Blues Project, y ahora el son y la guajira del oriente cubano.',
@@ -811,7 +811,7 @@ export const bio = {
   ],
   press: [
     { label: 'Con base en', value: 'Londres y La Habana' },
-    { label: 'Disco actual', value: 'I Left My Blues In Cuba' },
+    { label: 'Disco actual', value: 'Left My Blues In Cuba' },
     { label: 'Sello', value: 'ZOHO Records, Nueva York' },
     { label: 'Formaciones', value: 'Trío en Inglaterra, quinteto en Santiago de Cuba' },
   ],
@@ -966,6 +966,6 @@ export const gearForSale = {
     ...it,
     spec: 'Guitarra eléctrica de cuerdas de nylon · custom shop japonés',
     condition: 'El modelo firma de Dominic Miller',
-    note: 'La eléctrica de nylon que tocó Dominic Miller durante sus años con Sting. Tengo dos, y ésta es la segunda: la de la foto. Escríbeme para más detalles.',
+    note: 'La eléctrica de nylon que tocó Dominic Miller durante sus años con Sting. Tenía dos, y ésta era la segunda: la de la foto.',
   })),
 };

@@ -59,7 +59,7 @@ export const metadata = {
         url: '/og-image.png',
         width: 512,
         height: 512,
-        alt: `${site.band} — I Left My Blues In Cuba`,
+        alt: `${site.band} — Left My Blues In Cuba`,
       },
     ],
   },

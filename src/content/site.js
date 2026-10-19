@@ -96,7 +96,7 @@ export const home = {
   // Spelled with the acute, exactly as it is on the album sleeve.
   heroName: 'Ramón Goose & The Compadres',
   heroKicker: 'Santiago de Cuba · London',
-  heroTitle: 'I Left My Blues In Cuba',
+  heroTitle: 'Left My Blues In Cuba',
 
   // This is the first sentence of real text on the site. Google reads it, and
   // it states plainly who he is and what he does.
@@ -184,14 +184,14 @@ export const music = {
 
   // ---- THE NEW ALBUM ------------------------------------------------------
   featured: {
-    title: 'I Left My Blues In Cuba',
+    title: 'Left My Blues In Cuba',
     artist: 'Ramon Goose & The Compadres',
     // TODO: confirm with ZOHO before this goes live.
     label: 'ZOHO Records, New York',
     // TODO: the exact date, once ZOHO confirm it. The year is settled.
     releaseLine: 'Released 2026 on ZOHO Records — exact date to be announced.',
     status: 'Out in 2026',
-    cover: '/images/i-left-my-blues-in-cuba-sleeve.jpg',
+    cover: '/images/left-my-blues-in-cuba-sleeve.jpg',
     recordedAt: 'EGREM Studios, Santiago de Cuba',
     blurb: [
       'Nine tracks cut in Santiago de Cuba with a Cuban band. Six songs carried in from the blues and three written on the island.',
@@ -1095,11 +1095,11 @@ export const gearForSale = {
       // Leave this empty and the card shows `priceOnAsking` instead.
       price: '',
       condition: 'The Dominic Miller signature model',
-      note: 'The nylon-string electric Dominic Miller played through his years with Sting. I have two of them, and this is the second — the one in the photograph. Email me for more details.',
+      note: 'The nylon-string electric Dominic Miller played through his years with Sting. I had two of them, and this was the second — the one in the photograph.',
       // Already on the gear page, so the same file is used rather than a
       // second copy of it.
       image: '/images/gear/p-project.jpg',
-      sold: false,
+      sold: true,
     },
     // {
     //   name: 'Guyatone LG-200T',
@@ -1125,19 +1125,19 @@ export const shop = {
   // as coming soon rather than as a dead button.
   items: [
     {
-      name: 'I Left My Blues In Cuba',
+      name: 'Left My Blues In Cuba',
       variant: 'CD',
       price: '£12',
       href: '',
-      imagePath: '/images/i-left-my-blues-in-cuba-sleeve.jpg',
+      imagePath: '/images/left-my-blues-in-cuba-sleeve.jpg',
       note: 'Signed on request.',
     },
     {
-      name: 'I Left My Blues In Cuba',
+      name: 'Left My Blues In Cuba',
       variant: 'Vinyl',
       price: '£28',
       href: '',
-      imagePath: '/images/i-left-my-blues-in-cuba-sleeve.jpg',
+      imagePath: '/images/left-my-blues-in-cuba-sleeve.jpg',
       note: 'In development. A pressing is coming.',
     },
     {
@@ -1248,7 +1248,7 @@ export const bio = {
   // TODO: this is the placeholder. Replace it with the biography we write for
   // ZOHO Records — the same text should serve the label, the press and this page.
   short:
-    'Ramon Goose is an English guitarist working in Cuban music. Born in Colchester in 1975, he has spent thirty years taking the electric guitar out of the blues — through West Africa with the West African Blues Project, and now through Santiago de Cuba with The Compadres, whose album I Left My Blues In Cuba was recorded at EGREM Studios.',
+    'Ramon Goose is an English guitarist working in Cuban music. Born in Colchester in 1975, he has spent thirty years taking the electric guitar out of the blues — through West Africa with the West African Blues Project, and now through Santiago de Cuba with The Compadres, whose album Left My Blues In Cuba was recorded at EGREM Studios.',
 
   /**
    * Photographs down the biography page.
@@ -1297,7 +1297,7 @@ export const bio = {
   // Facts a journalist will want without having to ask.
   press: [
     { label: 'Based', value: 'London and Havana' },
-    { label: 'Current release', value: 'I Left My Blues In Cuba' },
+    { label: 'Current release', value: 'Left My Blues In Cuba' },
     { label: 'Label', value: 'ZOHO Records, New York' },
     { label: 'Live formats', value: 'Trio in England, quintet in Santiago de Cuba' },
   ],

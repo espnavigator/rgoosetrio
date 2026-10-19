@@ -1954,9 +1954,42 @@ a.card:hover {
   color: var(--red);
 }
 
-/* Sold, but left on the page for a while — people like seeing what went. */
-.product--sold {
-  opacity: 0.62;
+/* Sold, but left on the page for a while — people like seeing what went.
+   Only the picture is dimmed, not the whole card, so the SOLD stamp across it
+   stays at full strength. */
+.product--sold .product__image {
+  filter: grayscale(0.45) brightness(0.92);
+}
+
+.product__shot {
+  position: relative;
+  width: calc(100% + 3rem);
+  margin: -1.5rem -1.5rem 1.1rem;
+}
+
+.product__shot .product__image {
+  width: 100%;
+  margin: 0;
+}
+
+.product__sold {
+  position: absolute;
+  top: 50%;
+  left: -4%;
+  right: -4%;
+  transform: translateY(-50%) rotate(-8deg);
+  background: var(--red);
+  color: var(--paper);
+  border-block: 3px solid var(--ink);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+  font-size: clamp(1.15rem, 0.9rem + 1.4vw, 1.8rem);
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  text-indent: 0.28em;
+  text-align: center;
+  padding: 0.45rem 0;
 }
 
 .product--sold .product__price {

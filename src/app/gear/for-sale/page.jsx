@@ -55,19 +55,28 @@ export default function GearForSalePage({ locale = 'en' }) {
               {items.map((item) => (
                 <article key={item.name} className={`product${item.sold ? ' product--sold' : ''}`}>
                   {item.image && (
-                    <img
-                      className="product__image"
-                      /* A full path is used as-is, so a guitar already
-                         photographed for the gear page does not need a second
-                         copy of the same file. */
-                      src={asset(
-                        item.image.startsWith('/') ? item.image : `/images/for-sale/${item.image}`
+                    /* The photograph, with a SOLD stamp across it once the
+                       piece has gone. The stamp is positioned off this
+                       wrapper, which carries the card's full-bleed width, so
+                       it lines up with the picture and not the text column. */
+                    <div className="product__shot">
+                      <img
+                        className="product__image"
+                        /* A full path is used as-is, so a guitar already
+                           photographed for the gear page does not need a
+                           second copy of the same file. */
+                        src={asset(
+                          item.image.startsWith('/') ? item.image : `/images/for-sale/${item.image}`
+                        )}
+                        alt={item.name}
+                        loading="lazy"
+                        width="1100"
+                        height="1100"
+                      />
+                      {item.sold && (
+                        <span className="product__sold">{gearForSale.soldLabel}</span>
                       )}
-                      alt={item.name}
-                      loading="lazy"
-                      width="1100"
-                      height="1100"
-                    />
+                    </div>
                   )}
                   <span className="product__variant">
                     <Txt>{item.spec}</Txt>

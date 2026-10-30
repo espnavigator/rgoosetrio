@@ -157,7 +157,6 @@ export const music = {
       { name: 'Mustafa', role: 'Piano' },
       { name: 'Nancy Maura', role: 'Voz en Porque y Si Pudiera Expresarte (1935–2025)' },
       { name: 'Alejandro Almenares', role: 'Guitarra y voz' },
-      { name: 'Damian Busqueta Mineto', role: 'Trombón' },
       { name: 'Benilde Aysmel Guzmán Mariño', role: 'Trompeta' },
       { name: 'Rick Vito', role: 'Guitarra solista en I Loved Another Woman' },
     ],
@@ -265,7 +264,7 @@ export const tour = {
         src: '/images/tour/casa-de-la-trova-santiago-de-cuba-26-december-2026.jpg',
         alt: 'Cartel: Ramon Goose y The Compadres con Alejandro Almenares en la Casa de la Trova, Santiago de Cuba, 26 de diciembre de 2026',
         caption:
-          'Ramon Goose y The Compadres, con Alejandro Almenares e invitados especiales. Ramon Goose (voz y guitarra), Joaquín Solórzano (congas), Osvaldo Calderín (contrabajo), Eduardo Calzado (bongó), Damian Busqueta Mineto (trombón), Benilde Aysmel Guzmán Mariño (trompeta), Rudy Ramón (tres). Tocando canciones del nuevo álbum grabado en Santiago de Cuba.',
+          'Ramon Goose y The Compadres, con Alejandro Almenares e invitados especiales. Ramon Goose (voz y guitarra), Joaquín Solórzano (congas), Osvaldo Calderín (contrabajo), Eduardo Calzado (bongó), Benilde Aysmel Guzmán Mariño (trompeta), Rudy Ramón (tres). Tocando canciones del nuevo álbum grabado en Santiago de Cuba.',
       },
     },
     {
@@ -401,10 +400,10 @@ export const band = {
       bio: 'Una de las grandes boleristas de Santiago de Cuba, y una de las últimas defensoras del género en la ciudad. Nacida Justina María Balbuena Céspedes en 1935, cantaba desde los nueve años y nunca se fue de Santiago, porque era santiaguera y ahí se acababa la discusión. Canta en Porque y en Si Pudiera Expresarte. Murió en abril de 2025, a los noventa años, lo que convierte estas grabaciones en de las últimas que hizo.',
     },
     {
-      name: 'Damian Busqueta Mineto y Benilde Aysmel Guzmán Mariño',
-      role: 'Los metales: trombón y trompeta',
-      photo: '/images/band/horn-section.jpg',
-      bio: 'Damian Busqueta Mineto al trombón, productor ganador de dos premios Grammy, y Benilde Aysmel Guzmán Mariño a la trompeta. Los dos se grabaron en Santiago después de la base rítmica, que es la razón por la que el disco tardó lo que tardó. Los metales son lo que separa a una banda de son de un septeto, y son lo último que se pone.',
+      name: 'Benilde Aysmel Guzmán Mariño',
+      role: 'Trompeta',
+      photo: '/images/band/benilde-guzman.jpg',
+      bio: 'Benilde Aysmel Guzmán Mariño a la trompeta, grabado en Santiago después de la base rítmica, que es la razón por la que el disco tardó lo que tardó. Los metales son lo que separa a una banda de son de un septeto, y son lo último que se pone.',
     },
     {
       name: 'Alejandro Almenares',

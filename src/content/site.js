@@ -220,7 +220,6 @@ export const music = {
       { name: 'Mustafa', role: 'Piano' },
       { name: 'Nancy Maura', role: 'Vocals on Porque and Si Pudiera Expresarte (1935–2025)' },
       { name: 'Alejandro Almenares', role: 'Guitar and vocals' },
-      { name: 'Damian Busqueta Mineto', role: 'Trombone' },
       { name: 'Benilde Aysmel Guzmán Mariño', role: 'Trumpet' },
       { name: 'Rick Vito', role: 'Lead guitar on I Loved Another Woman' },
     ],
@@ -434,7 +433,7 @@ export const tour = {
         src: '/images/tour/casa-de-la-trova-santiago-de-cuba-26-december-2026.jpg',
         alt: 'Concert poster: Ramon Goose y The Compadres with Alejandro Almenares at Casa de la Trova, Santiago de Cuba, 26 December 2026',
         caption:
-          'Ramon Goose y The Compadres, con Alejandro Almenares y invitados especiales. Ramon Goose (voice and guitar), Joaquín Solórzano (congas), Osvaldo Calderín (double bass), Eduardo Calzado (bongó), Damian Busqueta Mineto (trombone), Benilde Aysmel Guzmán Mariño (trumpet), Rudy Ramón (tres). Playing songs from the new album recorded in Santiago de Cuba.',
+          'Ramon Goose y The Compadres, con Alejandro Almenares y invitados especiales. Ramon Goose (voice and guitar), Joaquín Solórzano (congas), Osvaldo Calderín (double bass), Eduardo Calzado (bongó), Benilde Aysmel Guzmán Mariño (trumpet), Rudy Ramón (tres). Playing songs from the new album recorded in Santiago de Cuba.',
       },
     },
     {
@@ -617,10 +616,10 @@ export const band = {
       bio: 'One of the great bolero singers of Santiago de Cuba, and one of the last defenders of the form in the city. Born Justina María Balbuena Céspedes in 1935, she sang from the age of nine and never left Santiago, because she was a santiaguera and that was the end of it. She sings on Porque and Si Pudiera Expresarte. She died in April 2025, aged ninety, which makes these among the last things she recorded.',
     },
     {
-      name: 'Damian Busqueta Mineto and Benilde Aysmel Guzmán Mariño',
-      role: 'The horn section: trombone and trumpet',
-      photo: '/images/band/horn-section.jpg',
-      bio: 'Damian Busqueta Mineto on trombone, a twice Grammy-winning producer, and Benilde Aysmel Guzmán Mariño on trumpet. Both were cut in Santiago after the rhythm section, which is why the record took as long as it did to finish. Horns are what separate a son band from a son septet, and they are the last thing to go on.',
+      name: 'Benilde Aysmel Guzmán Mariño',
+      role: 'Trumpet',
+      photo: '/images/band/benilde-guzman.jpg',
+      bio: 'Benilde Aysmel Guzmán Mariño on trumpet, cut in Santiago after the rhythm section, which is why the record took as long as it did to finish. Horns are what separate a son band from a son septet, and they are the last thing to go on.',
     },
     {
       name: 'Alejandro Almenares',

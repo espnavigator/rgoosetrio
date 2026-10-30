@@ -1344,7 +1344,6 @@ export const gallery = {
     { src: 'a17.jpg', tag: 'cuba', caption: 'The Compadres' },
     { src: 'a18.jpg', tag: 'cuba', caption: 'The Compadres' },
     { src: 'a19.jpg', tag: 'cuba', caption: 'The Compadres' },
-    { src: 'a11.jpg', tag: 'cuba', caption: 'The Compadres' },
 
     // The studios: EGREM and Siboney.
     { src: 'a07.jpg', tag: 'cuba', caption: 'Estudio 18, EGREM, with the Guyatone' },
